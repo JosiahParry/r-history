@@ -1,3 +1,5 @@
+## Design paradigms in R
+
 Lately I have been developing a deep curiosity of the origins of the R language. I have since read a more from the WayBack Machine than a Master’s student probably should. There are four documents that I believe to be extremely foundational and most clearly outline the original philosophies underpinning both R and its predecessor S. These are _Evolution of the S Language_ (Chambers, 1996), _A Brief History of S_ (Becker), _Stages in the Evolution of S_ (Chambers, 200), and _R: Past and Future History by Ross Ihaka_ (1998). The readings have elicited many lines of thought and potential inquiry. What interests me the most at present is the question "how have the design principles of S and R manifested themselves today?" 
 
 There are a number of design principles that I believe still exist in the R language today. Two of these find their origin in the development of S and the third was most clearly emphasized in the development of R. These are, in no particular order, what I believe to be the design principles that are most prominent in the modern iteration of R. The software should:
