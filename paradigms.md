@@ -10,7 +10,7 @@ There are a number of design principles that I believe still exist in the R lang
 
 The first design philosophy I think is quite apparent in R’s continual development as an interface language. I believe part of R’s success is because of the immense community development focusing on interfaces to other tools and languages. Most prominently I would argue is the development of interfaces to SQL, Stan, JavaScript, and Python. Each enables R users to interact with existing infrastructure which vastly increases the breadth of technologies and tools available to useRs. 
 
-Identifying R’s evolution as an interface language is a rather objective task. Assessing these latter two principles is a rather subjective, but one I will endeavor nonetheless. 
+Identifying R’s evolution as an interface language is a rather objective task. Assessing these latter two principles is a subjective task, but one I will endeavor nonetheless. 
 
 The second principle is stated clearly by Ihaka (1998).
 
