@@ -1,0 +1,5581 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 6099
+>>
+stream
+BT
+/TT2 1 Tf
+12 0 0 12 236.9 670.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+0.0024 Tw
+(A Brief History of S)Tj
+/TT4 1 Tf
+10 0 0 10 251.3 644.0601 Tm
+-0.009 Tw
+(Richard A. Becker)Tj
+/TT6 1 Tf
+-1.3 -2 TD
+-0.0057 Tw
+(AT&T Bell Laboratories)Tj
+-1.37 -1.4 TD
+-0.0055 Tw
+(Murray Hill, New Jersey 07974)Tj
+/TT2 1 Tf
+-15.26 -6 TD
+0 Tw
+(INTRODUCTION)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0762 Tw
+[(The S language has been in use for more than 15 years now, )-12.3(and )-12.3(this )-12.3(appears )-12.3(to )-12.3(be )-12.4(a )-12.3(good )-12.3(time )-12.3(to)]TJ
+-2.5 -1.2 TD
+0.0066 Tw
+[(recollect some of the events and influences that marked its development. )-248.7(The )5.1(present )5.1(paper )5.1(covers )5.1(material)]TJ
+T*
+0.0274 Tw
+[(on the design of S that has also been addressed by )-8.7(Becker )-8.7(and )-8.7(Chambers )-8.7(\(1984b\), )-8.7(but )-8.7(the )-8.7(emphasis )-8.7(here )-8.7(is)]TJ
+T*
+0.0777 Tw
+[(on historical development and less on technical computing )8.1(details. )-243.1(Also, )11.4(many )11.4(important )11.4(new )11.4(ideas )11.4(have)]TJ
+T*
+0.118 Tw
+[(come )12.1(about )12.1(since )12.1(that )12.1(work. )-249.8(Similarly, parts of Chambers \(1992\) discuss the history of S, but there the)]TJ
+T*
+-0.0046 Tw
+(emphasis is on very recent developments and future directions.)Tj
+2.5 -1.56 TD
+0.0375 Tw
+[(Why should anyone care about the history of S? )-254.7(This sounds like )-10.9(the )-10.9(question )-10.9(people )-10.9(ask )-10.9(of )-10.9(history)]TJ
+-2.5 -1.2 TD
+0.0576 Tw
+(in general, and the answer is much the same ó the study of the flow of ideas in S, in particular the intro-)Tj
+T*
+0.0264 Tw
+[(duction )8.5(and )8.5(dropping of various concepts and their origins, can help us to understand how software in gen-)]TJ
+T*
+0.0657 Tw
+[(eral )8.9(evolves. )-256.5(Some of the ideas that are so clear today were murky yesterday; how did )7.4(the )7.4(insights )7.4(arise?)]TJ
+T*
+0.1404 Tw
+[(What )16(things )16.1(were )16.1(done )16(well? )-244.1(What conditions helped S to grow into the strong system that it is now?)]TJ
+T*
+0.0953 Tw
+[(Could we have anticipated the changes that took place and have implemented years )7(ago )7(something )7(more)]TJ
+T*
+-0.0039 Tw
+(like the current version of S?)Tj
+2.5 -1.56 TD
+0.0073 Tw
+(This history of S should also be of interest to people who use the commercially available)Tj
+9 0 0 9 455.9 371.2601 Tm
+0 Tw
+(S-PLUS)Tj
+10 0 0 10 488.5 371.2601 Tm
+(lan-)Tj
+-41.65 -1.2 TD
+-0.0074 Tw
+(guage, because S and)Tj
+9 0 0 9 159.8 359.2601 Tm
+0 Tw
+(S-PLUS)Tj
+10 0 0 10 192.3 359.2601 Tm
+-0.0101 Tw
+(are very closely related.)Tj
+/TT2 1 Tf
+-12.03 -2.4 TD
+-0.0002 Tw
+(THE EARLY DAYS \(1976-80 VERSION OF ëSí\))Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0881 Tw
+[(S )8.9(was )8.9(not )8.9(the )8.9(first )8.9(statistical )8.9(computing )8.8(language designed at Bell Laboratories, but it was the first)]TJ
+-2.5 -1.2 TD
+0.0559 Tw
+[(one )-12.4(to be implemented. )-249.4(The pre-S language work dates from 1965 and is described in Becker and Cham-)]TJ
+T*
+-0.0034 Tw
+[(bers )8.6(\(1989\). )-238.4(However, because it did not directly influence S, we will not elaborate here.)]TJ
+2.5 -1.56 TD
+0.0566 Tw
+[(S )9.2(grew )9.2(up in 1975-1976 in the statistics research departments at Bell Laboratories. )-251.2(Up )-5.2(to )-5.2(that )-5.2(time,)]TJ
+-2.5 -1.2 TD
+0.0368 Tw
+[(most of our statistical computing, both for research and routine data analysis work, )10.6(was )10.7(carried )10.7(out )10.6(using )10.6(a)]TJ
+T*
+0.1835 Tw
+(a large, well-documented Fortran library known as)Tj
+9 0 0 9 290.4 256.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 310.8 256.0601 Tm
+0.1959 Tw
+[(\(Statistical Computing Subroutines\). )-239.4(The)]TJ
+9 0 0 9 488 256.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 72 244.0601 Tm
+0.0145 Tw
+[(library )-8.5(had )-8.5(been )-8.5(developed )-8.5(in-house )-8.5(over )-8.5(the )-8.5(years to provide a flexible base for our research. )-244(Because the)]TJ
+T*
+0.1243 Tw
+[(statistics research departments were charged with developing new methodology, often to )-13.6(deal )-13.6(with )-13.6(non-)]TJ
+T*
+0.0296 Tw
+[(standard )-7.9(data )-7.9(situations, )-7.9(the )-7.9(ability )-7.9(to )-7.9(carry out just the right computations was paramount. )-253.9(Routine )8.1(analy-)]TJ
+T*
+-0.0075 Tw
+(sis was rare.)Tj
+2.5 -1.56 TD
+0.1755 Tw
+[(Commercial )9.3(software )9.3(did )9.3(not fit well into our research environment. )-253.7(It often used a ëëshotguníí)]TJ
+-2.5 -1.2 TD
+0.047 Tw
+[(approach )-8.6(ó )-8.6(print )-8.6(out )-8.6(everything that might be relevant to the problem at hand because it could be several)]TJ
+T*
+0.1361 Tw
+[(hours before the statistician could get another set )-14.6(of )-14.6(output. )-266.1(This )-8.1(was )-8.1(reasonable )-8.1(when )-8.1(computing )-8.1(was)]TJ
+T*
+0.0864 Tw
+[(done )-10.4(in )-10.4(a )-10.4(batch )-10.4(mode. )-248.6(However, )-10.5(we )-10.5(wanted )-10.5(to )-10.5(be )-10.5(able )-10.5(to interact with our data, using Exploratory Data)]TJ
+T*
+0.1575 Tw
+[(Analysis )13.2(\(Tukey, )13.2(1971\) )13.2(techniques. )-239.5(In addition, commercial statistical software usually didnít compute)]TJ
+T*
+0.0003 Tw
+[(what we wanted and was not set up to be modified. )-245(The)]TJ
+9 0 0 9 299.7 132.4601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 318.2 132.4601 Tm
+-0.0043 Tw
+(library provided excellent support for our sim-)Tj
+-24.62 -1.2 TD
+-0.0067 Tw
+(ulations, large problems, monte-carlo, and non-standard analyses.)Tj
+2.5 -1.56 TD
+0.0074 Tw
+[(On the other hand, we did occasionally do simple )-14.4(computations. )-263.4(For )-8.4(example, )-8.4(suppose )-8.4(we )-8.4(wanted )-8.4(to)]TJ
+-2.5 -1.2 TD
+0.1144 Tw
+(carry out a linear regression given 20)Tj
+/TT4 1 Tf
+15.93 0 TD
+0 Tw
+(x)Tj
+/TT6 1 Tf
+0.44 0 TD
+(,)Tj
+/TT4 1 Tf
+0.25 0 TD
+(y)Tj
+/TT6 1 Tf
+0.8 0 TD
+0.1066 Tw
+[(data points. )-248.7(The idea of writing a Fortran program that called)]TJ
+-17.42 -1.2 TD
+0.0562 Tw
+[(library )8.6(routines )8.5(for )8.5(something )8.5(like )8.6(this )8.6(was )8.5(unappealing. )-240.4(While )7.9(the actual regression was done in a single)]TJ
+T*
+0.0398 Tw
+[(subroutine )-7(call, )-7(the )-7(program )-7(had )-7(to do its own input and output, and time spent in I/O often dominated the)]TJ
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Length 8350
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 2 -)Tj
+-20.77 -3.6 TD
+-0.0042 Tw
+[(actual computations. )-249.5(Even more importantly, the effort expended on )-12.7(programming )-12.7(was )-12.7(out )-12.7(of )-12.7(proportion )-12.7(to)]TJ
+0 -1.2 TD
+-0.0044 Tw
+[(the size of the problem. )-252.2(An interactive facility could make such work much easier.)]TJ
+2.5 -1.56 TD
+-0.003 Tw
+[(It was the realization that routine data analysis should not require writing Fortran programs that )-6.6(really)]TJ
+-2.5 -1.2 TD
+0.0078 Tw
+[(got )-16.3(S )-16.3(going. )-257(Our )-10(initial )-10(goals )-10(were not lofty; we simply wanted an interactive interface to the algorithms in)]TJ
+T*
+0 Tw
+(the)Tj
+9 0 0 9 87.4 656.4601 Tm
+(SCS)Tj
+10 0 0 10 106.6 656.4601 Tm
+0.0778 Tw
+[(library. )-233.7(In )9.5(the Spring of 1976, John Chambers, Rick Becker, Doug Dunn and Paul Tukey held a)]TJ
+-3.46 -1.2 TD
+0.0586 Tw
+[(series of meetings to discuss the idea. )-240.7(Graham Wilkinson, who was a visitor at the time, )13.9(also )13.9(participated)]TJ
+T*
+0.0261 Tw
+[(in )8.6(these early discussions. )-245.4(Gradually, we came to the conclusion that a full language was needed. )-249.2(The )-5.2(ini-)]TJ
+T*
+-0.0024 Tw
+(tial implementation was the work of Becker, Chambers, Dunn, along with Jean McRae and Judy Schilling.)Tj
+2.5 -1.56 TD
+0.0464 Tw
+[(The environment at Bell Laboratories in 1976 was unusual and certainly )-8.9(influenced )-8.9(the )-8.9(way )-8.9(S )-8.9(came)]TJ
+-2.5 -1.2 TD
+0.0747 Tw
+[(together. )-253.8(Our computer center provided a Honeywell 645 computer running)]TJ
+9 0 0 9 387.8 592.86 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 411.8 592.86 Tm
+0.0818 Tw
+[(. )-253.4(Almost all statistical)]TJ
+-33.98 -1.2 TD
+0.0964 Tw
+[(computing was done in Fortran, but there was a wide range of experience in using Fortran to )-16.7(implement)]TJ
+T*
+0.1258 Tw
+[(portable algorithms, as well as non-numeric software tools. )-255(For example, the)]TJ
+9 0 0 9 397.8 568.86 Tm
+0 Tw
+(PFORT)Tj
+10 0 0 10 429.6 568.86 Tm
+0.1104 Tw
+(Verifier \(Ryder &)Tj
+-35.76 -1.2 TD
+0.0371 Tw
+[(Hall, )11.7(1974\) )11.7(was )11.7(a program written in Fortran to verify the portability of Fortran programs. )-260.7(Portability was)]TJ
+T*
+0.0561 Tw
+[(a big concern then, since the Honeywell configuration was unlikely to be available to others and )9.3(since )9.3(the)]TJ
+T*
+-0.0065 Tw
+(investment we made in software was considerable.)Tj
+2.5 -1.56 TD
+0.0872 Tw
+[(Bell Laboratories in 1976 also provided a unique combination of people, software tools, )-8.5(and )-8.5(ideas.)]TJ
+-2.5 -1.2 TD
+0.0247 Tw
+[(John Chambers had been at Bell Laboratories for 10 years, had experimented )8.5(with )8.4(many )8.5(approaches )8.4(to )8.5(sta-)]TJ
+T*
+0.0789 Tw
+[(tistical computing, and had codified his thoughts in a book \(Chambers, 1977\). )-252.4(Rick )5.2(Becker )5.2(came )5.2(to )-14.6(Bell)]TJ
+T*
+0.1173 Tw
+[(Labs in 1974 with experience in interactive computing from work with the Troll )7.6(\(NBER, )7.6(1974\) )7.6(system.)]TJ
+T*
+0.0039 Tw
+[(The statistics research departments were heavily influenced by John Tukey and )-12.2(his )-12.2(approach )-12.2(to )-12.2(Exploratory)]TJ
+T*
+0.0049 Tw
+[(Data Analysis \(Tukey, 1971\). )-255.6(Computer science research at Bell Laboratories was still actively working on)]TJ
+T*
+0 Tw
+(the)Tj
+9 0 0 9 87.3 445.2601 Tm
+(UNIX)Tj
+/TT7 1 Tf
+10 0 0 10 109.8 445.2601 Tm
+<00b7>Tj
+/TT6 1 Tf
+1.12 0 TD
+0.0874 Tw
+(Operating System \(Ritchie and Thompson, 1978\) and many of the tools from that work were)Tj
+-4.9 -1.2 TD
+0.1511 Tw
+(available on)Tj
+9 0 0 9 126.2 433.2601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 150.2 433.2601 Tm
+0.1495 Tw
+[(. )-257.5(In particular, we had access to the C language, based on the Portable C Compiler)]TJ
+-7.82 -1.2 TD
+0.0477 Tw
+(\(Ritchie, et. al. 1978\), the)Tj
+9 0 0 9 179.1 421.2601 Tm
+0 Tw
+(YACC)Tj
+10 0 0 10 207.1 421.2601 Tm
+(and)Tj
+9 0 0 9 224.5 421.2601 Tm
+(LEX)Tj
+10 0 0 10 245 421.2601 Tm
+0.047 Tw
+[(tools for parsing and lexical analysis \(Johnson and Lesk, )-10(1978\),)]TJ
+-17.3 -1.2 TD
+0.0146 Tw
+[(the Ratfor language for writing structured Fortran \(Kernighan, 1975\), Struct, for )5.3(turning )5.3(Fortran )5.3(into )5.3(Ratfor)]TJ
+T*
+-0.0058 Tw
+(\(Baker, 1977\), and the M4 macro processor \(Kernighan and Ritchie, 1977\).)Tj
+2.5 -1.56 TD
+0.0268 Tw
+[(An important precondition for an interactive computing system was a good graphics facility. )-251.7(Becker)]TJ
+-2.5 -1.2 TD
+0.016 Tw
+[(and )-9.1(Chambers )-9.2(\(1976, )-9.1(1977\) )-9.1(\(and )-9.2(Chambers, )-9.1(1975\) wrote a subroutine library called GR-Z to provide flexi-)]TJ
+T*
+0.0129 Tw
+[(ble, )13.4(portable, )13.4(and )13.4(device-independent graphics. )-256.3(It used a computer-center supplied library, Grafpac, to pro-)]TJ
+T*
+0.0449 Tw
+[(duce )-11.7(output on batch devices such as microfilm recorders and printer/plotters. )-240.2(Interactive devices, such as)]TJ
+T*
+0.0455 Tw
+[(Tektronix graphics terminals, line printers, and others were supported by )-9.4(device )-9.4(driver )-9.4(subroutines )-9.4(written)]TJ
+T*
+0.0547 Tw
+[(for )-6.3(GR-Z. )-265.3(Its )-7.9(graphical )-7.9(parameters )-7.9(controlled )-7.9(graph )-7.9(layout and rendering, and were an extension of those)]TJ
+T*
+0.0162 Tw
+[(provided )8.4(by )8.4(Grafpac. )-249.1(The system provided for graphic input as well as output, and became the cornerstone)]TJ
+T*
+-0.0026 Tw
+(for graphics in S.)Tj
+2.5 -1.56 TD
+0.0264 Tw
+[(Another enabling experiment was one in separate compilation of portions of a system. )-256.4(Development)]TJ
+-2.5 -1.2 TD
+0.0788 Tw
+(of a statistical computing system under)Tj
+9 0 0 9 235.6 270.0601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 262.9 270.0601 Tm
+0.0748 Tw
+(required the use of overlays, where portions of the instruc-)Tj
+-19.09 -1.2 TD
+0.0075 Tw
+[(tions )10(were )10(brought )10(into )10(memory )10(when )6.2(they )6.2(were )6.2(needed. )-250.8(Unlike modern virtual memory systems, space on)]TJ
+T*
+0.0591 Tw
+[(the )-5.6(Honeywell )-5.6(machine )-5.6(was )-5.6(severely )-5.6(limited, and compilation and linking was slow. )-243.7(Development of the)]TJ
+T*
+0.008 Tw
+(system was likely to require lots of work on the various S functions, and it would be unacceptably slow and)Tj
+T*
+0.0359 Tw
+[(expensive )-7.7(to recompile or relink the entire system for every change in one of the functions. )-253.3(To get around)]TJ
+T*
+0.0255 Tw
+[(this, we developed a pair of assembler language routines that )-7.1(implemented )-7.1(transfer )-7.1(vectors. )-259.8(The )-11.7(main )-11.7(pro-)]TJ
+T*
+0.0269 Tw
+[(gram would ensure that jump instructions to various subroutines were placed )10.8(at )10.8(known )10.8(fixed )10.8(memory )10.8(loca-)]TJ
+T*
+0.0157 Tw
+[(tions. )-249.6(Overlays could then be compiled and linked separately, knowing exactly where they )-10.9(could )-10.9(find )-10.9(vari-)]TJ
+T*
+0.0452 Tw
+[(ous )-9(needed )-9(subroutines. )-272.6(Similarly, )-9.7(the )-9.7(overlays )-9.7(had )-9.7(a )-9.7(vector of transfer instructions to the overlayís func-)]TJ
+T*
+0.0362 Tw
+[(tions stored in another set of fixed addresses. )-253.8(Thus, the main program could always be sure )-9.2(of )-9.2(the )-9.2(address)]TJ
+T*
+0.0608 Tw
+[(to )-7.1(use )-7.1(when )-7.1(calling )-7.1(the )-7.1(subroutines. )-261.4(This separate compilation/linkage process fit right in with the notion)]TJ
+T*
+0.0269 Tw
+[(that S would be based on a collection of functions; each function or related group of functions could )-5.4(reside)]TJ
+T*
+-0.003 Tw
+(in a single overlay.)Tj
+2.5 -1.56 TD
+0.086 Tw
+(A feature of the computing environment on)Tj
+9 0 0 9 279.4 110.4601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 306.9 110.4601 Tm
+0.0931 Tw
+(was the)Tj
+9 0 0 9 341.6 110.4601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 363.6 110.4601 Tm
+0.0971 Tw
+[(text editor \(Ritchie, 1970\). )-252.1(It was)]TJ
+-29.16 -1.2 TD
+0.1491 Tw
+[(used )-6.5(as )-6.5(a )-6.5(command )-6.5(interpreter, )-6.5(doing )-6.5(textual computations to build an operating system command and)]TJ
+T*
+0.0284 Tw
+[(finally executing it. )-251.6(Thus,)]TJ
+9 0 0 9 181.2 86.4601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 202.5 86.4601 Tm
+0.0296 Tw
+(provided a primitive analog to the Unix system shell command interpreter.)Tj
+9 0 0 9 72 74.4601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 93.8 74.4601 Tm
+0.0676 Tw
+(was used extensively behind the scenes, to control compilations and overlay loading; it provided the)Tj
+-2.18 -1.2 TD
+-0.0004 Tw
+(scaffolding that allowed us to build S.)Tj
+ET
+endstream
+endobj
+11 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT6 6 0 R
+/TT7 12 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+14 0 obj
+<<
+/Length 8314
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 3 -)Tj
+/TT2 1 Tf
+-2.98 -3.6 TD
+0.0038 Tw
+(Initial S Concepts)Tj
+/TT6 1 Tf
+-15.29 -1.56 TD
+0.0963 Tw
+[(What were the basic ideas involved in S? )-248.5(Our primary goal was to bring interactive )-16.1(computing )-16.1(to)]TJ
+-2.5 -1.2 TD
+0.0553 Tw
+[(bear on statistics and data analysis problems. )-258.5(S was designed as an interactive language based )7.4(entirely )7.4(on)]TJ
+T*
+0.1164 Tw
+[(functions. )-239.8(A )12.4(few )12.4(of these functions would be implemented as prefix or infix operators \(arithmetic, sub-)]TJ
+T*
+0.0062 Tw
+[(scripting, )-9(creating )-9(sequences\), )-9(but )-9(most would be written with a function name followed by a parenthesized)]TJ
+T*
+0.0649 Tw
+[(argument list. )-250.3(Functions )8.2(would )8.2(be )8.2(allowed )8.2(an arbitrary number of positional and keyword arguments and)]TJ
+T*
+0.0464 Tw
+[(would return a data structure that would allow a collection of named results. )-239.8(Arguments )9.6(that )9.6(were )9.6(left )9.6(out)]TJ
+T*
+0.0439 Tw
+[(would )10.2(have )10.2(default )10.2(values. )-241.4(The )9.9(basic )9.9(data )9.9(structures would be vectors and a hierarchical structure, a com-)]TJ
+T*
+0.1558 Tw
+[(bination of vectors and/or other such structures \(Chambers, 1978\). )-250.8(Entire collections of data would be)]TJ
+T*
+-0.0059 Tw
+(referred to by a single name.)Tj
+2.5 -1.56 TD
+0.076 Tw
+[(The power of S and its functions would never be used, however, )-9.9(unless )-9.9(the )-9.9(system )-9.9(were )-9.9(extremely)]TJ
+-2.5 -1.2 TD
+0.0753 Tw
+[(flexible )-10.8(and )-10.8(provided )-10.8(the )-10.8(operations )-10.8(that our colleagues wanted. )-251.7(In order to access the computations that)]TJ
+T*
+0.2049 Tw
+(were presently available as subroutines in the)Tj
+9 0 0 9 270.5 556.86 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 291.1 556.86 Tm
+0.2068 Tw
+[(library \(and those that would )-7.8(later )-7.8(be )-7.8(written\) )-7.8(we)]TJ
+-21.91 -1.2 TD
+0.0461 Tw
+[(planned )-10.5(to import subroutines written in a lower-level programming language \(Fortran\) and we planned to)]TJ
+T*
+0.0706 Tw
+(allow ordinary)Tj
+/TT4 1 Tf
+6.26 0 TD
+0 Tw
+(users)Tj
+/TT6 1 Tf
+2.44 0 TD
+0.0784 Tw
+[(to do the same thing. )-246.4(Of course, to import an algorithm would require some sort of)]TJ
+-8.7 -1.2 TD
+0.0151 Tw
+(interface, to translate between the internal S data structures and those of the language, as well as to regular-)Tj
+T*
+0.0156 Tw
+[(ize the calling sequence. )-249.2(Our model for this was a diagram that represented an algorithm as a )-10.4(circle, )-10.4(with )-10.4(a)]TJ
+T*
+-0.0028 Tw
+(square interface routine wrapped around it, allowing it to fit into the square slot provided for S functions.)Tj
+2.5 -1.56 TD
+0.0767 Tw
+[(Another important notion that came early was that )-7.9(the )-7.9(language )-7.9(should )-7.9(be )-7.9(defined )-7.9(generally, )-7.9(based)]TJ
+-2.5 -1.2 TD
+0.0663 Tw
+[(on )-7.6(a )-7.6(formal )-7.6(grammar, )-7.6(and )-7.6(have as few restrictions as possible. )-243(\(We were all tired of Fortranís seemingly)]TJ
+T*
+0.1057 Tw
+[(capricious restrictions, on the form of subscripts, etc.\) )-266.1(English-like )-11.6(syntax )-11.6(had )-11.6(been )-11.6(tried )-11.6(in )-11.6(many )-11.6(other)]TJ
+T*
+0.095 Tw
+[(contexts and had generally failed to resemble a natural language in the end, so we were )8.3(happy )8.3(to )8.3(have )8.3(a)]TJ
+T*
+0.0675 Tw
+[(simple, )16.2(regular )16.2(language. )-245.6(Other applications languages at the time seemed too complicated ó although a)]TJ
+T*
+0.114 Tw
+[(formal grammar might describe the basic expression syntax, there were generally many other )7.8(parts. )-238.3(We)]TJ
+T*
+0.0955 Tw
+[(wanted )14.9(the expression syntax to cover everything. )-239.9(General functions and data structures were the key to)]TJ
+T*
+0.0151 Tw
+[(this )-30.1(simplicity. )-260.1(Functions that could take arbitrary numbers of arguments as input, and produce an arbitrar-)]TJ
+T*
+0.0574 Tw
+[(ily complex data structure as output should be all the language would need. )-248.8(Infix )-5.8(operators )-5.8(for )-5.8(arithmetic)]TJ
+T*
+0.0957 Tw
+[(and )-10.7(subscripting )-10.7(provided very natural expressions, but were simply syntactic sugar for underlying arith-)]TJ
+T*
+-0.0018 Tw
+(metic and subscripting functions.)Tj
+2.5 -1.56 TD
+0.1775 Tw
+[(From )6.6(the )6.6(beginning, one of the most powerful operations in S was the subscripting operator. )-251.7(It)]TJ
+-2.5 -1.2 TD
+0.0256 Tw
+[(comes )-7.4(in )-7.4(several )-7.4(flavors. )-270.4(First, )-9(a )-9(vector )-9(of )-9(numeric subscripts selects corresponding elements of an object.)]TJ
+T*
+0.1052 Tw
+[(Even )9.1(here )9.1(there )9.1(is )9.1(a )9.1(twist, because the vector of subscripts can contain repeats, making the result longer)]TJ
+T*
+0.0379 Tw
+[(than the original. )-242.7(Negative subscripts may be an idea that originated with )11(S: )10.9(they )11(describe )10.9(which )10.9(elements)]TJ
+T*
+0 Tw
+(should)Tj
+/TT4 1 Tf
+3 0 TD
+(not)Tj
+/TT6 1 Tf
+1.61 0 TD
+0.0762 Tw
+[(be )10.3(selected. )-249.6(Logical subscripts select elements corresponding to)]TJ
+/TT9 1 Tf
+9 0 0 9 384.6 297.6601 Tm
+0 Tw
+(TRUE)Tj
+/TT6 1 Tf
+10 0 0 10 409.5 297.6601 Tm
+0.0766 Tw
+(values, and empty sub-)Tj
+-33.75 -1.2 TD
+0.0546 Tw
+[(scripts )-8.6(select )-8.6(everything. )-267.6(All )-12.4(of these subscripting operations generalize to multi-way arrays. )-252.4(In )-8.1(addition,)]TJ
+T*
+-0.0054 Tw
+(any data structure can be subscripted as if it were a vector.Ü)Tj
+2.5 -1.56 TD
+0.0589 Tw
+[(S )13.3(began )13.3(with )13.3(several notions about data. )-246.4(The most common side effect in S is accomplished by the)]TJ
+-2.5 -1.2 TD
+0.0396 Tw
+[(assignment function; it gives a name to an S )12.2(object )12.2(and )12.2(causes )12.2(it )12.2(to )12.2(be )12.2(stored. )-242.6(This )11.4(storage )11.4(is )11.4(persistent )11.4(ó)]TJ
+T*
+0.0008 Tw
+(it lasts across S sessions.)Tj
+2.5 -1.56 TD
+0.0665 Tw
+[(The basic data structure in S is a vector of like-elements: numbers, )-7.7(character )-7.7(strings, )-7.7(or )-7.7(logical )-7.7(val-)]TJ
+-2.5 -1.2 TD
+0.0389 Tw
+[(ues. )-250.3(Although the notion of an)]TJ
+/TT4 1 Tf
+12.9 0 TD
+0 Tw
+(attribute)Tj
+/TT6 1 Tf
+3.74 0 TD
+0.0263 Tw
+(for an S object wasnít clearly implemented until the 1988 release,)Tj
+-16.64 -1.2 TD
+-0.0051 Tw
+[(from the beginning S recognized that the primary vector of data was often accompanied )-12.9(by )-12.9(other )-12.9(values )-12.9(that)]TJ
+T*
+0.0374 Tw
+[(described special properties of the data. )-253.4(For example, a matrix is just a vector of data along with an auxil-)]TJ
+T*
+0.0006 Tw
+(iary vector named)Tj
+/TT9 1 Tf
+9 0 0 9 146.8 170.4601 Tm
+0 Tw
+(Dim)Tj
+/TT6 1 Tf
+10 0 0 10 165.6 170.4601 Tm
+0.0175 Tw
+[(that )6.3(tells )6.3(the dimensionality \(number of rows and columns\). )-260.3(Similarly, a time series)]TJ
+-9.36 -1.2 TD
+0.1031 Tw
+(has a)Tj
+/TT9 1 Tf
+9 0 0 9 96.9 158.4601 Tm
+0 Tw
+(Tsp)Tj
+/TT6 1 Tf
+10 0 0 10 116.7 158.4601 Tm
+0.1076 Tw
+[(attribute to tell the start time, end time, and number of observations per cycle. )-244.7(These )5.3(vectors)]TJ
+-4.47 -1.2 TD
+-0.0037 Tw
+(with attributes are known as)Tj
+/TT4 1 Tf
+11.51 0 TD
+-0.0085 Tw
+(vector structures)Tj
+/TT6 1 Tf
+6.74 0 TD
+0.0013 Tw
+[(, and this distinguishes S from most other )-11.7(systems. )-259.5(For exam-)]TJ
+-18.25 -1.2 TD
+0.0305 Tw
+(ple, in)Tj
+9 0 0 9 100.1 134.4601 Tm
+0 Tw
+(APL)Tj
+10 0 0 10 117.1 134.4601 Tm
+0.0276 Tw
+[(, everything is a multi-way array, while in Troll, everything is )10.3(a )10.3(time )10.3(series. )-237.7(The)]TJ
+9 0 0 9 446.2 134.4601 Tm
+0 Tw
+(LISP)Tj
+10 0 0 10 467.4 134.4601 Tm
+0.0213 Tw
+(notion of)Tj
+-39.54 -1.2 TD
+0.069 Tw
+[(a property list is probably the closest analogy to S attributes. )-246.3(The )8.1(general )8.1(treatment )-7.7(of )-7.7(vectors )-7.7(with )-7.7(other)]TJ
+T*
+0.1555 Tw
+[(attributes in S makes data generalizations much easier )10.5(and )10.5(has )10.5(naturally )10.5(extended )10.5(to )10.5(an )10.5(object-oriented)]TJ
+8 0 0 8 72 100.4601 Tm
+0 Tw
+(__________________)Tj
+0 -1.25 TD
+0.0328 Tw
+(ÜLater, for arrays, we added one further twist: a matrix subscript with)Tj
+/TT4 1 Tf
+28.5125 0 TD
+0 Tw
+(k)Tj
+/TT6 1 Tf
+0.7375 0 TD
+0.0435 Tw
+[(columns )7.1(can )7.1(be )7.1(used to select individual elements)]TJ
+-29.25 -1.25 TD
+-0.0144 Tw
+(of a)Tj
+/TT4 1 Tf
+1.7625 0 TD
+0 Tw
+(k)Tj
+/TT6 1 Tf
+0.4375 0 TD
+-0.0402 Tw
+(-way array.)Tj
+ET
+endstream
+endobj
+15 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+18 0 obj
+<<
+/Length 8111
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 4 -)Tj
+-20.77 -3.6 TD
+-0.0056 Tw
+(implementation in recent releases \(but thatís for later\).)Tj
+2.5 -1.56 TD
+0.0458 Tw
+[(Vector structures in S were treated specially in many computations. )-268(Most )-13.1(notably, )-13.1(subscripting )-13.1(was)]TJ
+-2.5 -1.2 TD
+0.1559 Tw
+[(handled specially for arrays, with multiple subscripts allowed, )10.4(one )10.4(for )10.4(each )10.4(dimension. )-251.9(Similarly, time)]TJ
+T*
+-0.0057 Tw
+(series were time aligned \(influenced by Troll\) for arithmetic operations.)Tj
+2.5 -1.56 TD
+0.0809 Tw
+(Another data notion in the first implementation of S was the idea of a hierarchical structure, which)Tj
+-2.5 -1.2 TD
+0.1056 Tw
+[(contained )11(a )11(collection )11(of )11(other )-5.1(S )-5.1(objects.Ü )-248.9(Early S structures were made up of named)]TJ
+/TT4 1 Tf
+36.07 0 TD
+0 Tw
+(components)Tj
+/TT6 1 Tf
+4.77 0 TD
+0.1105 Tw
+(; they)Tj
+-40.84 -1.2 TD
+0.0143 Tw
+[(were )-7.3(treated )-7.3(specially, )-7.3(with )-7.3(the )-7.3(ëë$íí )-7.3(operator selecting components from structures and functions for creat-)]TJ
+T*
+0.0557 Tw
+[(ing and modifying structures. )-239.7(\(There was even a nascent understanding of the need to iterate )-9.3(over )-9.3(all )-9.3(ele-)]TJ
+T*
+0.0255 Tw
+[(ments )-9.8(of )-9.8(a )-9.8(structure, accomplished by allowing a number instead of a name when using the ëë$íí operator.\))]TJ
+T*
+0.1254 Tw
+[(By )12.7(the )12.7(1988 )12.7(release )12.7(we )12.7(recognized these structures as yet another form of vector, of mode)]TJ
+/TT4 1 Tf
+38.24 0 TD
+0 Tw
+(list)Tj
+/TT6 1 Tf
+1.23 0 TD
+0.1292 Tw
+(, with an)Tj
+-39.47 -1.2 TD
+0.0559 Tw
+[(attribute )-8(vector )-8(of )-8(names. )-266.3(This )-7.7(was )-7.7(a )-7.7(very )-7.7(powerful notion, and it integrated the treatment of hierarchical)]TJ
+T*
+-0.0047 Tw
+(structures with that of ordinary vectors.)Tj
+/TT2 1 Tf
+18.18 -2.4 TD
+0 Tw
+(Implementation)Tj
+/TT6 1 Tf
+-15.68 -1.56 TD
+0.0287 Tw
+[(Persistent data in S was stored in a )-10.3(system )-10.3(known )-10.3(as)]TJ
+/TT4 1 Tf
+21.55 0 TD
+0.0383 Tw
+(scatter storage)Tj
+/TT6 1 Tf
+6.01 0 TD
+0.0396 Tw
+(, implemented in routines on the)Tj
+9 0 0 9 72 517.2601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 90.8 517.2601 Tm
+0.0155 Tw
+[(library )5.5(by )5.5(Jack )5.5(Warner. )-244.3(Earlier projects in statistics research had needed what amounted to a large flat)]TJ
+-1.88 -1.2 TD
+0.1483 Tw
+[(file system, held in one operating-system file. )-245.3(Scatter storage provided that: give it a hunk of data, its)]TJ
+T*
+-0.0032 Tw
+[(length, and a name and it would store the data under the name. )-249.4(Given the name, it could retrieve the data.)]TJ
+2.5 -1.56 TD
+0.0062 Tw
+[(In memory, S objects were stored in dynamically allocated )-11.2(space; )-11.2(S )-11.2(used)]TJ
+9 0 0 9 392.3 477.6601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 411 477.6601 Tm
+-0.0013 Tw
+(library Fortran-callable)Tj
+-33.9 -1.2 TD
+0.0661 Tw
+[(utilities )-12.2(that )-12.2(enabled )-12.2(a )-12.2(program )-12.2(to request space from the operating system and use that space for holding)]TJ
+T*
+-0.0167 Tw
+(Fortran arrays.)Tj
+2.5 -1.56 TD
+0.0661 Tw
+[(The implementation was done in Fortran for many reasons. )-256.6(Primarily, there was little other choice.)]TJ
+-2.5 -1.2 TD
+-0.0005 Tw
+[(C )-8.3(was only beginning to get a start on the)]TJ
+9 0 0 9 240.9 426.0601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 267.4 426.0601 Tm
+-0.0027 Tw
+(system and at the time, very little numerical work had been)Tj
+-19.54 -1.2 TD
+0.0174 Tw
+[(done in C. )-245.7(Assembler language was obviously difficult and non-portable. )-253.4(Also, by )-7.7(using )-7.7(Fortran, )-7.7(we )-7.7(were)]TJ
+T*
+0.1163 Tw
+(able to make good use of the routines already available on the)Tj
+9 0 0 9 335.9 402.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 355.6 402.0601 Tm
+0.1022 Tw
+[(library. )-266.1(S )-12.6(was already a formidable)]TJ
+-28.36 -1.2 TD
+0.1139 Tw
+(implementation job and in the beginning we wanted to make the best use of the already-written compo-)Tj
+T*
+0.046 Tw
+[(nents. )-248.8(\(As S has been re-implemented, all of the reliance on)]TJ
+9 0 0 9 320.9 378.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 339.9 378.0601 Tm
+0.048 Tw
+[(and most of the Fortran has )16.4(gone )16.4(away.\))]TJ
+-26.79 -1.2 TD
+0.0262 Tw
+[(On the other hand, even though we were using Fortran, we were loath to give up modern )-8.7(control )-8.7(structures)]TJ
+T*
+0 Tw
+(\()Tj
+9 0 0 9 75.3 354.0601 Tm
+(IF-ELSE)Tj
+10 0 0 10 107.8 354.0601 Tm
+0.1071 Tw
+[(\) )-6.2(and )-6.2(data )-6.2(structures. )-261.6(As )-8.5(a )-8.5(compromise, )-8.5(we used Ratfor along with the M4 macro processor to)]TJ
+-3.58 -1.2 TD
+0.0646 Tw
+[(give )6.6(us )6.6(an )6.6(implementation )6.6(language )6.6(that was quite reasonable, especially before the advent of Fortran 77;)]TJ
+T*
+-0.0035 Tw
+(we called it the)Tj
+/TT4 1 Tf
+6.32 0 TD
+0.0035 Tw
+(algorithm language)Tj
+/TT6 1 Tf
+7.92 0 TD
+0 Tw
+(.)Tj
+-11.74 -1.56 TD
+-0.002 Tw
+[(As S was being built, there was a long-held belief at Bell )-7.6(Labs )-7.6(in )-7.6(the )-7.6(importance )-7.6(of )-7.6(software )-7.6(portabil-)]TJ
+-2.5 -1.2 TD
+0.0072 Tw
+[(ity and we made a number of attempts to provide it. )-248.1(The Fortran code we used was intended to be )13.6(portable,)]TJ
+T*
+0.194 Tw
+(not only for numerical software, but also for character handling, where M4 was used to parameterize)Tj
+T*
+0.0453 Tw
+[(machine-specific )-7.5(constants )-7.5(such )-7.5(as )-7.5(the number of characters that could be stored in an integer. )-250(The)]TJ
+9 0 0 9 480 278.4601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 72 266.4601 Tm
+0.0369 Tw
+[(environment )22.2(certainly )22.2(encouraged thoughts of portability, because it provided, on one machine, two differ-)]TJ
+T*
+0.0507 Tw
+(ent character sets \()Tj
+9 0 0 9 148.2 254.4601 Tm
+0 Tw
+(BCD)Tj
+10 0 0 10 169.8 254.4601 Tm
+(and)Tj
+9 0 0 9 187.3 254.4601 Tm
+(ASCII)Tj
+10 0 0 10 210.8 254.4601 Tm
+0.0456 Tw
+[(\) and two different sets of system calls \(for batch and time-sharing\). )-253.6(To)]TJ
+-13.88 -1.2 TD
+0.0848 Tw
+[(provide )9.4(even )9.4(more )9.4(for )9.4(portability, )9.4(we )9.4(tried to write code that would encapsulate operating-system depen-)]TJ
+T*
+-0.0037 Tw
+(dencies: file opening, memory management, printing.)Tj
+2.5 -1.56 TD
+0.0368 Tw
+[(Because S is based so heavily on functions that carry )-8.3(out )-8.3(particular )-8.3(computational )-8.3(tasks, )-8.3(we )-8.3(realized)]TJ
+-2.5 -1.2 TD
+0.0055 Tw
+[(as soon as we had a parser and executive program that it )7.3(would )7.3(be )7.3(necessary )7.3(to )7.3(implement )7.3(lots )7.3(of )7.3(functions.)]TJ
+T*
+0.0768 Tw
+(Although many of the functions had at their core an)Tj
+9 0 0 9 289.2 190.86 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 308.6 190.86 Tm
+0.0863 Tw
+(subroutine, it soon became apparent that imple-)Tj
+-23.66 -1.2 TD
+0.0722 Tw
+[(mentation of the necessary interface routines was repetitive, error-prone, and boring. )-256.5(As )-5.2(a )-5.2(result, )-5.2(a )-5.2(set )-5.2(of)]TJ
+T*
+0.0957 Tw
+(M4 macros, the)Tj
+/TT4 1 Tf
+6.8 0 TD
+0.1015 Tw
+(interface macros)Tj
+/TT6 1 Tf
+6.85 0 TD
+0.1059 Tw
+(, was developed to help speed the implementation of interface routines.)Tj
+-13.65 -1.2 TD
+0.0869 Tw
+[(We )-8.7(also )-8.7(developed )-8.7(some )-8.7(new )-8.7(algorithms for S; many of them, involving for example, linear algebra and)]TJ
+T*
+-0.0063 Tw
+(random numbers, reflected ideas described in Chambers, 1977.)Tj
+2.5 -1.56 TD
+0.2087 Tw
+[(From the beginning, S was designed to provide a )-6.8(complete )-6.8(environment )-6.8(for )-6.8(data )-6.8(analysis. )-253.6(We)]TJ
+-2.5 -1.2 TD
+0.0671 Tw
+[(believed that the raw data would be read into S, operated on by various S functions, )9.2(and )9.2(results )9.2(would )9.2(be)]TJ
+8 0 0 8 72 105.2601 Tm
+0 Tw
+(__________________)Tj
+0 -1.25 TD
+0.0607 Tw
+[(Ü )7.2(In )7.2(this )7.2(discussion )7.2(we will refer to S data structures as)]TJ
+/TT4 1 Tf
+22.9875 0 TD
+0 Tw
+(objects)Tj
+/TT6 1 Tf
+2.8125 0 TD
+0.0555 Tw
+[(, even though this nomenclature came later. )-264.8(The connota-)]TJ
+-25.8 -1.25 TD
+0.0603 Tw
+[(tions )-14.9(of )-14.9(the word are appropriate: an S object can contain arbitrary data, is self-describing, and stands on its own without)]TJ
+T*
+-0.025 Tw
+(requiring a name.)Tj
+ET
+endstream
+endobj
+19 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+21 0 obj
+<<
+/Length 7332
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 5 -)Tj
+-20.77 -3.6 TD
+0.0002 Tw
+[(produced. )-231.8(Users would spend much more time computing on S objects than they did in getting them into or)]TJ
+0 -1.2 TD
+0.084 Tw
+[(out )-7.5(of )-7.5(S. )-258.2(This is reflected in the relatively primitive input/output facilities for S. )-244.8(Basically, )7.2(one )7.2(function)]TJ
+T*
+0.0164 Tw
+[(was provided to read a vector of data values into S from )-9(a )-9(file, )-9(and )-8.9(no )-9(provisions )-8.9(were )-9(made )-8.9(for )-9(accommo-)]TJ
+T*
+-0.0005 Tw
+(dating Fortran-style formatted input/output.)Tj
+2.5 -1.56 TD
+0.0676 Tw
+[(From the beginning, S included interactive graphics. )-254.6(This was implemented by )-6.6(the )-6.5(GR-Z )-6.6(software.)]TJ
+-2.5 -1.2 TD
+0.0931 Tw
+[(A separate overlay area was provided for the graphics device functions, so )5.7(that )5.7(the )5.7(S )5.7(user )5.7(could )5.7(perform)]TJ
+T*
+-0.0057 Tw
+(appropriate graphics on a graphics terminal or at least line-printer style graphics on a character terminal.)Tj
+2.5 -1.56 TD
+0.3661 Tw
+[(Another early decision was that S should have documentation available )-14.4(online. )-261.7(A)]TJ
+/TT4 1 Tf
+37.48 0 TD
+0 Tw
+(detailed)Tj
+-39.98 -1.2 TD
+(documentation)Tj
+/TT6 1 Tf
+6.23 0 TD
+0.0337 Tw
+[(file was written for each function and described arguments, default values, usage, )5.4(details )5.4(of)]TJ
+-6.23 -1.2 TD
+-0.0059 Tw
+(the algorithm, an example, and cross references to other documentation.)Tj
+2.5 -1.56 TD
+0.0163 Tw
+[(The )12.2(S )12.2(executive program was a very basic loop: read user input, parse it according to the S grammar,)]TJ
+-2.5 -1.2 TD
+0.0262 Tw
+[(walk the parse tree evaluating the arguments and functions, and then print the result. )-249.1(The S executive )9.2(used)]TJ
+T*
+0.1326 Tw
+[(20K 36-bit words, and the functions were executed in a 6K-word overlay area. )-259.6(This gave a reasonable)]TJ
+T*
+-0.0035 Tw
+(time-sharing response time on)Tj
+9 0 0 9 195.2 541.2601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 221.7 541.2601 Tm
+-0.0026 Tw
+(for datasets of less than 10,000 data items.)Tj
+-12.47 -1.56 TD
+-0.0062 Tw
+[(Internal data structures were based on a 4-word header for S vectors, that gave a pointer )-7.9(to )-7.9(a )-7.9(character)]TJ
+-2.5 -1.2 TD
+-0.0033 Tw
+[(string )-8.9(name, )-8.9(a )-8.9(numeric )-8.9(code )-8.9(for )-8.9(the )-8.9(mode of the data, its length, and a pointer to a vector of appropriate val-)]TJ
+T*
+0.077 Tw
+[(ues )13.9(\(Chambers, )13.9(1974\). )-245.3(These headers are still around in recent implementations, although they no longer)]TJ
+T*
+-0.0041 Tw
+(reflect the true data structure, since they make no explicit provision for attributes.)Tj
+/TT2 1 Tf
+16.13 -2.4 TD
+-0.0011 Tw
+(A Working Version of ëSí)Tj
+/TT6 1 Tf
+-13.63 -1.56 TD
+0.0685 Tw
+[(By July, 1976, we decided to name the system. )-245.5(Acronyms )11.4(were )-6.6(in )-6.6(abundance )-6.6(at )-6.6(Bell )-6.6(Laboratories,)]TJ
+-2.5 -1.2 TD
+0.0677 Tw
+[(so it seemed sure that we would come up with one for our system, but no one seemed to be able )13.9(to )13.9(agree)]TJ
+T*
+0.0447 Tw
+[(with )6.4(any one elseís suggestion: Interactive)]TJ
+9 0 0 9 247.4 426.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 266.4 426.0601 Tm
+(\()Tj
+9 0 0 9 269.7 426.0601 Tm
+(ISCS)Tj
+10 0 0 10 288.7 426.0601 Tm
+0.0515 Tw
+(\), Statistical Computing System \(too confusing\), Sta-)Tj
+-21.67 -1.2 TD
+0.0761 Tw
+[(tistical )-9.8(Analysis )-9.8(System )-9.8(\(already )-9.8(taken\), )-9.8(etc. )-260.9(In the end, we decided that all of these names contained an)]TJ
+T*
+0.0665 Tw
+[(ëSí and, with the C programming language as a precedent, decided to name the system ëSí. )-242.8(\(We )-6.6(dropped)]TJ
+T*
+-0.0018 Tw
+(the quotes by 1979\).)Tj
+2.5 -1.56 TD
+0.0381 Tw
+[(By )13(January, )13(1977, )13(there )13(was )13(a )13(manual )13(describing )13(Version 1.0 of S that included 30 pages of detailed)]TJ
+-2.5 -1.2 TD
+0.1472 Tw
+[(documentation on the available functions. )-251.1(People who computed on the)]TJ
+9 0 0 9 377.8 362.4601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 405.8 362.4601 Tm
+0.1355 Tw
+(machine at Murray Hill)Tj
+-33.38 -1.2 TD
+-0.0027 Tw
+(were invited to use S, and a user community gradually began to form.)Tj
+2.5 -1.56 TD
+0.0464 Tw
+[(Work on S progressed quickly and by May, 1977, we had a revised )-11.9(implementation )-11.9(that )-11.9(used )-11.8(a )-11.9(new)]TJ
+-2.5 -1.2 TD
+0.0238 Tw
+[(set )-9.5(of )-9.5(database )-9.5(management )-9.5(routines. )-260.2(Version )-12.4(2.0 )-12.4(was )-12.3(introduced about a year later and included new fea-)]TJ
+T*
+-0.0044 Tw
+(tures, such as missing values, looping, broader support for character data, and many more functions.)Tj
+2.5 -1.56 TD
+0.1259 Tw
+[(The earliest versions of S worked reasonably well and were used for statistical computing at )-17.6(Bell)]TJ
+-2.5 -1.2 TD
+0.0159 Tw
+[(Labs. )-235.2(However, there were a number of problems that we hoped to address in the future. )-246.4(We saw the )13.6(need)]TJ
+T*
+0.0347 Tw
+[(for )9.4(an )9.4(increasing )9.5(number )9.4(of )9.4(functions )9.5(and, )9.4(even )9.5(with the interface macros, it was too hard to interface new)]TJ
+T*
+0.0549 Tw
+[(subroutines )-17.7(to )-17.7(S. )-262.9(A )-13.5(goal )-13.5(was )-13.5(to enable users to interface their own subroutines. )-249.9(Our reliance on the)]TJ
+9 0 0 9 485.5 259.2601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 72 247.2601 Tm
+0.0062 Tw
+[(editor to provide basic maintenance scripts for S was )-5.3(painful, )-5.3(because)]TJ
+9 0 0 9 354.5 247.2601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 375.7 247.2601 Tm
+0.0141 Tw
+(programs were difficult to write)Tj
+-30.37 -1.2 TD
+-0.0006 Tw
+(and almost impossible to read.)Tj
+2.5 -1.56 TD
+0.0071 Tw
+[(As S developed, the transfer vectors that pointed into the )-8.3(S )-8.3(executive )-8.3(would )-8.3(occasionally )-8.3(need )-8.3(updat-)]TJ
+-2.5 -1.2 TD
+-0.0025 Tw
+[(ing. )-256.8(This necessitated a long process of relinking all of the S functions.)]TJ
+2.5 -1.56 TD
+0.1453 Tw
+[(The basic parse-eval-print loop was successful and insulated users from most problems )-21.2(involving)]TJ
+-2.5 -1.2 TD
+0.1077 Tw
+[(operating )-6.8(system )-6.8(crashes; )-6.8(when )-6.8(the )-6.8(computer )-6.8(went down, all computations carried out to that time were)]TJ
+T*
+0.0349 Tw
+[(already )14.1(saved. )-240.1(However, the master scatter storage file was sometimes corrupted )-10.1(by )-10.1(a )-10.1(crash )-10.1(that )-10.1(happened)]TJ
+T*
+-0.002 Tw
+(in the middle of updates, making the system somewhat fragile.)Tj
+/TT2 1 Tf
+0 -2.4 TD
+0.0025 Tw
+(THE UNIX GENERATION \(1981 BROWN BOOK\))Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0605 Tw
+(Although the)Tj
+9 0 0 9 153.2 116.4601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 180.3 116.4601 Tm
+0.0669 Tw
+[(implementation )6.2(of )6.2(S )6.2(proved )6.2(its feasibility, it soon became apparent that growth)]TJ
+-10.83 -1.2 TD
+0.0554 Tw
+[(of )-8.4(S )-8.4(required )-8.4(a )-8.4(different )-8.4(environment. )-261.6(Many )-11.6(of )-11.6(our colleagues in statistics research were using S for rou-)]TJ
+T*
+0.0268 Tw
+[(tine data analysis, but were still writing stand-alone Fortran programs for their research work. )-263.2(At )-10(the )-10(same)]TJ
+T*
+0.0177 Tw
+[(time, )-11.5(word )-11.5(of )-11.5(S )-11.5(was )-11.5(getting to other researchers, both within the Bell System and at universities around the)]TJ
+T*
+-0.0015 Tw
+[(country. )-242.1(The time had come for S to expand its horizons.)]TJ
+ET
+endstream
+endobj
+22 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+24 0 obj
+<<
+/Length 9130
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 6 -)Tj
+/TT2 1 Tf
+-3.32 -3.6 TD
+-0.0052 Tw
+(Hardware Changes)Tj
+/TT6 1 Tf
+-14.95 -1.56 TD
+0.0285 Tw
+[(In )11.7(1978, )11.7(an )11.7(opportunity )11.7(came to perform a portability experiment with S. )-259.3(Portability )6.9(was )6.9(considered)]TJ
+-2.5 -1.2 TD
+0.0658 Tw
+[(an important notion for S, so when the computer science research departments got an )11(Interdata )11(8/32 )11.1(com-)]TJ
+T*
+0.038 Tw
+(puter to use in portability experiments for the)Tj
+9 0 0 9 258.7 668.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 284.1 668.4601 Tm
+0.0381 Tw
+[(operating system \(Johnson and Ritchie, )-10.6(1978\), )-10.6(S )-10.6(natu-)]TJ
+-21.21 -1.2 TD
+0.0569 Tw
+[(rally )-9.1(went )-9.1(along. )-258.4(The Interdata machine was a byte-oriented computer with 32-bit words. )-253.1(Prior )-6.8(to )-6.8(this, )-6.8(S)]TJ
+T*
+0.0248 Tw
+(work on)Tj
+9 0 0 9 107.9 644.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 133.2 644.4601 Tm
+0.025 Tw
+(was hampered by the 16-bit address space of machines that ran the)Tj
+9 0 0 9 405.5 644.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 430.9 644.4601 Tm
+0.0389 Tw
+(system and by the)Tj
+-35.89 -1.2 TD
+0.0865 Tw
+[(lack of a good Fortran compiler. )-248.8(The latter problem was solved by a new Fortran 77 compiler )9(\(Feldman)]TJ
+T*
+-0.003 Tw
+[(and Weinberger, 1978\). )-261.7(As )-21.3(the)]TJ
+9 0 0 9 200.5 620.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 225.7 620.4601 Tm
+0.0145 Tw
+(research progressed on the Interdata machine, all sorts of useful tools)Tj
+-15.37 -1.2 TD
+-0.0049 Tw
+(and languages \(C in particular\) became available for use with S.)Tj
+2.5 -1.56 TD
+0.0569 Tw
+[(Gradually, )21.2(we )21.2(realized the advantages of using the)]TJ
+9 0 0 9 305.6 592.86 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 331.2 592.86 Tm
+0.0587 Tw
+[(system as the base for S. )-254.3(By the time that)]TJ
+-25.92 -1.2 TD
+0.0379 Tw
+(we had parallel implementations of S on)Tj
+9 0 0 9 238.8 580.86 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 265.7 580.86 Tm
+(and)Tj
+9 0 0 9 282.8 580.86 Tm
+(UNIX)Tj
+10 0 0 10 305.3 580.86 Tm
+0.0275 Tw
+[(, )-16.8(it became apparent to us that porting S to a new)]TJ
+-23.33 -1.2 TD
+0.018 Tw
+[(operating system was going to be painful, no matter how )-8.7(much )-8.7(work )-8.7(was )-8.7(done )-8.7(to )-8.7(isolate )-8.7(system )-8.7(dependen-)]TJ
+T*
+0.0873 Tw
+[(cies. )-255.5(That )-8.3(is )-8.3(because )-8.3(the utilities, the scaffolding needed to build S, would have to be rewritten for each)]TJ
+T*
+0.0492 Tw
+[(new )14.3(operating )14.3(system. )-238.3(That )11.5(was )11.5(a )11.5(big task. )-253.8(By writing those utilities once for the)]TJ
+9 0 0 9 409.8 544.86 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 435.3 544.86 Tm
+0.0468 Tw
+(system and mak-)Tj
+-36.33 -1.2 TD
+0.0076 Tw
+(ing use of the shell, the loader,)Tj
+/TT4 1 Tf
+12.58 0 TD
+0 Tw
+(make)Tj
+/TT6 1 Tf
+2.1 0 TD
+-0.0031 Tw
+[(, )-11.8(and )-11.8(other )-11.8(tools, )-11.8(S )-11.8(could )-11.8(travel to any hardware by hitching a ride with)]TJ
+9 0 0 9 72 520.86 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 94.5 520.86 Tm
+0.0169 Tw
+[(. )-242.3(It )8(was )8(obvious even then that there would be far more interest in porting the)]TJ
+9 0 0 9 410.6 520.86 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 435.8 520.86 Tm
+0.0158 Tw
+(operating system)Tj
+-36.38 -1.2 TD
+-0.0023 Tw
+(to new hardware than in porting S to a new system.)Tj
+2.5 -1.56 TD
+0.16 Tw
+(The link with the)Tj
+9 0 0 9 174.3 493.2601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 200.9 493.2601 Tm
+0.1568 Tw
+[(system provided other benefits as well. )-257(S could use )-9.7(the )-9.7(C )-9.7(language )-9.7(for)]TJ
+-12.89 -1.2 TD
+0.0184 Tw
+[(implementation, since C was likely to be available )11.8(and )11.8(well )11.8(debugged )11.8(on )11.8(any)]TJ
+9 0 0 9 385.1 481.2601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 410.2 481.2601 Tm
+0.2511 Tw
+[(machine. Since )242.8(the)]TJ
+/TT4 1 Tf
+8.1 0 TD
+0 Tw
+(f77)Tj
+/TT6 1 Tf
+-41.92 -1.2 TD
+0.0533 Tw
+[(Fortran-77 compiler used the same code generator as C, inter-language calls were )-9.8(easy. )-270.6(S )-14.1(could )-14.1(rely )-14.2(on )-14.1(a)]TJ
+T*
+0.1053 Tw
+(consistent environment, with the shell command language \(a real programming language to replace)Tj
+9 0 0 9 485.5 457.2601 Tm
+0 Tw
+(QED)Tj
+10 0 0 10 72 445.2601 Tm
+0.2345 Tw
+(scripts\), the)Tj
+/TT4 1 Tf
+5.39 0 TD
+0 Tw
+(make)Tj
+/TT6 1 Tf
+2.6 0 TD
+0.2467 Tw
+(command for describing the system build process, known compilers and compiler)Tj
+-7.99 -1.2 TD
+-0.0048 Tw
+(options, a reasonably stable linker and libraries, and a hierarchical file system with very general file names.)Tj
+2.5 -1.56 TD
+0.1493 Tw
+[(The benefits of linking S )-6.9(and)]TJ
+9 0 0 9 224.8 417.6601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 251.4 417.6601 Tm
+0.155 Tw
+(were obvious, but the Interdata environment was a one-time)Tj
+-17.94 -1.2 TD
+0.0142 Tw
+[(experiment and not hardware that would )7(be )7(widely )7(used. )-241.1(The)]TJ
+9 0 0 9 323 405.6601 Tm
+0.0159 Tw
+(DEC PDP-11)Tj
+10 0 0 10 374.5 405.6601 Tm
+0.0028 Tw
+(machines were the natural home)Tj
+-30.25 -1.2 TD
+0.0553 Tw
+(of the)Tj
+9 0 0 9 98.5 393.6601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 124.2 393.6601 Tm
+0.0675 Tw
+[(system at the time and we wanted to try S there. )-243.1(Unfortunately, these machines had a 16-bit)]TJ
+-5.22 -1.2 TD
+0.1508 Tw
+(architecture and the squeeze proved to be too much until the)Tj
+9 0 0 9 332.1 381.6601 Tm
+0 Tw
+(PDP)Tj
+10 0 0 10 348.6 381.6601 Tm
+0.1476 Tw
+(-11/45 machine came out with 16-bit)Tj
+-27.66 -1.2 TD
+0.0561 Tw
+[(addressing for both instructions and data. )-257.7(S functions naturally ran as separate processes, but to fit )-13.1(on )-13.1(the)]TJ
+9 0 0 9 72 357.6601 Tm
+0 Tw
+(PDP)Tj
+10 0 0 10 88.5 357.6601 Tm
+0.1448 Tw
+[(-11 )-9.2(we )-9.2(even )-9.2(made )-9.2(the parser into a separate process. )-263(Similarly, graphics was done by running the)]TJ
+-1.65 -1.2 TD
+0.0385 Tw
+[(device )17.1(function )17.1(as )17.1(a )17.1(separate )17.1(process linked by two-way pipes to the main S process. )-255.3(S )5.2(put )5.2(a )5.2(rather )5.2(severe)]TJ
+T*
+0.0178 Tw
+(strain on the resources of such a small machine, so it was obvious that the)Tj
+9 0 0 9 372.4 333.6601 Tm
+0 Tw
+(PDP)Tj
+10 0 0 10 388.9 333.6601 Tm
+0.0085 Tw
+[(-11 )-8.5(was )-8.5(not the ideal S vehi-)]TJ
+-31.69 -1.2 TD
+-0.0119 Tw
+(cle, either.)Tj
+2.5 -1.56 TD
+0.0483 Tw
+[(Soon we had another opportunity to test our new model of piggyback portability. )-247(The)]TJ
+9 0 0 9 450.7 306.0601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 476.2 306.0601 Tm
+(system)Tj
+-40.42 -1.2 TD
+0.0469 Tw
+(was ported to the)Tj
+9 0 0 9 145 294.0601 Tm
+0.0613 Tw
+(DEC VAX)Tj
+10 0 0 10 188.3 294.0601 Tm
+0.0444 Tw
+[(computers, a new generation of 32-bit machines, )9.4(where )9.4(the )9.4(size )9.4(constraints )9.4(of)]TJ
+-11.63 -1.2 TD
+0 Tw
+(the)Tj
+9 0 0 9 87.3 282.0601 Tm
+(PDP)Tj
+10 0 0 10 103.8 282.0601 Tm
+0.0552 Tw
+[(-11 wouldnít chafe so much. )-247.9(Freed from process size constraints, we tried )-12.7(a )-12.7(new )-12.7(implementation,)]TJ
+-3.18 -1.2 TD
+0.0264 Tw
+[(where )-5.9(all )-5.9(of the functions were glued together into one large S process. )-251.1(That allowed the operating system)]TJ
+T*
+0.0177 Tw
+[(to )10.4(use )10.4(demand )10.4(paging to bring in from disk just the parts of S that were needed for execution. )-254.5(This )6.7(worked)]TJ
+T*
+0.0696 Tw
+[(well with S, because it is unlikely that a single S session will use more than a )12(fraction )12(of )12(the )12(S )12(functions.)]TJ
+T*
+0.1467 Tw
+[(The 32-bit architecture also allowed S to take on much )-13.1(bigger )-13.1(problems, )-13.1(with )-13.1(size )-13.1(limited )-13.1(only )-13.1(by )-13.1(the)]TJ
+T*
+0.0593 Tw
+[(amount of memory the operating system would allow S to )15.2(dynamically )15.2(allocate. )-243.7(By )9(eliminating )9(all )9(of )9(the)]TJ
+T*
+0.1063 Tw
+[(separately executable functions, disk usage was also much less, and the single S process could easily )-9.9(be)]TJ
+T*
+-0.0041 Tw
+(relinked when basic S or system library routines changed.)Tj
+2.5 -1.56 TD
+0.007 Tw
+[(By )14.7(October, 1979, we had made a concerted effort to move all of our S functions to the)]TJ
+9 0 0 9 449.5 182.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 474.6 182.4601 Tm
+(version)Tj
+-40.26 -1.2 TD
+-0.001 Tw
+(of S, making it our primary platform.)Tj
+/TT2 1 Tf
+18.82 -2.4 TD
+0.0017 Tw
+(Changes to S)Tj
+/TT6 1 Tf
+-16.32 -1.56 TD
+0.038 Tw
+(Perhaps the biggest change made possible by running S on the)Tj
+9 0 0 9 353.1 130.86 Tm
+0 Tw
+(VAX)Tj
+10 0 0 10 375.5 130.86 Tm
+0.0372 Tw
+[(machines was the ability )-13.9(to )-13.9(dis-)]TJ
+-30.35 -1.2 TD
+0.019 Tw
+[(tribute )-11.4(it )-11.4(outside )-11.4(of )-11.4(Bell )-11.4(Labs )19.6(research. )-245.8(Our first outside distribution was in 1980, but by 1981, source ver-)]TJ
+T*
+0.1075 Tw
+[(sions )6.7(of S were made widely available. )-252.5(At the time, the Bell System was a regulated monopoly, and as)]TJ
+T*
+0.1151 Tw
+[(such would often distribute software for a nominal fee )11.1(for )11.1(educational )11.1(use. )-238(Source distribution not only)]TJ
+T*
+0.0156 Tw
+[(allowed others access to S, but provided the statistics research departments a new )-11.6(vehicle )-11.6(for )-11.6(disseminating)]TJ
+T*
+[(the results of our research. )-253.2(As we began wider distribution of S, we dropped )8.9(version )8.9(numbering )8.9(in )8.9(favor )8.9(of)]TJ
+ET
+endstream
+endobj
+25 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+27 0 obj
+<<
+/Length 7991
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 7 -)Tj
+-20.77 -3.6 TD
+0.0264 Tw
+[(dates; )12.9(for )12.9(example )12.9(an S release might be identified as ëëJune, 1980íí. )-249.7(Major )7(releases )7(were )7(accompanied )7(by)]TJ
+0 -1.2 TD
+-0.0032 Tw
+(completely new books; updates had revised versions of the online documentation.)Tj
+2.5 -1.56 TD
+0.0369 Tw
+[(As S became more widely used, it also gained some new features. )-257.1(One )-11.2(major )-11.2(addition )-11.2(was )-11.2(that )-11.2(of )-11.2(a)]TJ
+-2.5 -1.2 TD
+0.0942 Tw
+(portable macro processor, implemented by Ed Zayas, based on the macro processor from)Tj
+/TT4 1 Tf
+37.07 0 TD
+0.1012 Tw
+(Software Tools)Tj
+/TT6 1 Tf
+-37.07 -1.2 TD
+0.0785 Tw
+[(\(Kernighan )6.9(and )6.9(Plaugher, )6.9(1976\).Ü )-242.5(Macros allowed users to extend the S language by combining existing)]TJ
+T*
+0.1174 Tw
+[(functions and macros into entities designed specifically to )10.6(carry )10.6(out )10.6(their )10.6(own )10.6(tasks. )-232.7(Once )13.3(a )13.3(macro )13.3(was)]TJ
+T*
+-0.0015 Tw
+(completed, it would carry out the computation and hide the implementation details.)Tj
+2.5 -1.56 TD
+0.0379 Tw
+(As users began to use S for larger problems, it became apparent that the implicit looping that S used)Tj
+-2.5 -1.2 TD
+0.1548 Tw
+[(\(iterating over all elements of a vector\), was unable to handle every problem. )-254.4(It was )10.9(necessary )10.9(to )10.9(add)]TJ
+T*
+-0.0019 Tw
+[(explicit looping constructs to the language. )-244.2(We did so with a general)]TJ
+/TT9 1 Tf
+9 0 0 9 351.1 592.86 Tm
+0 Tw
+(for)Tj
+/TT6 1 Tf
+10 0 0 10 369.8 592.86 Tm
+(expression:)Tj
+/TT9 1 Tf
+8 0 0 8 108 577.86 Tm
+-0.001 Tw
+(for\(index in values\) expression)Tj
+/TT6 1 Tf
+10 0 0 10 72 559.86 Tm
+-0.0146 Tw
+(where the)Tj
+/TT9 1 Tf
+9 0 0 9 113.5 559.86 Tm
+0 Tw
+(index)Tj
+/TT6 1 Tf
+10 0 0 10 143 559.86 Tm
+-0.0037 Tw
+(variable would take on the series of values in turn, each time executing the)Tj
+/TT9 1 Tf
+9 0 0 9 443.8 559.86 Tm
+0 Tw
+(expression)Tj
+/TT6 1 Tf
+10 0 0 10 497.8 559.86 Tm
+(.)Tj
+-40.08 -1.56 TD
+0.1171 Tw
+[(Since )10.1(one )10.1(very )10.1(common )10.1(use )10.1(of )10.1(for )10.1(loops was to iterate over the rows or columns of a matrix, the)]TJ
+/TT9 1 Tf
+9 0 0 9 72 532.2601 Tm
+0 Tw
+(apply)Tj
+/TT6 1 Tf
+10 0 0 10 102.3 532.2601 Tm
+0.0665 Tw
+[(function was introduced. )-255.7(This function takes a matrix and the name of a function and applies that)]TJ
+-3.03 -1.2 TD
+0.0272 Tw
+[(function in turn to each of the rows or columns of the matrix \(or to general )-8.5(slices )-8.5(of )-8.5(an )-8.5(array\) )-8.5(and )-8.5(does )-8.5(not)]TJ
+T*
+0.1263 Tw
+[(require an explicit loop. )-246(We were able to implement)]TJ
+/TT9 1 Tf
+9 0 0 9 296.8 508.2601 Tm
+0 Tw
+(apply)Tj
+/TT6 1 Tf
+10 0 0 10 327.5 508.2601 Tm
+0.1209 Tw
+(so that the implicit looping was done with)Tj
+-25.55 -1.2 TD
+-0.0047 Tw
+(much greater efficiency than could be achieved by a loop in the S language.)Tj
+2.5 -1.56 TD
+0.036 Tw
+[(Graphics )28.7(were enhanced considerably at this time. )-245.8(New devices were supported, including pen plot-)]TJ
+-2.5 -1.2 TD
+0.1201 Tw
+[(ters from Hewlett-Packard and Tektronix. )-249.2(Graphic )-8(input )-8(was )-8(available, )-8(to allow interaction with a plot.)]TJ
+T*
+0.2067 Tw
+[(The user would manipulate the cursor or pen of the plotting device )-15(to )-15(signal )-15(a )-15.1(position. )-258.6(Underlying)]TJ
+/TT4 1 Tf
+T*
+0.1062 Tw
+(graphical parameters)Tj
+/TT6 1 Tf
+9.16 0 TD
+0.1056 Tw
+[(allowed control over both graphical layout and )17.1(rendering. )-236.7(These )14.6(parameters )14.6(origi-)]TJ
+-9.16 -1.2 TD
+0.0473 Tw
+[(nated )10(with )10(the )10(GR-Z graphics library, but extended naturally to S use. )-250.2(Layout )7.4(parameters )7.4(allowed )7.4(specifi-)]TJ
+T*
+0.0652 Tw
+[(cation )-10.6(of )-10.6(the )-10.6(number of plots per page \(or screen\), the size and shape of the plot region; these parameters)]TJ
+T*
+0.1192 Tw
+[(were )21.6(all set by the)]TJ
+/TT9 1 Tf
+9 0 0 9 153 408.6601 Tm
+0 Tw
+(par)Tj
+/TT6 1 Tf
+10 0 0 10 172.9 408.6601 Tm
+0.1155 Tw
+[(function. )-246.4(Rendering parameters, controlling such things as line width, character)]TJ
+-10.09 -1.2 TD
+0.0251 Tw
+[(size, )-6.4(and color, were allowed as arguments to any graphics functions, and their values were reset following)]TJ
+T*
+-0.003 Tw
+(the call to the graphics function.)Tj
+2.5 -1.56 TD
+-0.0037 Tw
+(Another innovation was the)Tj
+/TT9 1 Tf
+9 0 0 9 210.2 369.0601 Tm
+0 Tw
+(diary)Tj
+/TT6 1 Tf
+10 0 0 10 239.7 369.0601 Tm
+0.0031 Tw
+[(function, )5.1(that allowed the user to activate \(or deactivate\) a record-)]TJ
+-16.77 -1.2 TD
+0.0466 Tw
+[(ing of the expressions that were typed from the terminal. )-245.6(This )13.8(recognized )13.8(the )13.8(importance )13.8(of )13.8(keeping )13.8(track)]TJ
+T*
+0.1872 Tw
+(of what analysis had been performed and of the unique position of the system to provide a machine-)Tj
+T*
+-0.0023 Tw
+[(readable )17.6(record. )-264.5(This )-9.5(facility )-9.5(also )-9.5(made S comments more important. )-251.6(Syntactically, the remainder of a line)]TJ
+T*
+0.0676 Tw
+[(following )11.1(a )11.1(ëë#íí )11.1(was )11.1(ignored, )11.1(thus )11.1(allowing comments, but now, the comments could also be recorded in)]TJ
+T*
+0.0468 Tw
+[(the )-11.7(diary )-11.7(file, )-11.7(giving a way of making annotations. )-250.2(In the interests of conserving disk space, the diary file)]TJ
+T*
+-0.0059 Tw
+(was off by default.)Tj
+2.5 -1.56 TD
+0.019 Tw
+(At this time, S provided 3 directoriesÜ for holding datasets: the)Tj
+/TT4 1 Tf
+25.65 0 TD
+0 Tw
+(working)Tj
+/TT6 1 Tf
+3.55 0 TD
+0.0089 Tw
+(directory, the)Tj
+/TT4 1 Tf
+5.61 0 TD
+0 Tw
+(save)Tj
+/TT6 1 Tf
+2.04 0 TD
+(directory,)Tj
+-39.35 -1.2 TD
+0.2045 Tw
+(and the)Tj
+/TT4 1 Tf
+3.58 0 TD
+0 Tw
+(shared)Tj
+/TT6 1 Tf
+3.18 0 TD
+0.2152 Tw
+[(directory. )-233.3(Any )10.7(datasets created by assignments were stored in the working directory.)]TJ
+-6.76 -1.2 TD
+0.1183 Tw
+[(Although )-9.7(it )-9.7(provided )-9.7(storage that persisted from one S session to another, the thought was that the user)]TJ
+T*
+0.0166 Tw
+[(would clean up the working directory from time to time, or perhaps even clear it out altogether. )-250.4(In )6.5(order )-15.6(to)]TJ
+T*
+0.0445 Tw
+[(preserve critical data \(the raw data for an analysis and important computed results\), the save )11.8(directory )11.8(was)]TJ
+T*
+0.2564 Tw
+[(available. The )238.9(function)]TJ
+/TT9 1 Tf
+9 0 0 9 169.9 221.4601 Tm
+0 Tw
+(save)Tj
+/TT6 1 Tf
+10 0 0 10 194.2 221.4601 Tm
+0.0155 Tw
+[(was used to record datasets on the )-6.4(save )-6.4(directory.Ü )-271(Finally, )-6.8(the )-6.8(shared )-6.8(direc-)]TJ
+-12.22 -1.2 TD
+0.0664 Tw
+(tory was the repository for some datasets that S provided ó generally example datasets that were used in)Tj
+T*
+-0.005 Tw
+(the manual.)Tj
+2.5 -1.56 TD
+-0.0032 Tw
+[(A new data structure was introduced at this time: )-6.2(the )-6.2(category. )-262.4(It )-8.2(was )-8.2(designed )-8.2(to )-8.1(hold )-8.2(discrete )-8.2(\(cate-)]TJ
+-2.5 -1.2 TD
+0.0467 Tw
+[(gorical\) data and consisted of a vector of labels and an integer vector that indexed those labels. )-253.8(Computa-)]TJ
+T*
+-0.0025 Tw
+(tionally, the category acted like a vector of numbers, but it still retained the names of the original levels.)Tj
+2.5 -1.56 TD
+-0.0037 Tw
+[(As S became more popular, demand for users to add their own algorithms began )-11(to )-11(grow, )-11(and )-11(we )-11(also)]TJ
+8 0 0 8 72 132.2601 Tm
+0 Tw
+(__________________)Tj
+0 -1.25 TD
+-0.0136 Tw
+(Ü A macro facility was described in documentation for the earlier version of S, but it was seldom used.)Tj
+T*
+0.0279 Tw
+[(ÜThe )-14.4(name ëëdirectoryíí replaced the earlier usage ëëdatabaseíí to emphasize that the S datasets were stored in a)]TJ
+7 0 0 7 435.5 112.26 Tm
+0 Tw
+(UNIX)Tj
+8 0 0 8 455.2 112.26 Tm
+(sys-)Tj
+-47.9 -1.25 TD
+-0.0464 Tw
+(tem directory.)Tj
+T*
+0.05 Tw
+[(ÜWe )20.2(should )20.2(have )20.2(realized )20.2(that people have a very hard time at cleaning up; the working data tended to be used for every-)]TJ
+T*
+-0.0138 Tw
+(thing and the save directory was seldom used.)Tj
+ET
+endstream
+endobj
+28 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+30 0 obj
+<<
+/Length 8634
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 8 -)Tj
+-20.77 -3.6 TD
+0.1176 Tw
+[(felt the need to expand the basic pool of algorithms available within S. )-254.6(This lead to the creation of the)]TJ
+/TT4 1 Tf
+0 -1.2 TD
+0.0641 Tw
+(interface language)Tj
+/TT6 1 Tf
+7.59 0 TD
+0.0666 Tw
+[(. )-255.6(This language was designed to describe new S functions, specifying the S data )13.5(struc-)]TJ
+-7.59 -1.2 TD
+0.0866 Tw
+[(tures for arguments, their default values, simple computations, and the output data structure. )-252.6(It was )-19.9(built)]TJ
+T*
+0.0537 Tw
+[(from several components. )-262.3(First, there was a ëëcompileríí for the language, that used a)]TJ
+/TT4 1 Tf
+35.37 0 TD
+0 Tw
+(lex)Tj
+/TT6 1 Tf
+1.46 0 TD
+0.0468 Tw
+(program to turn)Tj
+-36.83 -1.2 TD
+0.1106 Tw
+[(the input syntax into a )-7.5(set )-7.5(of)]TJ
+/TT4 1 Tf
+12.38 0 TD
+0 Tw
+(m4)Tj
+/TT6 1 Tf
+1.59 0 TD
+0.1155 Tw
+[(macro )6.6(calls. )-256.7(This compiler was written by Graham McRae, a summer)]TJ
+-13.97 -1.2 TD
+0.0372 Tw
+[(employee of Bell Labs. )-248.1(The macro calls emitted by the compiler were run through)]TJ
+/TT4 1 Tf
+33.9 0 TD
+0 Tw
+(m4)Tj
+/TT6 1 Tf
+1.51 0 TD
+0.0332 Tw
+(with a large collec-)Tj
+-35.41 -1.2 TD
+0.0056 Tw
+[(tion of macro definitions, the interface macros, whose job was )-11.3(to )-11.3(produce )-11.3(the )-11.3(code )-11.3(that )-11.3(dealt )-11.3(with )-11.3(argument)]TJ
+T*
+0.0261 Tw
+[(and )-5.6(data )-5.6(structure )-5.6(processing for S functions, producing a file in the algorithm language \(described above\).)]TJ
+T*
+0.0551 Tw
+[(The )11.2(algorithm )11.2(language was then processed by)]TJ
+/TT4 1 Tf
+19.39 0 TD
+0 Tw
+(m4)Tj
+/TT6 1 Tf
+1.22 0 TD
+(,)Tj
+/TT4 1 Tf
+0.56 0 TD
+(ratfor)Tj
+/TT6 1 Tf
+2.34 0 TD
+0.0558 Tw
+(, and the Fortran compiler, in sequence, in order)Tj
+-23.51 -1.2 TD
+0.1035 Tw
+[(to produce executable code. )-255.2(As might be expected, the interface language had a number of quirks, each)]TJ
+T*
+-0.0027 Tw
+(inherited from one of the many tools required to process it.)Tj
+2.5 -1.56 TD
+-0.0047 Tw
+[(The macro processor was very popular, yet it was also the )-9.8(source )-9.8(of )-9.8(confusion )-9.8(for )-9.8(many )-9.8(users. )-261.3(While)]TJ
+-2.5 -1.2 TD
+0.0155 Tw
+[(simple macros could be used by rote, a real understanding of macro processing was )12.2(required )12.2(for )12.2(more )12.2(com-)]TJ
+T*
+0.0554 Tw
+[(plex )7.1(tasks. )-233.1(Because )12.3(macro )12.3(processing )12.3(was carried out as a preliminary to the S parser, users often needed)]TJ
+T*
+0.0136 Tw
+(to understand the difference between operations that were carried out at macro time by the macro processor)Tj
+T*
+0.0256 Tw
+[(and those that were carried out during execution by the )-15.5(S )-15.5(functions. )-259.7(The )-8.7(macro )-8.7(processor )-8.7(built )-8.7(the )-8.7(expres-)]TJ
+T*
+0.0973 Tw
+[(sions )-10(that )-10(were )-10(given )-10(to )-10(the )-10(S )-10(parser and evaluator, but in so doing, occasionally needed its own special)]TJ
+T*
+0.1036 Tw
+[(operations. )-250.9(Thus, the macro processor had separate assignments \(the)]TJ
+/TT9 1 Tf
+9 0 0 9 360.2 500.4601 Tm
+0 Tw
+(?DEFINE)Tj
+/TT6 1 Tf
+10 0 0 10 401.6 500.4601 Tm
+0.1003 Tw
+[(macro\), conditionals )-15(\(the)]TJ
+/TT9 1 Tf
+9 0 0 9 72 488.4601 Tm
+0 Tw
+(?IFELSE)Tj
+/TT6 1 Tf
+10 0 0 10 112.8 488.4601 Tm
+0.0448 Tw
+(macro\), and looping \(the)Tj
+/TT9 1 Tf
+9 0 0 9 216 488.4601 Tm
+0 Tw
+(?FOR)Tj
+/TT6 1 Tf
+10 0 0 10 240.6 488.4601 Tm
+0.0344 Tw
+[(macro\). )-256.2(Although )-13.9(the initial ëë?íí and the all-capital-letter names)]TJ
+-16.86 -1.2 TD
+0.0233 Tw
+[(were meant as a cue that these operations were )-11.6(different )-11.6(from )-11.6(ordinary )-11.6(S )-11.6(ëëfunctionsíí, )-11.6(the )-11.6(notion )-11.6(confused)]TJ
+T*
+0.2262 Tw
+[(many )-6.9(users. )-260.4(While )-8.8(in )-8.7(many )-8.8(ways )-8.7(macros )-8.7(were able to provide a convenient way for users to store)]TJ
+T*
+0.0541 Tw
+[(sequences of S expressions, there were annoying problems: )-13.7(macros )-13.6(could )-13.6(not )-13.7(be )-13.7(used )-13.7(by )-13.7(the)]TJ
+/TT9 1 Tf
+9 0 0 9 452.8 452.4601 Tm
+0 Tw
+(apply)Tj
+/TT6 1 Tf
+10 0 0 10 483 452.4601 Tm
+(func-)Tj
+-41.1 -1.2 TD
+-0.0044 Tw
+(tion, for example.)Tj
+2.5 -1.56 TD
+-0.004 Tw
+[(Another example of the problems with macros was the use )-8.6(of )-8.7(storage. )-257.1(Often, )-8.5(a )-8.5(computation )-8.5(encapsu-)]TJ
+-2.5 -1.2 TD
+0.0995 Tw
+[(lated )-5.4(in )-5.4(a )-5.4(macro )-5.4(required )-5.4(intermediate )-5.4(datasets, )-5.4(but it was important that those datasets not conflict with)]TJ
+T*
+-0.0037 Tw
+[(ones that the user had created explicitly. )-251.5(A naming convention, that named these temporaries with an )-20.7(initial)]TJ
+T*
+0.1052 Tw
+[(ëëTíí, was adopted, but even this was insufficient. )-255.6(Suppose )12.5(one )12.5(macro )12.5(called )12.5(another )12.5(macro. )-238.8(If )6.5(the )6.5(first)]TJ
+T*
+0.1663 Tw
+[(macro )14.4(had )14.4(a temporary named ëëTxíí, it was important that the second macro not use the same name.)]TJ
+T*
+0.005 Tw
+[(Eventually, we developed a macro ëë?Tíí that would include a level number in the generated name, to )6.7(avoid)]TJ
+T*
+0.0128 Tw
+[(these problems. )-257.2(Thus, ëë?T\(x\)íí would produce the name ëëT1xíí in )-12.4(the )-12.4(first-level )-12.4(macro )-12.4(and )-12.4(ëëT2xíí )-12.4(in )-12.4(the)]TJ
+T*
+0.1164 Tw
+[(next )-8.6(level. )-270.1(Finally, some way was needed to clean up all of these temporary datasets at the end, so the)]TJ
+T*
+0.0068 Tw
+[(function )11.2(that )11.2(removed )11.2(objects was made to return a value so that the last step of a macro could remove tem-)]TJ
+T*
+-0.004 Tw
+(poraries and yet still return a value.)Tj
+2.5 -1.56 TD
+0.1879 Tw
+(Overall, this first)Tj
+9 0 0 9 173 301.2601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 195.5 301.2601 Tm
+0.1872 Tw
+(-based version of S worked well and its availability to a wider audience)Tj
+-12.35 -1.2 TD
+0.0783 Tw
+[(helped )-8.3(S )-8.3(grow. )-257(The next step was to polish it up, provide better documentation, and make it more avail-)]TJ
+T*
+0 Tw
+(able.)Tj
+/TT2 1 Tf
+0 -2.4 TD
+0.0037 Tw
+(S TO THE WORLD \(1984 BROWN BOOK\))Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0584 Tw
+(In 1984, the book)Tj
+/TT4 1 Tf
+7.54 0 TD
+0.0677 Tw
+(S: An Interactive Environment for Data Analysis and Graphics)Tj
+/TT6 1 Tf
+26.08 0 TD
+0.0681 Tw
+(was published by)Tj
+-36.12 -1.2 TD
+0.0484 Tw
+[(Wadsworth )6.7(\(and )6.7(later )6.7(reviewed )6.7(by )6.7(Larntz, )6.7(1986\). )-253.8(This book, along with an article in the)]TJ
+/TT4 1 Tf
+36.42 0 TD
+0 Tw
+(Communications)Tj
+-36.42 -1.2 TD
+0.0398 Tw
+(of the ACM,)Tj
+/TT6 1 Tf
+5.23 0 TD
+0.046 Tw
+[(\(Becker )17.5(and )17.5(Chambers, 1984b\) described S as of 1984. )-249.3(The following year, Wadsworth pub-)]TJ
+-5.23 -1.2 TD
+0 Tw
+(lished)Tj
+/TT4 1 Tf
+2.73 0 TD
+0.0858 Tw
+(Extending the S System,)Tj
+/TT6 1 Tf
+10.15 0 TD
+0.0844 Tw
+[(describing the interface language and the process of building new )7.4(S )7.4(func-)]TJ
+-12.88 -1.2 TD
+0.0031 Tw
+(tions in detail.)Tj
+2.5 -1.56 TD
+0.0182 Tw
+(Prior to 1984, S was distributed directly from the Computer Information Service at Bell Labs in New)Tj
+-2.5 -1.2 TD
+0.1953 Tw
+[(Jersey. )-259.2(Beginning )-16.7(in )-16.7(1984, )-16.7(S source code was licensed, both educationally and commercially, by the)]TJ
+T*
+0.1552 Tw
+[(AT&T )9.8(Software )9.8(Sales )9.8(organization )9.8(in Greensboro, North Carolina. )-258.6(S was always distributed in source)]TJ
+T*
+0.0178 Tw
+[(form, in keeping with the small group of people working directly )10.3(with )10.3(it, )10.3(i.e. )10.3(Becker )10.3(and )10.3(Chambers )10.3(\(and, )10.3(in)]TJ
+T*
+0.0544 Tw
+[(1984, )6.1(Wilks\). )-240.6(Especially )15.9(after our experiences with the divergent)]TJ
+9 0 0 9 342.1 126.0601 Tm
+0 Tw
+(GCOS)Tj
+10 0 0 10 369.2 126.0601 Tm
+(and)Tj
+9 0 0 9 386.5 126.0601 Tm
+(UNIX)Tj
+10 0 0 10 412.1 126.0601 Tm
+0.0551 Tw
+(versions of S, we real-)Tj
+-34.01 -1.2 TD
+0.0256 Tw
+[(ized the importance of keeping only one copy of the source )13.3(code. )-243.6(It )7.2(was )7.2(the )7.2(only )7.2(way )7.2(that )7.2(our )7.2(small )7.2(group)]TJ
+T*
+0.0075 Tw
+[(could )16(manage )16(the )16(software. )-244.8(We also knew that a source code distribution would allow people to make their)]TJ
+T*
+0.0372 Tw
+[(own )-11.5(adjustments )-11.5(as they installed S on a variety of machines and we also knew that there was no way that)]TJ
+T*
+0.1541 Tw
+[(we could provide binary distributions for even a handful of the hardware/software )-17.9(combinations )-18(that )-18(S)]TJ
+T*
+0.0042 Tw
+[(users )3.2(had. )-250.6(Our focus was on portability within the)]TJ
+9 0 0 9 276.8 66.0601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 301.8 66.0601 Tm
+-0.0026 Tw
+[(system )5.1(\(Becker, )5.1(1984\). )-253.4(Also, remember that the S)]TJ
+ET
+endstream
+endobj
+31 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+33 0 obj
+<<
+/Length 7999
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 279.7 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 9 -)Tj
+-20.77 -3.6 TD
+0.0068 Tw
+[(work )12.9(was )12.9(being )12.9(done )12.9(by )12.9(researchers; )12.9(S was not viewed as a commercial venture with support by Bell Labo-)]TJ
+0 -1.2 TD
+0.0275 Tw
+[(ratories. )-244(Thus, sites that used S needed source code to give them a way to administer and )9(and )9(maintain )9(the)]TJ
+T*
+0 Tw
+(system.)Tj
+2.5 -1.56 TD
+0.0742 Tw
+[(While a number of S features were expanded and cleaned up in the 1984 release, perhaps the )-11.1(more)]TJ
+-2.5 -1.2 TD
+0.0556 Tw
+[(important influences were happening outside of that version. )-245.2(John )10.3(Chambers )10.3(moved )10.3(to )10.3(a )10.3(different )10.3(organi-)]TJ
+T*
+0.1455 Tw
+[(zation at Bell Laboratories and began work on )-12.8(a )-12.8(system )-12.8(known )-12.8(as)]TJ
+9 0 0 9 355.6 644.4601 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 372.6 644.4601 Tm
+0.1586 Tw
+(, the Quantitative Programming)Tj
+-30.06 -1.2 TD
+0.069 Tw
+[(Environment \(Chambers, 1987\). )-246.3(The)]TJ
+9 0 0 9 227.2 632.4601 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 247.4 632.4601 Tm
+0.0682 Tw
+(work was based on S, but was intended to make it into a more)Tj
+-17.54 -1.2 TD
+0.0167 Tw
+[(general programming language for applications involving data. )-251.1(Up to now, S was known as )-6.9(a )-6.9(ëëstatisticalíí)]TJ
+T*
+0.0878 Tw
+(language, primarily because of its origins in the statistics research departments, but in reality, most of its)Tj
+T*
+0.1347 Tw
+[(strengths were in general data manipulation, )-9.7(graphics, )-9.7(and )-9.7(exploratory )-9.7(data )-9.7(analysis. )-261.9(While )-19.6(millions )-19.6(of)]TJ
+T*
+0.1044 Tw
+(people with personal computers began using spreadsheets for understanding their own data, few of them)Tj
+T*
+0.0379 Tw
+[(thought they were doing anything like ëëstatisticsíí. )-247.4(The actual statistical functions in S were primarily )-6.1(for)]TJ
+T*
+0.1266 Tw
+[(regression. )-232(There were, of course, functions to compute probabilities and quantiles for various distribu-)]TJ
+T*
+0.0286 Tw
+[(tions, but these were left as building blocks, )-10.9(not )-10.9(integrated )-10.9(with )-10.9(statistical )-10.9(applications. )-262.2(QPE )-6.3(was )-6.3(a )-6.3(natural)]TJ
+T*
+-0.0016 Tw
+(notion to move S away from a perception that it was best used by a statistician.)Tj
+2.5 -1.56 TD
+0.0578 Tw
+(For some time, Chambers worked on)Tj
+9 0 0 9 251.3 520.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 271.4 520.86 Tm
+0.0577 Tw
+(by himself, rewriting the executive in C and generalizing)Tj
+-19.94 -1.2 TD
+0.0789 Tw
+[(the language. )-258.1(In )-11.1(1986)]TJ
+9 0 0 9 167.1 508.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 187.5 508.86 Tm
+0.078 Tw
+(was ready to be used by others, and the question was how should)Tj
+9 0 0 9 460.4 508.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 480.7 508.86 Tm
+0.08 Tw
+(and S)Tj
+-40.87 -1.2 TD
+0.0473 Tw
+[(relate )15.4(to )15.4(one )15.4(another? )-242.7(At )5.7(the )5.7(time, )5.7(S had thousands of users, while)]TJ
+9 0 0 9 347.4 496.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 367.4 496.86 Tm
+0.046 Tw
+(was still a research project; S had)Tj
+-29.54 -1.2 TD
+0.0459 Tw
+(hundreds of functions, while)Tj
+9 0 0 9 190.8 484.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 210.8 484.86 Tm
+0.0364 Tw
+[(had few. )-261.4(A marriage was proposed: we would integrate the functions of)]TJ
+-13.88 -1.2 TD
+-0.0024 Tw
+(S with the executive of)Tj
+9 0 0 9 166.6 472.86 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 183.6 472.86 Tm
+-0.0008 Tw
+(, gaining the best of both worlds.)Tj
+/TT2 1 Tf
+-11.16 -2.4 TD
+0.0038 Tw
+(NEW S \(1988 BLUE BOOK\))Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0566 Tw
+(The combination of)Tj
+9 0 0 9 180.1 433.2601 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 200.2 433.2601 Tm
+0.0542 Tw
+[(and S produced a language that was called ëëNew Síí. )-254.3(Because )-14.2(it )-14.2(was )-14.2(dif-)]TJ
+-12.82 -1.2 TD
+0.066 Tw
+[(ferent from the 1984 version of S in many ways, there was a need for )-8.9(a )-8.9(new )-8.9(name.Ü )-261(In )-13.9(the )-13.9(Fall )-13.9(of )-13.9(1984,)]TJ
+T*
+0.0287 Tw
+[(just after publication of the Brown book, Allan Wilks joined )13.5(Bell )13.5(Laboratories )13.5(and )13.5(became )13.5(a )13.5(full )13.5(partner )13.5(in)]TJ
+T*
+0.0374 Tw
+[(the S effort. )-247.9(The blue book,)]TJ
+/TT4 1 Tf
+11.75 0 TD
+0.0407 Tw
+(The New S Language)Tj
+/TT6 1 Tf
+8.65 0 TD
+0.0462 Tw
+[(, )13.1(was )13.1(authored by Becker, Chambers, and Wilks, as was)]TJ
+-20.4 -1.2 TD
+-0.0047 Tw
+[(the New S software. )-250.9(Major changes to S occurred during the 1984-1988 period.)]TJ
+/TT2 1 Tf
+16.95 -2.4 TD
+0.0096 Tw
+(Functions and Syntax)Tj
+/TT6 1 Tf
+-14.45 -1.56 TD
+0.0168 Tw
+[(The transition to New S was perhaps the most radical that S users experienced. )-248.5(The macro processor)]TJ
+-2.5 -1.2 TD
+0.1056 Tw
+[(was gone, replaced by a new and general way of defining functions in the S language itself. )-256.6(This made)]TJ
+T*
+-0.0019 Tw
+[(functions into truly first-class S objects. )-257.1(Functions were named by assignment statementsÜ:)]TJ
+/TT9 1 Tf
+8 0 0 8 108 306.6601 Tm
+-0.0008 Tw
+(square <- function\(x\) xà2)Tj
+/TT6 1 Tf
+10 0 0 10 72 288.66 Tm
+0.008 Tw
+(S functions could now be passed to other functions \(like)Tj
+/TT9 1 Tf
+9 0 0 9 300 288.66 Tm
+0 Tw
+(apply)Tj
+/TT6 1 Tf
+10 0 0 10 327 288.66 Tm
+0.0075 Tw
+[(\), and could be the output of other )-6.1(computa-)]TJ
+-25.5 -1.2 TD
+0.0675 Tw
+[(tions. )-246.1(Because S data structures could contain functions, it no longer seemed )11.8(appropriate )11.8(to )11.8(use )11.8(the )11.8(name)]TJ
+T*
+-0.0044 Tw
+(ëëdatasetíí; from this point on, we referred to S ëëobjectsíí \(a suggestion of David Lubinsky\).)Tj
+2.5 -1.56 TD
+0.0554 Tw
+[(One )10.2(nice )10.2(characteristic )10.2(of )10.2(S )10.2(functions )10.2(is that they are able to handle arbitrary numbers of arguments)]TJ
+-2.5 -1.2 TD
+0.0348 Tw
+(by a special argument named ì)Tj
+/TT9 1 Tf
+9 0 0 9 198.8 237.0601 Tm
+0 Tw
+(...)Tj
+/TT6 1 Tf
+10 0 0 10 215 237.0601 Tm
+0.0234 Tw
+[(î. )-260.6(Any )-14.9(arguments )-14.9(not otherwise matched are matched by)]TJ
+/TT9 1 Tf
+9 0 0 9 451.5 237.0601 Tm
+0 Tw
+(...)Tj
+/TT6 1 Tf
+10 0 0 10 473 237.0601 Tm
+0.0185 Tw
+(and can)Tj
+-40.1 -1.2 TD
+-0.0032 Tw
+(be passed down to other functions.)Tj
+2.5 -1.56 TD
+0.055 Tw
+[(Internally, )7.5(S )7.5(functions are stored as parse trees, and explicit functions)]TJ
+/TT9 1 Tf
+9 0 0 9 383.7 209.4601 Tm
+0 Tw
+(parse)Tj
+/TT6 1 Tf
+10 0 0 10 413.8 209.4601 Tm
+(and)Tj
+/TT9 1 Tf
+9 0 0 9 431.3 209.4601 Tm
+(deparse)Tj
+/TT6 1 Tf
+10 0 0 10 472.2 209.4601 Tm
+0.0433 Tw
+(are pro-)Tj
+-40.02 -1.2 TD
+0.0852 Tw
+[(vided to produce parse trees from text and to turn those trees back into character form. )-238.8(Parse )10(trees )10.1(are )10(S)]TJ
+T*
+0.0474 Tw
+[(objects, )10.1(and )10.1(can )10.1(be )10.1(manipulated )10.1(by )10.1(S )10.1(functions. )-253.4(For example, the blue book contains a function that takes)]TJ
+T*
+-0.0022 Tw
+(symbolic derivatives of S expressions.)Tj
+2.5 -1.56 TD
+0.0059 Tw
+[(Many )10.6(functions were rewritten in the S language when New S was introduced. )-259.3(Functions like)]TJ
+/TT9 1 Tf
+9 0 0 9 477 157.86 Tm
+0 Tw
+(apply)Tj
+/TT6 1 Tf
+10 0 0 10 72 145.86 Tm
+0.066 Tw
+(became easy to express in the S language itself, although these implementations were somewhat less effi-)Tj
+0 -1.2 TD
+0.1472 Tw
+[(cient )12.7(than )12.7(the )12.7(versions )12.7(they )12.7(replaced. )-239.8(In )19.6(general, as functions are implemented in S, the users have an)]TJ
+8 0 0 8 72 123.8601 Tm
+0 Tw
+(__________________)Tj
+0 -1.25 TD
+0.0184 Tw
+[(Ü )16.9(Eventually, )16.9(the )16.9(new )16.9(S )16.9(language )16.9(was )16.9(called )16.9(simply S; the 1984 version became known as Old S and now it is hardly men-)]TJ
+T*
+0 Tw
+(tioned.)Tj
+T*
+-0.0021 Tw
+(ÜThe initial idea of functions in)Tj
+7 0 0 7 175.1 93.8601 Tm
+0 Tw
+(QPE)Tj
+8 0 0 8 190.4 93.8601 Tm
+0.0021 Tw
+[(did not include this form of function as an S object. )-235.2(Instead, the )-12.3(syntax )-12.3(was )-12.3(more )-12.3(akin)]TJ
+-14.8 -1.25 TD
+-0.0141 Tw
+(to the way we defined macros:)Tj
+/TT9 1 Tf
+7 0 0 7 171.4 83.8601 Tm
+-0.0011 Tw
+(FUNCTION square\(x\) xà2)Tj
+/TT6 1 Tf
+8 0 0 8 263.8 83.8601 Tm
+0 Tw
+(.)Tj
+ET
+endstream
+endobj
+34 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+36 0 obj
+<<
+/Length 7713
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 10 -)Tj
+-20.52 -3.6 TD
+0.0363 Tw
+[(easier )9.2(time )9.2(of )9.2(modifying )9.2(and )9.2(understanding )9.2(them, because debugging is done in the interpreted S language)]TJ
+0 -1.2 TD
+-0.0044 Tw
+(\(with the help of interactive browsing\).)Tj
+2.5 -1.56 TD
+0.0788 Tw
+[(Unlike )9.2(the )9.2(transition from the 1981 to 1984 versions of S, the transition to New S was difficult for)]TJ
+-2.5 -1.2 TD
+0.1668 Tw
+[(users. )-242.5(Their macros would no longer work. )-252.4(To help in this change, we provided a )5.2(conversion )5.2(utility,)]TJ
+/TT9 1 Tf
+9 0 0 9 72 656.4601 Tm
+0 Tw
+(MAC.to.FUN)Tj
+/TT6 1 Tf
+10 0 0 10 128.5 656.4601 Tm
+-0.0025 Tw
+(that would attempt to convert straightforward macros to S functions.)Tj
+-3.15 -1.56 TD
+0.0961 Tw
+[(New )11(S )11(provided )11(a )11(very uniform environment for functions. )-256.1(All S functions were represented by S)]TJ
+-2.5 -1.2 TD
+0.0575 Tw
+[(objects, )-7(even )-7(those whose implementation was done internally in C code. )-250.3(An explicit notion of interfaces)]TJ
+T*
+0.0344 Tw
+[(provided the key: there were functions to interface to internal code )-12.6(\()]TJ
+/TT9 1 Tf
+9 0 0 9 349.8 616.86 Tm
+0 Tw
+(.Internal)Tj
+/TT6 1 Tf
+10 0 0 10 398.4 616.86 Tm
+0.05 Tw
+(\), to algorithms in Fortran)Tj
+-32.64 -1.2 TD
+0 Tw
+(\()Tj
+/TT9 1 Tf
+9 0 0 9 76.8 604.86 Tm
+(.Fortran)Tj
+/TT6 1 Tf
+10 0 0 10 120 604.86 Tm
+0.0608 Tw
+(\), to algorithms in C \()Tj
+/TT9 1 Tf
+9 0 0 9 211.2 604.86 Tm
+0 Tw
+(.C)Tj
+/TT6 1 Tf
+10 0 0 10 222 604.86 Tm
+0.0577 Tw
+(\), and even to old-S routines \()Tj
+/TT9 1 Tf
+9 0 0 9 346.1 604.86 Tm
+0 Tw
+(.S)Tj
+/TT6 1 Tf
+10 0 0 10 356.9 604.86 Tm
+0.0463 Tw
+[(\). )-260.7(Along )-9(these same lines, the func-)]TJ
+-28.49 -1.2 TD
+0 Tw
+(tion)Tj
+/TT9 1 Tf
+9 0 0 9 90.6 592.86 Tm
+(unix)Tj
+/TT6 1 Tf
+10 0 0 10 115.2 592.86 Tm
+0.056 Tw
+(provided an interface to programs that run in the)Tj
+9 0 0 9 316.4 592.86 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 342 592.86 Tm
+0.0573 Tw
+(systemóthe standard output of the pro-)Tj
+-27 -1.2 TD
+0.0758 Tw
+[(cess was returned as the value of the function. )-256.4(This was an outgrowth of successful early experiments in)]TJ
+T*
+0.087 Tw
+[(interfacing S and GLIM \(Chambers and Schilling, 1981\); we found it was quite feasible to have a )-9.2(stand-)]TJ
+T*
+-0.0042 Tw
+(alone program carry out computations for S.)Tj
+2.5 -1.56 TD
+0.0168 Tw
+[(From )10.2(the )10.2(userís point of view, the most noticeable syntax change was in the way very simple expres-)]TJ
+-2.5 -1.2 TD
+-0.0021 Tw
+[(sions )7.9(were )7.9(interpreted. )-252.9(For example, with old-S, the expression)]TJ
+/TT9 1 Tf
+8 0 0 8 108 514.2601 Tm
+0 Tw
+(foo)Tj
+/TT6 1 Tf
+10 0 0 10 72 496.2601 Tm
+0.025 Tw
+[(would print the dataset named ëëfooíí if one existed or else execute )-11.2(the )-11.2(function )-11.2(ëëfooíí )-11.2(with )-11.2(no )-11.2(arguments.)]TJ
+T*
+0.0369 Tw
+[(With new S, this expression would always print the object named ëëfooíí, even if it happened to be a )16.8(func-)]TJ
+T*
+-0.0063 Tw
+(tion. To execute the function required parentheses:)Tj
+/TT9 1 Tf
+8 0 0 8 108 457.2601 Tm
+0 Tw
+(foo\(\))Tj
+/TT6 1 Tf
+10 0 0 10 72 439.2601 Tm
+-0.0027 Tw
+(In old-S, it had been possible to omit parentheses from even complicated expressions:)Tj
+/TT9 1 Tf
+8 0 0 8 108 424.2601 Tm
+-0.0007 Tw
+(foo a,b)Tj
+/TT6 1 Tf
+10 0 0 10 72 406.2601 Tm
+-0.0052 Tw
+(was once equivalent to)Tj
+/TT9 1 Tf
+8 0 0 8 108 391.2601 Tm
+0 Tw
+(foo\(a,b\))Tj
+/TT6 1 Tf
+10 0 0 10 72 373.2601 Tm
+-0.0017 Tw
+(but it is now a syntax error.)Tj
+2.5 -1.56 TD
+0.0153 Tw
+[(Some )5.1(functions )5.1(familiar )5.1(to )5.1(old-S users had their names changed or were subsumed by new functions.)]TJ
+-2.5 -1.2 TD
+0.1543 Tw
+[(These changes were described in the detailed documentation of the blue )7.8(book )7.8(under )7.8(the )7.8(name)]TJ
+/TT9 1 Tf
+9 0 0 9 471.6 345.6601 Tm
+0 Tw
+(Depre-)Tj
+-44.4 -1.3333 TD
+(cated)Tj
+/TT6 1 Tf
+10 0 0 10 99 333.6601 Tm
+-0.0039 Tw
+[(. )-250.9(In some instances, the operations that the functions carried out were no longer needed; in )-11.1(others )-11.1(the)]TJ
+-2.7 -1.2 TD
+-0.0042 Tw
+[(operation )-8(changed )-8(enough )-7.9(that )-8(it )-7.9(was )-8(deemed )-7.9(reasonable )-7.9(to )-7.9(change the name to force the user to realize that)]TJ
+T*
+0.0347 Tw
+[(something had changed. )-252.3(In other cases, fat was trimmed. )-256.1(For example, there was no need )-10.4(for )-10.5(the )-10.4(Fortran-)]TJ
+T*
+-0.0073 Tw
+(style ëë**íí operator for superscripts when ëëàíí was available and more suggestive.)Tj
+2.5 -1.56 TD
+0.0969 Tw
+[(Various functions were introduced in order to help in producing and debugging S functions. )-266.9(Most)]TJ
+-2.5 -1.2 TD
+0.0375 Tw
+(important was the)Tj
+/TT9 1 Tf
+9 0 0 9 147.3 270.0601 Tm
+0 Tw
+(browser)Tj
+/TT6 1 Tf
+10 0 0 10 185.1 270.0601 Tm
+0.0365 Tw
+[(, that allowed the user interactively to examine S data structures. )-252.7(It )9.7(became )10.4(an)]TJ
+-11.31 -1.2 TD
+0.0975 Tw
+[(invaluable )11(tool )11(for )11(understanding )11(the state of a computation and was often sprinkled liberally throughout)]TJ
+T*
+0.1993 Tw
+[(code under development. )-246(The function)]TJ
+/TT9 1 Tf
+9 0 0 9 241.6 246.0601 Tm
+0 Tw
+(trace)Tj
+/TT6 1 Tf
+10 0 0 10 273.1 246.0601 Tm
+0.1962 Tw
+(allowed selected functions to be monitored, with user-)Tj
+-20.11 -1.2 TD
+0.0222 Tw
+[(defined actions when the functions were executed. )-246.3(There )-5.4(was )-5.4(also )-5.4(an )-5.4(option )-5.4(that )-5.4(specified )-17.4(the )-17.4(functions )-17.4(to)]TJ
+T*
+0.143 Tw
+[(be called when S encountered an error or )6.4(interrupt. )-245.5(Implementation )6(of)]TJ
+/TT9 1 Tf
+9 0 0 9 372.7 222.06 Tm
+0 Tw
+(trace)Tj
+/TT6 1 Tf
+10 0 0 10 403.6 222.06 Tm
+0.1351 Tw
+(is particularly elegant; a)Tj
+-33.16 -1.2 TD
+0.0466 Tw
+[(traced function is modified to do the user actions and is placed in the session frame \(retained )-7.5(for )-7.5(the )-7.5(dura-)]TJ
+T*
+0.0378 Tw
+[(tion of an S session\) where it will be earlier on )10.9(the )10.9(search )10.9(path )10.9(when )10.9(the )10.9(S )10.9(executive )10.9(looks )10.9(for )10.9(it. )-247.4(Both )9.5(the)]TJ
+/TT9 1 Tf
+9 0 0 9 72 186.06 Tm
+0 Tw
+(browser)Tj
+/TT6 1 Tf
+10 0 0 10 112.3 186.06 Tm
+(and)Tj
+/TT9 1 Tf
+9 0 0 9 129.2 186.06 Tm
+(trace)Tj
+/TT6 1 Tf
+10 0 0 10 158.7 186.06 Tm
+-0.0026 Tw
+(functions are written entirely in S.)Tj
+/TT2 1 Tf
+6.89 -2.4 TD
+-0.0042 Tw
+(Data and Data Management)Tj
+/TT6 1 Tf
+-13.06 -1.56 TD
+0.2264 Tw
+[(New S regularized the treatment of directories, by having a list of them, )-8.7(rather )-8.7(than )-8.7(the )-8.7(fixed)]TJ
+-2.5 -1.2 TD
+0.0207 Tw
+[(sequence of working, save, and shared directories of Old S. )-244.6(The functions)]TJ
+/TT9 1 Tf
+9 0 0 9 374.9 134.4601 Tm
+0 Tw
+(get)Tj
+/TT6 1 Tf
+10 0 0 10 393.8 134.4601 Tm
+(and)Tj
+/TT9 1 Tf
+9 0 0 9 410.9 134.4601 Tm
+(assign)Tj
+/TT6 1 Tf
+10 0 0 10 446 134.4601 Tm
+-0.0022 Tw
+(were extended)Tj
+-37.4 -1.2 TD
+0.0271 Tw
+[(to )12.6(allow )12.6(retrieval )12.6(and )12.6(storage of S objects on any of the attached directories. )-250.7(An S object,)]TJ
+/TT9 1 Tf
+9 0 0 9 439.2 122.4601 Tm
+0 Tw
+(.Search.list)Tj
+/TT6 1 Tf
+10 0 0 10 72 110.4601 Tm
+-0.0041 Tw
+(was used to record the names of the directories on the search list.)Tj
+2.5 -1.56 TD
+0.0558 Tw
+[(A major change in data structures was in the separation of the )-8.6(notions )-8.6(of )-8.6(hierarchical )-8.6(structures )-8.6(and)]TJ
+-2.5 -1.2 TD
+0.0151 Tw
+[(attributes of vectors. )-252.7(A vector of mode ì)]TJ
+/TT9 1 Tf
+9 0 0 9 237.2 82.86 Tm
+0 Tw
+(list)Tj
+/TT6 1 Tf
+10 0 0 10 258.8 82.86 Tm
+0.0138 Tw
+[(î represented a vector of other S objects. )-256.2(Such vectors )5.5(could)]TJ
+-18.68 -1.2 TD
+0.0557 Tw
+[(be subscripted and manipulated like other, atomic mode, vectors. )-250(Now, any vectors could have )-15.3(attributes:)]TJ
+ET
+endstream
+endobj
+37 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+39 0 obj
+<<
+/Length 8680
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 11 -)Tj
+/TT9 1 Tf
+9 0 0 9 72 708.0601 Tm
+0 Tw
+(names)Tj
+/TT6 1 Tf
+10 0 0 10 101.7 708.0601 Tm
+0.0163 Tw
+(to name the elements of the vector,)Tj
+/TT9 1 Tf
+9 0 0 9 245.6 708.0601 Tm
+0 Tw
+(dim)Tj
+/TT6 1 Tf
+10 0 0 10 264.5 708.0601 Tm
+0.0051 Tw
+[(to )-16.6(give )-16.6(dimensioning )-16.6(information for treating a vector as an)]TJ
+-19.25 -1.2 TD
+-0.0059 Tw
+[(array, )13.3(etc. )-251.2(The notion of a vector structure was recognized )-14.2(as )-14.2(simply )-14.2(a )-14.2(vector )-14.2(with )-14.2(other )-14.2(attributes. )-256(Vectors)]TJ
+T*
+(were also allowed to have zero length, a convenience that regularizes some computations.Ü)Tj
+2.5 -1.56 TD
+0.1757 Tw
+[(A )8.7(first )8.7(hint )8.7(at )8.7(the )8.7(object-oriented features of S came about with the 1988 release. )-249.6(The function)]TJ
+/TT9 1 Tf
+9 0 0 9 72 656.4601 Tm
+0 Tw
+(print)Tj
+/TT6 1 Tf
+10 0 0 10 101.6 656.4601 Tm
+0.004 Tw
+(was made to recognize an attribute named)Tj
+/TT9 1 Tf
+9 0 0 9 272.7 656.4601 Tm
+0 Tw
+(class)Tj
+/TT6 1 Tf
+10 0 0 10 299.7 656.4601 Tm
+-0.0021 Tw
+(; if this attribute was present with a value, say,)Tj
+/TT9 1 Tf
+9 0 0 9 487.8 656.4601 Tm
+0 Tw
+(xxx)Tj
+/TT6 1 Tf
+10 0 0 10 72 644.4601 Tm
+-0.005 Tw
+(and if there was a function named)Tj
+/TT9 1 Tf
+9 0 0 9 209.7 644.4601 Tm
+0 Tw
+(print.xxx)Tj
+/TT6 1 Tf
+10 0 0 10 258.3 644.4601 Tm
+-0.0016 Tw
+(, that function would be called to handle the printing.)Tj
+-16.13 -1.56 TD
+0.0788 Tw
+[(Another )13.4(feature )13.4(of )13.4(New )13.4(S )13.4(was )13.4(the )13.4(notion that S objects could be used to control the operation of S)]TJ
+-2.5 -1.2 TD
+0.043 Tw
+[(itself. )-254.5(In particular, there were four such objects:)]TJ
+/TT9 1 Tf
+9 0 0 9 275.2 616.86 Tm
+0 Tw
+(.Program)Tj
+/TT6 1 Tf
+10 0 0 10 321.3 616.86 Tm
+0.0365 Tw
+(expressed the basic parse/eval/print loop in S)Tj
+-24.93 -1.2 TD
+0.1129 Tw
+[(itself )5.4(and )5.4(could be replaced for special purposes;)]TJ
+/TT9 1 Tf
+9 0 0 9 278.7 604.86 Tm
+0 Tw
+(.Search.list)Tj
+/TT6 1 Tf
+10 0 0 10 347.2 604.86 Tm
+0.1099 Tw
+(gave a character vector describing the)Tj
+-27.52 -1.2 TD
+0.1143 Tw
+(directories to be searched for S objects,)Tj
+/TT9 1 Tf
+9 0 0 9 240 592.86 Tm
+0 Tw
+(.Options)Tj
+/TT6 1 Tf
+10 0 0 10 286.8 592.86 Tm
+0.1083 Tw
+(was a list controlling optional features such as the S)Tj
+-21.48 -1.2 TD
+0.0551 Tw
+(prompt string, default sizes and limits for execution parameters, etc.)Tj
+/TT9 1 Tf
+9 0 0 9 354.7 580.86 Tm
+0 Tw
+(.Random.seed)Tj
+/TT6 1 Tf
+10 0 0 10 422.6 580.86 Tm
+0.0446 Tw
+(recorded the current)Tj
+-35.06 -1.2 TD
+0.129 Tw
+[(state )5.4(of )5.4(the )5.4(random )5.4(number )5.4(generator. )-248(In addition, various functions named beginning with)]TJ
+/TT9 1 Tf
+9 0 0 9 458.4 568.86 Tm
+0 Tw
+(sys.)Tj
+/TT6 1 Tf
+10 0 0 10 486.3 568.86 Tm
+(con-)Tj
+-41.43 -1.2 TD
+0.027 Tw
+[(tained information about the state of the S executive and its current )-8(evaluation. )-265.2(This )-9.4(allowed )-9.4(the)]TJ
+/TT9 1 Tf
+9 0 0 9 466.2 556.86 Tm
+0 Tw
+(browser)Tj
+/TT6 1 Tf
+10 0 0 10 72 544.86 Tm
+-0.003 Tw
+(to be applied to evaluation frames of running functions.)Tj
+2.5 -1.56 TD
+0.0787 Tw
+[(The )14.2(diary )14.2(file )14.2(of )14.3(old-S )14.3(was )14.2(replaced by an audit file. )-246.6(The audit file furnishes both an audit trail by)]TJ
+-2.5 -1.2 TD
+0.0174 Tw
+[(which )-6.7(the )-6.7(entire set of expressions given to S can be recreated, and it also is the basis for a history function)]TJ
+T*
+0.1454 Tw
+[(that )12.2(allows )12.2(re-execution )12.2(of expressions and for an externally implemented auditing facility \(Becker and)]TJ
+T*
+0.1238 Tw
+[(Chambers, 1988\). )-244.7(There have been occasional complaints about the presence of the audit file, about its)]TJ
+T*
+0.0854 Tw
+[(size, )13.9(and all of the information therein describing which S objects were read and written by each expres-)]TJ
+T*
+0.0377 Tw
+[(sion, )-10.1(but )-10.1(generally )-10.1(it )-10.1(is )-10.1(recognized )-10.1(that )-10.1(the file contains important information about the path of the analy-)]TJ
+T*
+0.0541 Tw
+[(sis. )-255.1(The external audit file processor can be used to recreate analyses, to )-14.1(find )-14.1(the )-14.1(genesis )-14.1(of )-14.1(objects, )-14.1(or )-14.1(to)]TJ
+T*
+-0.0047 Tw
+(decide what should be executed following changes to data objects.)Tj
+2.5 -1.56 TD
+0.1761 Tw
+[(S )13.2(data )13.2(directories )13.2(inherited )13.2(a )13.2(feature from commercial databases: commitment and backout upon)]TJ
+-2.5 -1.2 TD
+0.1071 Tw
+[(error. )-248.7(As )-10.9(in )-10.9(the )-10.9(past, )-10.9(each )-10.9(S )-10.9(expression )-10.9(typed )-10.9(by )-10.9(the user is evaluated as a whole and the system starts)]TJ
+T*
+0.0459 Tw
+[(afresh )14.7(with )14.7(each )14.7(new )14.7(expression. )-244.6(With )12.4(the )12.4(database )12.4(backout facilities, S objects that are created during an)]TJ
+T*
+0.075 Tw
+[(expression are not written to the database )7.8(until )7.8(the )7.8(expression )7.8(successfully )7.8(completes. )-247.2(This )9.9(provides )9.9(sev-)]TJ
+T*
+0.1163 Tw
+[(eral )27.2(advantages. )-249.7(First, because objects are kept in memory during expression execution, multiple use or)]TJ
+T*
+0.0481 Tw
+[(assignments to one object do not require multiple disk access. )-248.1(Second, )12.1(if )12.1(an )12.1(error )12.1(occurs, )12.1(the )12.1(old )12.1(data )12.1(that)]TJ
+T*
+-0.0091 Tw
+(was present before the error is preserved.)Tj
+2.5 -1.56 TD
+0.0237 Tw
+(Another feature is that of in-memory databases, called)Tj
+/TT4 1 Tf
+22.16 0 TD
+0 Tw
+(frames)Tj
+/TT6 1 Tf
+2.72 0 TD
+0.0264 Tw
+[(, which hold name/value pairs )-13.4(in )-13.4(mem-)]TJ
+-27.38 -1.2 TD
+0.0156 Tw
+[(ory. )-259.2(A )-8.4(new frame is opened for each function that executes, providing a place to store temporary data until)]TJ
+T*
+0.0674 Tw
+[(that function exits. )-244.9(When a function exits, its frame and all that was stored there )-7.7(is )-7.7(deallocated. )-251.1(There )-15.6(is)]TJ
+T*
+0.0564 Tw
+[(also a frame associated with each top-level expression as well as one that lasts as long as the )9(entire )9(S )9(ses-)]TJ
+T*
+0 Tw
+(sion.)Tj
+/TT2 1 Tf
+18.18 -2.4 TD
+(Implementation)Tj
+/TT6 1 Tf
+-15.68 -1.56 TD
+0.0987 Tw
+[(New S was implemented primarily in C, as )-7.9(was )-7.9(the)]TJ
+9 0 0 9 314.6 254.4601 Tm
+0 Tw
+(QPE)Tj
+10 0 0 10 335.2 254.4601 Tm
+0.1086 Tw
+[(executive. )-231(Internal routines, too, such as)]TJ
+-26.32 -1.2 TD
+0.0846 Tw
+[(arithmetic and subscripting, were generally rewritten in C. )-250.7(The rewrite was necessary to support double-)]TJ
+T*
+0.0474 Tw
+[(precision )16.6(arithmetic. )-241.8(Code )5.2(to support complex numbers was added. )-249.6(Many routines that in old-S had been)]TJ
+T*
+0.0251 Tw
+(implemented in the interface language were re-implemented in the S language, although graphics functions)Tj
+T*
+0.0744 Tw
+(were largely left in the interface language and invoked through the)Tj
+/TT9 1 Tf
+9 0 0 9 349.3 206.4601 Tm
+0 Tw
+(.S)Tj
+/TT6 1 Tf
+10 0 0 10 363.4 206.4601 Tm
+0.0883 Tw
+[(function. )-243(Most )11.3(of the Fortran that)]TJ
+-29.14 -1.2 TD
+0.2763 Tw
+[(was present in S was rewritten, although basic )9(numerical )9(algorithms, )9(such )9(as )9(those )9(from)]TJ
+9 0 0 9 465 194.4601 Tm
+0 Tw
+(LINPACK)Tj
+10 0 0 10 72 182.4601 Tm
+-0.0071 Tw
+(\(Dongerra, et. al, 1979\) or)Tj
+9 0 0 9 178.9 182.4601 Tm
+0 Tw
+(EISPACK)Tj
+10 0 0 10 218.9 182.4601 Tm
+-0.0023 Tw
+(\(Smith et. al, 1976\) were left in Fortran.)Tj
+-12.19 -1.56 TD
+0.107 Tw
+[(The advent of New S also brought about a basic change in underlying algorithms )-8.3(and )-8.3(data. )-258.7(Now,)]TJ
+-2.5 -1.2 TD
+0.0774 Tw
+[(everything is done in double precision, although the user is presented with a unified view )10.9(of )10.9(a )10.9(data )10.9(mode)]TJ
+T*
+0 Tw
+(named)Tj
+/TT9 1 Tf
+9 0 0 9 101.5 142.86 Tm
+(numeric)Tj
+/TT6 1 Tf
+10 0 0 10 139.3 142.86 Tm
+0.0478 Tw
+[(, )12(which )12(includes )12(integer and floating point values. )-253(For special purposes \(most notably for)]TJ
+-6.73 -1.2 TD
+0.1296 Tw
+[(passing values down to C or Fortran algorithms\), it is possible to specify )15.3(the )15.2(representation )15.2(of )15.3(numbers)]TJ
+T*
+-0.0023 Tw
+(\(integer, single, or double precision\), but this is normally far from the userís mind.)Tj
+2.5 -1.56 TD
+0.1378 Tw
+[(S uses lazy evaluation. )-254.4(This means that an expression is not evaluated until S actually needs the)]TJ
+8 0 0 8 72 93.2601 Tm
+0 Tw
+(__________________)Tj
+0 -1.25 TD
+(ÜThe)Tj
+7 0 0 7 90.4 83.2601 Tm
+(APL)Tj
+8 0 0 8 105.6 83.2601 Tm
+-0.0046 Tw
+[(language )15.5(is )15.5(especially )15.5(good )15.5(at )15.5(treating boundary cases such as zero-length vectors and we found that proper treat-)]TJ
+-4.2 -1.25 TD
+-0.0168 Tw
+(ment of boundary cases often makes writing S functions easier.)Tj
+ET
+endstream
+endobj
+40 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+44 0 obj
+<<
+/Length 8392
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 12 -)Tj
+-20.52 -3.6 TD
+0.0763 Tw
+[(value. )-249(For example, when a function is called, the values of )-11.9(its )-11.9(actual )-11.9(arguments )-11.9(are )-11.9(not )-11.9(computed )-11.9(until,)]TJ
+0 -1.2 TD
+-0.004 Tw
+(somewhere in the function body, an expression uses the value.)Tj
+2.5 -1.56 TD
+0.1298 Tw
+(Along with the ability to call C or Fortran algorithms, on some machines S is capable of reading)Tj
+-2.5 -1.2 TD
+0.0375 Tw
+[(object files \(such as those produced by the C or Fortran compilers\) and loading them directly into )10(memory)]TJ
+T*
+[(while )8.2(S )8.2(is )8.2(executing. )-244.7(This )9.6(means )9.6(that new algorithms can be incorporated into S on the fly, with recompi-)]TJ
+T*
+0.0283 Tw
+[(lation of only the changed program, and without relinking the S )7(system )7(itself. )-236.2(Dynamic )6(loading )6(like )6(this )6(is)]TJ
+T*
+0.1741 Tw
+[(machine dependent, requiring a knowledge of object file formats and relocation )-13.6(procedures, )-13.6(so )-13.6(it )-13.6(only)]TJ
+T*
+0.0101 Tw
+[(works )-5.6(on )-5.6(a )-5.6(select )-5.6(group )-5.6(of )-5.6(computers. )-259.1(It is always possible to link external subroutines with S by using the)]TJ
+9 0 0 9 72 608.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 97 608.4601 Tm
+-0.0064 Tw
+(system loader.)Tj
+0 -1.56 TD
+0.0465 Tw
+[(Graphics functions in New S are very similar to those in earlier )-9.8(versions )-9.8(\(for )-9.8(the )-9.8(most )-9.8(part, )-9.8(they )-9.8(are)]TJ
+-2.5 -1.2 TD
+0.0165 Tw
+[(still implemented by old-S interface routines\), however they )12.7(have )12.7(been )12.7(regularized )12.7(in )12.7(many )12.7(ways. )-241.3(A )5.2(single)]TJ
+T*
+0 Tw
+(function)Tj
+/TT9 1 Tf
+9 0 0 9 108.6 568.86 Tm
+(plot.xy)Tj
+/TT6 1 Tf
+10 0 0 10 149.7 568.86 Tm
+0.0831 Tw
+(is used to determine the)Tj
+/TT4 1 Tf
+10.17 0 TD
+0 Tw
+(x)Tj
+/TT6 1 Tf
+0.44 0 TD
+0.0831 Tw
+(- and)Tj
+/TT4 1 Tf
+2.45 0 TD
+0 Tw
+(y)Tj
+/TT6 1 Tf
+0.44 0 TD
+0.0799 Tw
+[(-coordinates for a scatterplot. )-264.9(Utilizing the parse-tree)]TJ
+-21.27 -1.2 TD
+0.0074 Tw
+[(for the plotting expression, S can provide meaningful labels for the plot axes, )10.9(based )10.9(on )10.9(the )10.9(expressions )10.9(used)]TJ
+T*
+0.0349 Tw
+(to produce the)Tj
+/TT4 1 Tf
+6.08 0 TD
+0 Tw
+(x)Tj
+/TT6 1 Tf
+0.44 0 TD
+0.0331 Tw
+(- and)Tj
+/TT4 1 Tf
+2.35 0 TD
+0 Tw
+(y)Tj
+/TT6 1 Tf
+0.44 0 TD
+0.0382 Tw
+[(-coordinates. )-229.6(Graphics devices are implemented by C routines that fill )-6.4(a )-6.4(data )-6.4(struc-)]TJ
+-9.31 -1.2 TD
+-0.0027 Tw
+(ture with pointers to primitive routines: draw a line, plot a string, clear the screen, etc.)Tj
+2.5 -1.56 TD
+0.1147 Tw
+(As pen plotters and graphics terminals became less prevalent, new graphics device functions were)Tj
+-2.5 -1.2 TD
+0.1469 Tw
+[(brought )-16.8(into )-16.8(S. )-260.1(In particular, the most commonly used devices are now one for the X window system)]TJ
+T*
+0 Tw
+(\()Tj
+/TT9 1 Tf
+9 0 0 9 75.3 493.2601 Tm
+(x11)Tj
+/TT6 1 Tf
+10 0 0 10 91.5 493.2601 Tm
+-0.0032 Tw
+(\), and for Adobeís PostScript)Tj
+/TT7 1 Tf
+11.68 0 TD
+0 Tw
+<00b8>Tj
+/TT6 1 Tf
+1.14 0 TD
+-0.0124 Tw
+(language \()Tj
+/TT9 1 Tf
+9 0 0 9 261.5 493.2601 Tm
+0 Tw
+(postscript)Tj
+/TT6 1 Tf
+10 0 0 10 315.5 493.2601 Tm
+(\).)Tj
+-21.85 -1.56 TD
+0.0174 Tw
+[(A novel portion of the blue book describes the semantics of S execution )-11.7(in )-11.7(the )-11.7(S )-11.7(language )-11.7(itself. )-254.9(We)]TJ
+-2.5 -1.2 TD
+0.088 Tw
+[(found )-10.9(that )-10.9(it )-10.9(was often easier to implement new ideas using the S language in order to try them out, and)]TJ
+T*
+-0.0043 Tw
+(only after deciding that they were worthwhile would we recode them more efficiently in C.)Tj
+2.5 -1.56 TD
+0.0272 Tw
+[(The advent of New S and the blue book gave S a solid foundation as a computational language. )-248.1(The)]TJ
+-2.5 -1.2 TD
+-0.0009 Tw
+(time was ripe for a major thrust into statistics.)Tj
+/TT2 1 Tf
+0 -2.4 TD
+0.0061 Tw
+(STATISTICAL SOFTWARE IN S \(1991 WHITE BOOK\))Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0272 Tw
+[(Because of its relatively recent publication, it is )-8.4(harder )-8.4(to )-8.4(reflect )-8.4(on )-8.4(the )-8.4(book,)]TJ
+/TT4 1 Tf
+31.6 0 TD
+0.0428 Tw
+(Statistical Models in S)Tj
+/TT6 1 Tf
+-34.1 -1.2 TD
+0.036 Tw
+[(\(Chambers )-7.6(and )-7.6(Hastie, )-7.6(1992\). )-262.8(Certainly, )-9.2(a )-9.2(number )-9.2(of )-9.2(important )-9.2(enhancements to the core of S were made)]TJ
+T*
+0.0979 Tw
+[(in )5.2(that )5.2(time, although, for the most part, the Statistical Models work was a very large implementation of)]TJ
+T*
+0.0188 Tw
+[(software )-8.1(primarily )-8.1(in )-8.1(the )-8.1(S )-8.1(language )-8.1(itself. )-255.7(Notice )-14(that )-14(statistics )-14(is )-14(not properly part of S itself; S is a com-)]TJ
+T*
+0.0248 Tw
+[(putational language and environment for data analysis and graphics. )-250.5(The )-5.9(Statistical )-5.9(Models )-5.9(work )-5.9(is )-5.9(imple-)]TJ
+T*
+0.0012 Tw
+(mented in S and is not S itself.)Tj
+2.5 -1.56 TD
+0.1167 Tw
+[(The models work was done by ten authors, )-8.5(coordinated )-8.5(by )-8.5(John )-8.5(Chambers )-8.5(and )-8.5(Trevor )-8.5(Hastie. )-260.3(In)]TJ
+-2.5 -1.2 TD
+0.1358 Tw
+[(some ways, this was a departure from the small-team )6.7(model )6.7(of )6.7(S )6.7(development. )-242(On )8.8(the )8.8(other )8.8(hand, )8.8(the)]TJ
+T*
+0.0452 Tw
+[(work )13.8(was )13.8(based upon a common core and was carried out by researchers with intense personal interests in)]TJ
+T*
+0.0157 Tw
+[(their )-8.6(particular )-8.6(portions. )-251.3(In addition, formal code reviews were held for all of the models software, helping)]TJ
+T*
+-0.0013 Tw
+(to ensure that it was well-implemented and fit in with the rest of S.)Tj
+2.5 -1.56 TD
+0.1182 Tw
+[(The )10.1(most )10.1(fundamental )10.1(contribution of the Models work is probably the modeling language, and it)]TJ
+-2.5 -1.2 TD
+0.0675 Tw
+[(was achieved with a minimal change to the S )9.9(language )9.9(ó )9.9(the )9.9(addition )9.9(of )9.9(the )9.9(ì)]TJ
+/TT9 1 Tf
+9 0 0 9 395.5 235.2601 Tm
+0 Tw
+(ò)Tj
+/TT6 1 Tf
+10 0 0 10 400.9 235.2601 Tm
+0.0502 Tw
+(î operator to create)Tj
+/TT9 1 Tf
+9 0 0 9 482.4 235.2601 Tm
+0 Tw
+(for-)Tj
+-45.6 -1.3333 TD
+(mula)Tj
+/TT6 1 Tf
+10 0 0 10 96.5 223.2601 Tm
+0.0353 Tw
+[(objects \(Chambers, 1993a\). )-250(The modeling language provided a way of unifying a wide range of )-10.9(sta-)]TJ
+-2.45 -1.2 TD
+0.15 Tw
+[(tistical )-18.7(techniques, )-18.7(including )-18.7(linear )-18.7(models, )-18.7(analysis of variance, generalized linear models, generalized)]TJ
+T*
+-0.0045 Tw
+(additive models, local regression models, tree-based models, and non-linear models.)Tj
+2.5 -1.56 TD
+0.0167 Tw
+[(The major change to S itself was the strong reliance on classes and methods. )-238.7(Generic )-6(functions )-6(were)]TJ
+-2.5 -1.2 TD
+0.0066 Tw
+(introduced; they call the function)Tj
+/TT9 1 Tf
+9 0 0 9 207.6 171.66 Tm
+0 Tw
+(UseMethod)Tj
+/TT6 1 Tf
+10 0 0 10 256.2 171.66 Tm
+-0.0017 Tw
+[(, )-11.5(which )-11.5(tells the S executive to look for the)]TJ
+/TT9 1 Tf
+9 0 0 9 430.4 171.66 Tm
+0 Tw
+(class)Tj
+/TT6 1 Tf
+10 0 0 10 459.9 171.66 Tm
+-0.005 Tw
+(attribute of)Tj
+-38.79 -1.2 TD
+0.0928 Tw
+[(the generic functionís argument and )-13.4(to )-13.4(dispatch )-13.4(the )-13.4(appropriate)]TJ
+/TT4 1 Tf
+26.48 0 TD
+0 Tw
+(method)Tj
+/TT6 1 Tf
+3.3 0 TD
+0.1068 Tw
+(function, the one whose name is)Tj
+-29.78 -1.2 TD
+0.1078 Tw
+[(made )-5.5(by )-5.5(concatenating )-5.5(the )-5.5(generic )-5.5(function )-5.5(name with the class name. )-255.2(By installing the object-oriented)]TJ
+T*
+0.077 Tw
+[(methods )6.3(in )6.3(this )6.3(form )6.3(much )6.3(of )6.3(S could remain as it was, with generics and methods being installed where)]TJ
+T*
+0.0871 Tw
+[(they were needed. )-260.7(A )-9.1(form of inheritance was supplied by allowing the)]TJ
+/TT9 1 Tf
+9 0 0 9 368.7 123.66 Tm
+0 Tw
+(class)Tj
+/TT6 1 Tf
+10 0 0 10 399.1 123.66 Tm
+0.0823 Tw
+(attribute to be a character)Tj
+-32.71 -1.2 TD
+0.1553 Tw
+[(vector rather than just a single character string. )-248.7(If no method can be )-13.7(found )-13.7(to )-13.7(match )-13.7(the )-13.7(first )-13.7(class, )-13.7(S)]TJ
+T*
+0.0254 Tw
+[(searches )-8.2(for )-8.2(a )-8.2(method )-8.2(that matches one of the later classes. )-249.9(Chambers \(1993a\) describes the ideas in much)]TJ
+T*
+-0.0166 Tw
+(greater detail.)Tj
+2.5 -1.56 TD
+0.1353 Tw
+[(Another major addition to the language concerns data: )-13(the)]TJ
+/TT4 1 Tf
+24.71 0 TD
+0.1492 Tw
+(data frame)Tj
+/TT6 1 Tf
+4.91 0 TD
+0.1457 Tw
+(class of objects provides a)Tj
+ET
+endstream
+endobj
+45 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT7 12 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+47 0 obj
+<<
+/Length 7563
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 13 -)Tj
+-20.52 -3.6 TD
+0.0163 Tw
+[(matrix-like )-5.6(data )-5.6(structure )-5.6(for )-5.6(variables that are not necessarily of the same mode \(matrices must have a sin-)]TJ
+0 -1.2 TD
+0.0059 Tw
+[(gle )12.3(mode\). )-246.3(This )14.4(enables a variety of observations to be recorded on the subjects: for example, data on med-)]TJ
+T*
+0.1239 Tw
+[(ical patients could contain, for each patient, )-254.4(the name \(a character string\), sex )11.7(\(a )11.7(factor\), )11.7(age )11.7(group )11.7(\(an)]TJ
+T*
+-0.0091 Tw
+(ordered factor\), height and weight \(numeric\).)Tj
+2.5 -1.56 TD
+0.0453 Tw
+[(Another interesting inversion happened with S data directories; we once again refer to them as )-6.2(data-)]TJ
+-2.5 -1.2 TD
+0.0656 Tw
+[(bases. )-250.6(This is because the )6.4(notion )6.4(of )6.4(a)]TJ
+9 0 0 9 230.1 644.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 255.7 644.4601 Tm
+0.0524 Tw
+[(directory became too confining. )-253.3(Now, there are several sorts)]TJ
+-18.37 -1.2 TD
+-0.0038 Tw
+(of S databases: 1\))Tj
+9 0 0 9 145 632.4601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 170 632.4601 Tm
+-0.004 Tw
+[(system directories; 2\) S objects that are attached as )-10.9(part )-10.9(of )-10.9(the )-10.9(search )-10.9(list; )-10.9(3\) )-10.9(a )-10.9(com-)]TJ
+-9.8 -1.2 TD
+-0.003 Tw
+[(piled )-12.4(portion )-12.4(of S memory; 4\) a user-defined database. )-241.5(Because of this, we now think of methods that oper-)]TJ
+T*
+0.0869 Tw
+[(ate )11.3(on )11.3(S )11.3(databases. )-231.6(There )11.6(are )11.6(methods to attach databases to the search list, to read and write objects, to)]TJ
+T*
+0.0075 Tw
+[(remove )-6(them, )-6(to )-6(generate )-6(a list of objects in a database, and to detach them from the search list. )-247.8(The )11.2(search)]TJ
+T*
+-0.0014 Tw
+(list itself outgrew its early character-string implementation; it is now a true list.)Tj
+/TT2 1 Tf
+0 -2.4 TD
+0.0069 Tw
+(THE FUTURE)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0584 Tw
+[(This paper has described S up to the present, but will soon be out )-9.7(of )-9.7(date, )-9.7(as )-9.7(S )-9.7(continues )-9.7(to )-9.7(evolve.)]TJ
+-2.5 -1.2 TD
+-0.0023 Tw
+(What is likely to happen?)Tj
+2.5 -1.56 TD
+0.0873 Tw
+[(We )15.1(intend )15.1(to )15.1(address )15.1(efficiency issues. )-244.5(New ideas in internal data structures may allow significant)]TJ
+-2.5 -1.2 TD
+0.0283 Tw
+[(savings at run time by allowing earlier binding of operations to )13.8(data. )-239.5(A )12.6(better )12.6(memory )12.6(management )12.6(model)]TJ
+T*
+-0.0052 Tw
+(may use reference counts or other techniques to avoid extraneous copies of data, improving memory usage.)Tj
+2.5 -1.56 TD
+0.0749 Tw
+[(We hope to eliminate another of our side effects: graphics. )-247.4(Instead )-12.8(of )-12.8(calling )-12.8(graphics )-12.8(functions )-12.8(to)]TJ
+-2.5 -1.2 TD
+0.1453 Tw
+[(produce output, graphics functions would instead produce a )10.8(graphics )10.8(object. )-240(The )13.1(\(automatically )13.1(called\))]TJ
+T*
+0.108 Tw
+[(print method for a graphics object would plot it. )-254.2(This concept would allow )-10.8(plots )-10.8(to )-10.8(be )-10.8(saved, )-10.8(passed )-10.8(to)]TJ
+T*
+-0.0039 Tw
+(other functions, modified, composed with one another, etc.)Tj
+2.5 -1.56 TD
+0.067 Tw
+[(One general area that we would like to integrate into S is )-7.7(the )-7.8(area )-7.7(of )-7.8(high-interaction )-7.7(graphics )-7.8(with)]TJ
+-2.5 -1.2 TD
+0.0773 Tw
+[(linked windows. )-249.3(Difficult research issues remain with this, including the problem of determining when )11.1(a)]TJ
+T*
+0.0388 Tw
+[(set )12.6(of points on one plot corresponds to a set on another plot. )-239.7(There seems to be a conflict with this appli-)]TJ
+T*
+-0.0062 Tw
+(cation and the general independence of S expressions.)Tj
+2.5 -1.56 TD
+0.0896 Tw
+[(In )12.4(the )12.4(long )12.4(run, )12.4(for )12.4(portability )12.4(reasons, )12.4(we )12.4(would like to eliminate Fortran from S, relying on C or)]TJ
+-2.5 -1.2 TD
+0.0048 Tw
+[(perhaps )-10.2(C++ )-10.2(as )-10.2(the )-10.2(implementation )-10.2(language. )-259.2(One )-12.1(less )-12.1(language )-12.1(would make it easier \(and less expensive\))]TJ
+T*
+0.0862 Tw
+[(for )7.9(people )7.9(to )7.9(compile )7.9(S. )-249(But without Fortran, how do we make use of broadly available numerical algo-)]TJ
+T*
+0.0588 Tw
+[(rithms written in Fortran? )-246.5(The)]TJ
+/TT4 1 Tf
+12.89 0 TD
+0 Tw
+(f2c)Tj
+/TT6 1 Tf
+1.52 0 TD
+0.0478 Tw
+(tool \(Feldman, et. al, 1990\) holds some promise here, since it has been)Tj
+-14.41 -1.2 TD
+-0.0006 Tw
+(used successfully to install S on machines without Fortran.)Tj
+2.5 -1.56 TD
+0.0463 Tw
+[(When )9.9(we )9.9(built S, we intentionally did not provide a user interface with added features such as com-)]TJ
+-2.5 -1.2 TD
+0.0177 Tw
+[(mand editing or graphical input. )-244.6(We preferred instead to build a simple system that could support a variety)]TJ
+T*
+0.0068 Tw
+[(of )9.2(specialized )9.2(user )9.2(interfaces. )-248.5(The X window system \(Scheifler and Gettys, 1986\) )-10(may )-10(now )-10(provide )-10(a )-10(port-)]TJ
+T*
+0.0352 Tw
+[(able way to implement graphical user interfaces. )-248.8(Perhaps the time has come for serious experiments )6.9(along)]TJ
+T*
+-0.0034 Tw
+(these lines.)Tj
+2.5 -1.56 TD
+0.1391 Tw
+[(With the Statistical Models work, we did not press the object-oriented methodology to its )-9.7(logical)]TJ
+-2.5 -1.2 TD
+0.0261 Tw
+[(conclusion. )-262.2(For )-10.2(example, )-10.2(we )-10.2(did not convert current time series, matrices, and categories into objects with)]TJ
+/TT9 1 Tf
+9 0 0 9 72 223.2601 Tm
+0 Tw
+(class)Tj
+/TT6 1 Tf
+10 0 0 10 102.3 223.2601 Tm
+0.0782 Tw
+[(attributes, although we plan to do so in the future. )-254(This seems obvious in retrospect: many of )-10.1(the)]TJ
+-3.03 -1.2 TD
+0.0755 Tw
+[(special cases in arithmetic computations and subscripting are caused by the need )7.6(to )7.6(deal )7.6(with )7.6(time-series,)]TJ
+T*
+0.0252 Tw
+[(matrices, )7.3(and )7.3(categories. )-257.8(By using classes, we could handle these special cases )-9.8(in )-9.8(separate )-9.8(functions. )-257.9(Fac-)]TJ
+T*
+0.0862 Tw
+[(tors )-11.3(are )-11.3(one )-11.3(step )-11.3(in )-11.3(this )-11.3(direction; )-11.3(a )-11.3(factor )-11.3(is essentially a category with a class attribute and a variety of)]TJ
+T*
+-0.0051 Tw
+(methods to provide appropriate operations on factors.)Tj
+2.5 -1.56 TD
+0.0268 Tw
+[(The )9.9(future )9.9(of )9.9(S )9.9(is )9.9(increasingly influenced by people in the academic and business communities. )-248.5(The)]TJ
+-2.5 -1.2 TD
+0.0422 Tw
+(commercial success of the)Tj
+9 0 0 9 181.5 147.66 Tm
+0 Tw
+(S-PLUS)Tj
+10 0 0 10 214.5 147.66 Tm
+0.0488 Tw
+(system from StatSci \(1993\) has brought the S language to thousands of)Tj
+-14.25 -1.2 TD
+0.0351 Tw
+[(people, including users of personal computers )-5.9(\(reviewed )-5.9(by )-5.9(Therneau, )-5.9(1990\). )-255(Software )-14.7(related )-14.7(to )-14.7(S )-14.7(is )-14.7(dis-)]TJ
+T*
+0.0668 Tw
+[(tributed electronically via the Mike Meyerís Statlib )19.2(archive,)]TJ
+/TT9 1 Tf
+9 0 0 9 319.5 123.66 Tm
+0 Tw
+(statlib@lib.stat.cmu.edu)Tj
+/TT6 1 Tf
+10 0 0 10 449.1 123.66 Tm
+0.0533 Tw
+(, and an elec-)Tj
+-37.71 -1.2 TD
+0.0442 Tw
+(tronic user group,)Tj
+/TT9 1 Tf
+9 0 0 9 146.7 111.66 Tm
+0 Tw
+(S-news@stat.toronto.edu)Tj
+/TT6 1 Tf
+10 0 0 10 270.9 111.66 Tm
+0.0494 Tw
+[(, actively discusses S issues. )-254.6(Ha )]TJ
+12.8271 0 TD
+0.0569 Tw
+[("rdle )-17.1(\(1990\) has written a)]TJ
+-32.7171 -1.2 TD
+0.0871 Tw
+[(book )-13.7(describing )-13.7(smoothing )-13.7(with )-13.7(an )-13.6(implementation in S, and Venables and Ripley \(1994\) have written a)]TJ
+T*
+0.0008 Tw
+(statistics text based on S.)Tj
+ET
+endstream
+endobj
+48 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+50 0 obj
+<<
+/Length 7428
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 14 -)Tj
+/TT2 1 Tf
+-20.52 -3.6 TD
+0 Tw
+(CONCLUSIONS)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0977 Tw
+[(Early )9.7(on, )9.7(we )9.7(hinted )9.7(that )9.7(a )9.7(study )9.7(of )9.7(the history of S could be helpful in understanding the software)]TJ
+-2.5 -1.2 TD
+-0.0019 Tw
+[(development )12.2(process. )-247.6(Now, the time has come to try to draw some of these conclusions.)]TJ
+2.5 -1.56 TD
+0.1261 Tw
+[(Much )6.8(of )6.8(the )6.8(work )6.8(in )6.8(getting )6.8(S to its current state followed an evolutionary process. )-258.2(Couldnít we)]TJ
+-2.5 -1.2 TD
+0.0174 Tw
+[(have gotten there more quickly, more easily, and with less user pain by designing the )11.2(language )11.2(better )11.2(in )11.2(the)]TJ
+T*
+-0.004 Tw
+[(first )10.1(place? )-251(I think the answer is ëëNo.íí, we could not have avoided some of the excursions we made.)]TJ
+2.5 -1.56 TD
+0.0088 Tw
+[(S in 1976 was remarkably like S of 1993 ó )-6.7(many )-6.7(of )-6.7(the )-6.7(basic )-6.7(ideas )-6.7(were )-6.7(in )-6.7(place. )-246.2(However, )-6.9(even )-6.9(if)]TJ
+-2.5 -1.2 TD
+0.0192 Tw
+(we had a blueprint for the full version of S in 1976, it would have been overwhelming, both to us as imple-)Tj
+T*
+0.1185 Tw
+[(mentors )12.7(and )12.7(to )12.7(the )12.7(computing )12.7(hardware )12.7(of the day. )-255.8(Aiming too high may have caused us to give up in)]TJ
+T*
+0.017 Tw
+[(advance. )-236.8(It was useful to keep the project at a level that could be )11.8(sustained )11.8(by )11.8(two )11.8(or )11.8(three )11.8(people, )11.8(because)]TJ
+T*
+0.0179 Tw
+[(in that way, S evolved in a way that was aesthetically pleasing to all of us. )-255.9(S was )-11.9(not )-11.9(designed )-11.9(by )-11.9(commit-)]TJ
+T*
+0.0289 Tw
+[(tee. )-244(There )-14.8(is )-14.8(nothing like individual motivation ó wanting to produce something for your personal use ó)]TJ
+T*
+0.0006 Tw
+(to get it done right.)Tj
+2.5 -1.56 TD
+0.019 Tw
+(S was also the result of an evolution with plenty )Tj
+19.687 0 TD
+0.0238 Tw
+[(of feedback from our own and othersí real use. )-251.5(The)]TJ
+-22.187 -1.2 TD
+-0.0051 Tw
+[(iteration )-11.9(of )-11.9(design, )-11.9(use, )-11.9(and feedback was important. )-254.3(It seemed that each time we completed a new revision)]TJ
+T*
+-0.0025 Tw
+(to S and had a little while to rest, we then felt new energy that enabled us to think of forging ahead again.)Tj
+2.5 -1.56 TD
+0.0462 Tw
+[(Each )7.7(version )7.7(of )7.7(S )7.7(had )7.7(limited )7.7(goals. )-236.1(When )12.2(we started, our initial idea was to produce an interactive)]TJ
+-2.5 -1.2 TD
+0.0957 Tw
+(version of the)Tj
+9 0 0 9 132.4 486.0601 Tm
+0 Tw
+(SCS)Tj
+10 0 0 10 151.8 486.0601 Tm
+0.0874 Tw
+[(library. )-235.5(Because it was limited, the goal also seemed attainable. )-251.3(As Brian Kernighan)]TJ
+-7.98 -1.2 TD
+0.0471 Tw
+[(has )12.4(stated )12.4(ëëI )12.4(never )12.4(start )12.4(on )12.4(a )12.4(project that I think will require more than a month.íí )-247.7(Of course, the projects)]TJ
+T*
+0.0074 Tw
+[(do )-10.6(grow )-10.7(to )-10.6(require )-10.6(more )-10.6(time )-10.6(than )-10.6(that, )-10.6(but especially for research, it is good to feel like the time horizon is)]TJ
+T*
+-0.0048 Tw
+(short and that there will be time for feedback and changes.)Tj
+2.5 -1.56 TD
+-0.0045 Tw
+[(Another important concept is that we always emphasized the way the user )-12.9(would )-12.9(see )-12.9(the )-12.9(system. )-259.3(Our)]TJ
+-2.5 -1.2 TD
+-0.0063 Tw
+[(initial )-12.3(efforts )-12.3(gave )-12.3(only )-12.3(a )-12.3(vague thought toward machine efficiency and concentrated instead on human effi-)]TJ
+T*
+0.0071 Tw
+[(ciency. )-232.7(It )7.5(is )7.5(a mistake to let hardware dominate the design of software; yes, it does have to be implemented)]TJ
+T*
+0.0758 Tw
+[(and )-12.3(actually )-12.3(work, )-12.3(but )-12.3(it need not be totally controlled by current hardware. )-251.2(In the years that S has been)]TJ
+T*
+0.0443 Tw
+[(around, machine speed has increased by several orders of magnitude, disk space is )-8.9(far )-8.9(more )-8.9(available, )-8.9(and)]TJ
+T*
+0.0238 Tw
+[(costs )-10.5(have )-10.5(come )-10.5(down )-10.5(dramatically. )-265.4(It would have been unfortunate if we had allowed the performance of)]TJ
+T*
+0.0283 Tw
+[(now-ancient )15(hardware )15(to )15(affect )15(the )15(overall )15(design )15(of )15(S. )-239.5(A good idea is to first make it work and then make)]TJ
+T*
+0.0005 Tw
+(it fast.)Tj
+2.5 -1.56 TD
+0.0458 Tw
+[(Efficiency )10.4(in )10.4(S )10.4(has )10.4(always )10.4(been )10.4(an )10.4(elusive goal and has often been the part of the code that changes)]TJ
+-2.5 -1.2 TD
+0.0173 Tw
+[(most )-10.4(from )-10.4(one )-10.4(version )-10.4(of S to another. )-245.8(Work on efficiency must be continuous because, as the system gets)]TJ
+T*
+0.0472 Tw
+[(more )17(efficient )17(and runs on more powerful computers, our tendency and that of users is to implement more)]TJ
+T*
+0.0162 Tw
+[(and more in the S language itself, causing efficiency to be a constant battle. )-246.1(We have )8.8(also )8.8(found )8.8(more )8.8(than)]TJ
+T*
+0.119 Tw
+[(once )11.5(that )11.5(it )11.4(is )11.4(not )11.4(obvious )11.4(which )11.4(changes )11.5(will )11.5(improve )11.5(efficiency. )-245.8(Our best advice is to implement and)]TJ
+T*
+0.2136 Tw
+[(then measure. )-261.7(Chambers \(1992\) discusses some recent attempts to measure performance and Becker,)]TJ
+T*
+-0.0032 Tw
+(Chambers, and Wilks \(1993\) describes a tool we devised to monitor memory usage.)Tj
+2.5 -1.56 TD
+0.0579 Tw
+[(Along these same lines, we tried from the beginning to make S as broad as possible, )-14.8(by )-14.8(eliminating)]TJ
+-2.5 -1.2 TD
+0.0256 Tw
+[(constraints. )-255.7(S was built to use whatever cpu or memory resources )6.6(the )6.6(operating )6.6(system )6.6(would )6.6(allow; )6.6(noth-)]TJ
+T*
+0.0278 Tw
+[(ing in S itself restricts the problem size. )-260(Similarly, S has no restrictions in its language ó everything is an)]TJ
+T*
+0.0283 Tw
+[(expression, built up from combinations of other )14.3(expressions. )-234(Data )14.3(structures )14.3(are )14.3(also )14.3(general )14.3(combinations)]TJ
+T*
+-0.0029 Tw
+(of vectors, with no restrictions on how they can be put together.)Tj
+2.5 -1.56 TD
+0.0072 Tw
+[(A )21.8(general principle is that the language should have minimal side effects. )-249.8(In S, the major side effects)]TJ
+-2.5 -1.2 TD
+0.1443 Tw
+[(are )-9.8(assignments )-9.8(\(that create persistent objects\), printing, and graphics. )-261.4(Minimal side effects provide an)]TJ
+T*
+0.0454 Tw
+[(important property: each expression is independent of the expressions that preceded it, aside )-10.9(from )-10.9(the )-10.9(data)]TJ
+T*
+0 Tw
+(objects that it uses.)Tj
+2.5 -1.56 TD
+0.0561 Tw
+[(S also succeeded by its basic building-block approach. )-266.6(Within )-10.7(the )-10.7(broad )-10.7(context )-10.7(of )-10.7(the )-10.7(S )-10.7(language,)]TJ
+-2.5 -1.2 TD
+0.107 Tw
+[(we furnished a number of functions to carry out primitive computations, )7.8(relying )7.8(on )7.8(the )7.8(user )7.8(to )7.8(put )7.8(them)]TJ
+T*
+0.048 Tw
+[(together )12.2(in a way most appropriate to the problem at hand. )-254.2(Although this does not make for a system that)]TJ
+T*
+0.1191 Tw
+(can be used without thought, it does provide a powerful tool for those who know how to get what they)Tj
+T*
+0 Tw
+(want.)Tj
+2.5 -1.56 TD
+0.1989 Tw
+(We have always)Tj
+/TT4 1 Tf
+7.42 0 TD
+0 Tw
+(used)Tj
+/TT6 1 Tf
+2.3 0 TD
+0.2183 Tw
+[(S ourselves. )-253.9(Although that may seem like a trite observation, it is very)]TJ
+ET
+endstream
+endobj
+51 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+53 0 obj
+<<
+/Length 8612
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 15 -)Tj
+-20.52 -3.6 TD
+0.0186 Tw
+[(important )-10.8(to )-10.8(the )-10.8(way )-10.8(S )-10.8(has evolved. )-244.5(Often, the impetus for change in S is the result of using it to address a)]TJ
+0 -1.2 TD
+0.0875 Tw
+[(new )6(problem. )-255.2(Without new problems to solve, S wouldnít grow. )-246.5(If we hadnít considered S our )-7(primary)]TJ
+T*
+0.0194 Tw
+[(research )-5.7(tool, )-5.7(we )-5.7(would )-5.7(probably )-5.7(not )-5.7(have )-5.7(kept it up-to-date with the latest algorithms and statistical meth-)]TJ
+T*
+0.0862 Tw
+[(ods. )-248.5(S )8.9(has )9(always )8.9(had )8.9(new )9(methodology )9(available )9(quickly, )8.9(at )8.9(least )8.9(in part because it was designed to be)]TJ
+T*
+-0.0094 Tw
+(extended by)Tj
+/TT4 1 Tf
+5.1 0 TD
+0 Tw
+(users)Tj
+/TT6 1 Tf
+2.36 0 TD
+-0.0013 Tw
+(as well as its originators.)Tj
+-4.96 -1.56 TD
+0.0273 Tw
+[(S has done well, too, because of the synergy that comes from integrating tools. )-245(When developing an)]TJ
+-2.5 -1.2 TD
+0.1459 Tw
+[(algorithm, the S user can use the data management and graphical routines to generate test )5.6(data, )5.6(to )5.6(plot)]TJ
+T*
+-0.0022 Tw
+(results, and generally to support the activity.)Tj
+2.5 -1.56 TD
+0.0467 Tw
+(One of the characteristics that made S into what it has become is that each part of S is ëëownedíí by)Tj
+-2.5 -1.2 TD
+0.0257 Tw
+[(someone. )-248.1(There )-10.7(has )-10.7(been )-10.7(no ëëmarket driveníí component to S ó each function is there because one of us)]TJ
+T*
+0.0241 Tw
+[(wanted )8.4(it )8.5(there )8.5(for )8.4(our )8.5(own )8.5(use or because someone else convinced us that a particular function was neces-)]TJ
+T*
+0.0474 Tw
+[(sary. )-252.7(Decisions )-8.5(about )-8.5(S )-8.5(have )-8.5(generally )-8.5(been )-8.5(by )-8.5(consensus \(a necessity with two authors and highly desir-)]TJ
+T*
+0.0481 Tw
+[(able )5.6(with )5.6(three\). )-251.9(Thus, S has the imprint of a few individuals who cared deeply and is not the bland )-6.7(work)]TJ
+T*
+-0.0038 Tw
+(of a committee.)Tj
+2.5 -1.56 TD
+0.0084 Tw
+[(Because )16.3(S )16.3(came )16.3(from )16.3(a )16.3(research )16.3(environment, )16.3(we )16.3(have felt free to admit our mistakes and to fix them)]TJ
+-2.5 -1.2 TD
+0.0169 Tw
+[(rather )7.4(than )7.4(propagate )7.4(them )7.4(forever. )-241.6(There have been a few painful conversions, most notably the transition)]TJ
+T*
+0.0358 Tw
+[(from )5.9(old-S )5.9(to )5.9(new )5.9(S, )5.9(but )5.9(the alternative is to carry the baggage of old implementations along forever. )-253.4(It )-7.2(is)]TJ
+T*
+0.0253 Tw
+[(better )-10.5(to feel the momentary pain of a conversion than to be burdened forever by older, less informed deci-)]TJ
+T*
+0.0363 Tw
+[(sions. )-251.5(Perhaps, had S been a commercial venture, we would not )-11.5(have )-11.5(had )-11.5(the )-11.5(luxury )-11.5(of )-11.5(doing )-11.5(it )-11.5(again )-11.5(and)]TJ
+T*
+0.0006 Tw
+(again until we got it right.)Tj
+2.5 -1.56 TD
+0.0027 Tw
+[(A tools approach was certainly beneficial )-16.6(to )-16.6(the )-16.6(development )-16.6(of )-16.6(S. )-262.6(The )-12.5(software )-12.5(available )-12.5(within )-12.5(the)]TJ
+9 0 0 9 72 441.6601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 97.1 441.6601 Tm
+0.0007 Tw
+[(system )-8(allowed )-8(us to build S quickly and portably. )-250.1(For )8.2(example, )8.2(the )8.2(interface )8.2(language )8.2(compiler )8.2(was)]TJ
+-2.51 -1.2 TD
+0.002 Tw
+(a fairly easy project because of)Tj
+/TT4 1 Tf
+12.68 0 TD
+0 Tw
+(lex)Tj
+/TT6 1 Tf
+1.16 0 TD
+(,)Tj
+/TT4 1 Tf
+0.51 0 TD
+(m4)Tj
+/TT6 1 Tf
+1.22 0 TD
+0.0062 Tw
+(, and)Tj
+/TT4 1 Tf
+2.21 0 TD
+0 Tw
+(ratfor)Tj
+/TT6 1 Tf
+2.34 0 TD
+0.0195 Tw
+[(. )-238.3(On the other hand, a tool built from other tools tends to)]TJ
+-20.12 -1.2 TD
+0.097 Tw
+[(inherit the idiosyncrasies of each of those tools. )-252.2(It was difficult to describe to users of the )17.9(interface )17.9(lan-)]TJ
+T*
+0.0355 Tw
+[(guage )11.5(just )11.5(why )11.5(there )11.5(were )11.5(so )11.5(many )11.5(reserved )11.5(words in the language \(see Appendix A of Becker and Cham-)]TJ
+T*
+-0.009 Tw
+(bers, 1985\).)Tj
+2.5 -1.56 TD
+0.0958 Tw
+(One way of assessing the evolution of a language is to watch for concepts that have been dropped)Tj
+-2.5 -1.2 TD
+0.0275 Tw
+[(over time. )-244.8(These notions are important clues to what was )11.9(done )11.8(wrong )11.9(and )11.8(later )11.9(improved. )-239.5(In )5.3(S, )5.3(the )5.3(notion)]TJ
+T*
+0.0147 Tw
+[(of a dataset was dropped in favor of the idea of an object. )-257.5(This recognized the much more general )-13.2(role )-13.2(that)]TJ
+T*
+0.0176 Tw
+[(S )-11.9(objects )-11.9(had )-11.9(in )-11.9(the language, holding not only data but functions and expressions. )-260.2(Similarly, our idea of a)]TJ
+T*
+-0.0053 Tw
+[(vector structure was approximately right, but was clarified by two more precise concepts: )-12.3(the )-12.3(\(vector\) )-12.3(list )-12.3(of)]TJ
+T*
+-0.0017 Tw
+(S objects and the notion that any object could have attributes.)Tj
+2.5 -1.56 TD
+0.1255 Tw
+[(Steve Johnson once said that programming languages should never incorporate an )-5.5(untried )-5.5(feature.)]TJ
+-2.5 -1.2 TD
+0.1072 Tw
+[(While we didnít slavishly follow that advice, most of the features present in )11.2(S )11.2(were )11.2(influenced )11.2(by )11.2(some)]TJ
+T*
+-0.0021 Tw
+[(other )11.1(languages. )-244.4(We often found a good concept in an existing system and adapted it to our purposes.)]TJ
+2.5 -1.56 TD
+0.1153 Tw
+[(As )10(an )10(example, )10(the )10(basic interactive operation of S, the parse/eval/print loop, was a well-explored)]TJ
+-2.5 -1.2 TD
+0.0306 Tw
+(concept, occurring in)Tj
+9 0 0 9 160.2 250.86 Tm
+0 Tw
+(APL)Tj
+10 0 0 10 177.2 250.86 Tm
+0.0405 Tw
+(, Troll,)Tj
+9 0 0 9 208 250.86 Tm
+0 Tw
+(LISP)Tj
+10 0 0 10 226.5 250.86 Tm
+0.0362 Tw
+(, and)Tj
+9 0 0 9 249.2 250.86 Tm
+0 Tw
+(PPL)Tj
+10 0 0 10 264.7 250.86 Tm
+0.0272 Tw
+[(, among others. )-255.8(From)]TJ
+9 0 0 9 356.7 250.86 Tm
+0 Tw
+(APL)Tj
+10 0 0 10 376.5 250.86 Tm
+0.0232 Tw
+(we borrowed the concept of the)Tj
+-30.45 -1.2 TD
+0.016 Tw
+[(multi-way array \(although we did not make it our basic data structure\), )-9(and )-9(the )-9(overall )-8.9(consistency )-9(of )-9(oper-)]TJ
+T*
+0.0565 Tw
+[(ations. )-250.1(The notion of a typeless language \(with no declarations\) was also )9.3(present )9.3(in)]TJ
+9 0 0 9 416.8 226.86 Tm
+0 Tw
+(APL)Tj
+10 0 0 10 436.8 226.86 Tm
+(and)Tj
+9 0 0 9 454.2 226.86 Tm
+(PPL)Tj
+10 0 0 10 469.7 226.86 Tm
+0.2987 Tw
+[(. As )250.4(the)]TJ
+9 0 0 9 72 214.86 Tm
+0 Tw
+(PPL)Tj
+10 0 0 10 90 214.86 Tm
+-0.0059 Tw
+(manual \(Taft, 1972\) stated, ëë)Tj
+/TT4 1 Tf
+11.75 0 TD
+0 Tw
+(type)Tj
+/TT6 1 Tf
+1.91 0 TD
+-0.0009 Tw
+(is an attribute, not of)Tj
+/TT4 1 Tf
+8.55 0 TD
+0 Tw
+(variables)Tj
+/TT6 1 Tf
+3.72 0 TD
+-0.0041 Tw
+(, but rather of)Tj
+/TT4 1 Tf
+5.68 0 TD
+0 Tw
+(values)Tj
+/TT6 1 Tf
+2.55 0 TD
+(.íí)Tj
+-33.46 -1.56 TD
+0.0951 Tw
+[(We )9.6(wanted )9.6(the )9.6(basic )9.6(syntax )9.6(of )9.6(the language to be familiar, so we used standard arithmetic expres-)]TJ
+-2.5 -1.2 TD
+0.027 Tw
+[(sions )-12.2(such )-12.2(as )-12.2(those )-12.2(found )-12.2(in Fortran or C. )-245.3(We wanted to emphasize that the assignment operation was dif-)]TJ
+T*
+0.1061 Tw
+[(ferent from an equality test so, like Algol, we used a special operator. )-259.2(The )-7.3(specific )-7.3(ì)]TJ
+/TT9 1 Tf
+9 0 0 9 427.2 175.2601 Tm
+0 Tw
+(<-)Tj
+/TT6 1 Tf
+10 0 0 10 438 175.2601 Tm
+0.1076 Tw
+(î operator came)Tj
+-36.6 -1.2 TD
+0 Tw
+(from)Tj
+9 0 0 9 93.9 163.2601 Tm
+(PPL)Tj
+10 0 0 10 111.9 163.2601 Tm
+-0.0051 Tw
+(\(and was a single character on some old terminals\).)Tj
+-1.49 -1.56 TD
+-0.0015 Tw
+[(The basic notion that everything in S is an expression fits in very nicely with the formal )-7.1(grammar )-7.1(that)]TJ
+-2.5 -1.2 TD
+0.0978 Tw
+[(describes S ó a language statement is just an )14.7(expression. )-241(Certainly )9(C )9(and )9(Ratfor )9(contributed )9(the )9(notion)]TJ
+T*
+0.0574 Tw
+[(that a braced expression was an expression, thus allowing S to get by without need )-9.4(for )-9.4(special )-9.4(syntax )-9.4(like)]TJ
+9 0 0 9 72 111.66 Tm
+0 Tw
+(BEGIN/END)Tj
+10 0 0 10 123 111.66 Tm
+(or)Tj
+9 0 0 9 133.8 111.66 Tm
+(IF/FI)Tj
+10 0 0 10 154.8 111.66 Tm
+(or)Tj
+9 0 0 9 165.6 111.66 Tm
+(CASE/ESAC)Tj
+10 0 0 10 214.1 111.66 Tm
+(.)Tj
+-11.71 -1.56 TD
+0.0474 Tw
+[(Some of the more innovative ideas )-8.8(in )-8.8(data )-8.8(structuring )-8.8(came )-8.8(from)]TJ
+9 0 0 9 365.2 96.0601 Tm
+0 Tw
+(LISP)Tj
+10 0 0 10 383.7 96.0601 Tm
+0.0568 Tw
+(: the lambda calculus form of)Tj
+-31.17 -1.2 TD
+0.0958 Tw
+[(function declarations, the storage of functions as objects in the language, )7.3(the )7.3(notion )7.3(of )7.3(functions )7.3(as )7.3(first-)]TJ
+T*
+-0.0034 Tw
+(class objects, property lists attached to data.)Tj
+ET
+endstream
+endobj
+54 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+56 0 obj
+<<
+/Length 6679
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 16 -)Tj
+-18.02 -3.6 TD
+0.1152 Tw
+[(Some pieces of syntax come from languages that are )-9.9(pretty )-9.9(far )-9.9(removed )-9.9(from )-9.9(the )-9.9(applications )-9.9(we)]TJ
+-2.5 -1.2 TD
+0.1365 Tw
+[(foresaw with S. )-250.5(In particular, the IBM 360 Assembler and Job )5.8(Control )5.8(\()]TJ
+9 0 0 9 378.5 696.0601 Tm
+0 Tw
+(JCL)Tj
+10 0 0 10 393.5 696.0601 Tm
+0.1246 Tw
+(\) languages helped to con-)Tj
+-32.15 -1.2 TD
+0.038 Tw
+[(tribute )9.3(the )9.3(notions )9.3(of )9.3(arguments given by either positional or keyword notation, along with defaults for the)]TJ
+T*
+0.0558 Tw
+[(arguments. )-244(The common thread between S and these languages was the need for functions that had )7.5(many)]TJ
+T*
+-0.0037 Tw
+(arguments, although a user would only specify some of them for any particular application.)Tj
+2.5 -1.56 TD
+0.0144 Tw
+[(More )12.5(recently, )12.5(we )12.5(borrowed )12.5(ideas )12.5(about classes and inheritance from languages like C++,)]TJ
+9 0 0 9 461.4 644.4601 Tm
+0 Tw
+(CLOS)Tj
+10 0 0 10 484.4 644.4601 Tm
+0.0162 Tw
+(, and)Tj
+-41.24 -1.2 TD
+0 Tw
+(Smalltalk.)Tj
+2.5 -1.56 TD
+0.0759 Tw
+(The Troll system contributed in many ways: the need for a time-series data type and special opera-)Tj
+-2.5 -1.2 TD
+0.0147 Tw
+[(tions )-20.5(on time-series; interactive graphics for data analysis; persistent storage of datasets; the power of func-)]TJ
+T*
+-0.0029 Tw
+(tions as a basic way of expressing computations.)Tj
+2.5 -1.56 TD
+0 Tw
+(The)Tj
+9 0 0 9 115.6 577.2601 Tm
+(UNIX)Tj
+10 0 0 10 141.4 577.2601 Tm
+0.0758 Tw
+[(operating system also contributed a few ideas \(as well as )-9.1(an )-9.1(excellent )-9.1(development )-9.1(plat-)]TJ
+-6.94 -1.2 TD
+0.0761 Tw
+(form\): the use of a leading ì)Tj
+/TT9 1 Tf
+9 0 0 9 189.3 565.2601 Tm
+0 Tw
+(!)Tj
+/TT6 1 Tf
+10 0 0 10 194.7 565.2601 Tm
+0.0672 Tw
+[(î )-10.9(to )-10.9(indicate )-10.9(that )-10.9(a )-10.9(line should be executed by the operating system and the)]TJ
+-12.27 -1.2 TD
+0.0389 Tw
+[(notion )9.1(of )9.1(having simple, well defined tools as the basis for computing. )-246.4(The)]TJ
+9 0 0 9 381.6 553.2601 Tm
+0 Tw
+(UNIX)Tj
+10 0 0 10 407 553.2601 Tm
+0.0395 Tw
+(shell also contributed to)Tj
+-33.5 -1.2 TD
+0.0773 Tw
+[(the )-13.2(notion )-13.2(of )-13.2(continuation )-13.2(lines. )-260.2(Like )-12.9(S, )-12.9(it )-12.9(knows )-12.9(when an expression is incomplete and responds with a)]TJ
+T*
+-0.0007 Tw
+(special prompt to indicate this.)Tj
+2.5 -1.56 TD
+0.1279 Tw
+[(The )13.9(origins )13.9(of )13.9(a )13.9(few )13.9(concepts )13.9(are )13.9(more mysterious. )-246.1(Perhaps they are unique to S in their precise)]TJ
+-2.5 -1.2 TD
+0.0456 Tw
+[(implementation, but they were probably the result of some external influence. )-251.4(In particular, the syntax for)]TJ
+T*
+0 Tw
+(the)Tj
+/TT9 1 Tf
+9 0 0 9 87.4 489.6601 Tm
+(for)Tj
+/TT6 1 Tf
+10 0 0 10 106.8 489.6601 Tm
+(loop:)Tj
+/TT9 1 Tf
+9 0 0 9 130.6 489.6601 Tm
+0.0772 Tw
+(for\(i in x\))Tj
+/TT6 1 Tf
+10 0 0 10 194.6 489.6601 Tm
+0.0668 Tw
+[(that allows looping over the elements of various data structures )-9.4(and )-9.4(doesnít)]TJ
+-12.26 -1.2 TD
+0.0258 Tw
+[(force )-6.1(the )-6.1(creation )-6.1(of )-6.1(an integer subscript. )-247.3(Other programming languages have functions that can cope with)]TJ
+T*
+-0.0043 Tw
+(arbitrary numbers of arguments, but the use of)Tj
+/TT9 1 Tf
+9 0 0 9 259.7 465.6601 Tm
+0 Tw
+(...)Tj
+/TT6 1 Tf
+10 0 0 10 280.9 465.6601 Tm
+0.001 Tw
+(in S has its own unique qualities.)Tj
+-18.39 -1.56 TD
+0.1471 Tw
+[(One important non-technical concept was very important to the evolution of S. )-268.1(Almost )-10.1(from )-10.1(the)]TJ
+-2.5 -1.2 TD
+0.0164 Tw
+[(beginning, S was made readily available in source form to AT&T organizations, to educational )-8.3(institutions,)]TJ
+T*
+0.0382 Tw
+[(and )10.4(to )10.4(outside )10.4(companies. )-244(This )10.6(distribution )10.6(of )10.6(source )10.6(allowed an S user community to grow and also gave)]TJ
+T*
+0.0022 Tw
+[(the research community a vehicle for distributing software. )-257.8(At present there is an active S mailing list, con-)]TJ
+T*
+0.0182 Tw
+[(sisting of hundreds of users around the world, asking questions, providing )-8.9(software, )-8.9(and )-8.9(contributing )-8.9(to )-8.9(the)]TJ
+T*
+-0.0004 Tw
+[(evolution of S. )-242.7(We hope that evolution continues for a long time.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+0 Tw
+(ACKNOWLEDGEMENTS)Tj
+/TT6 1 Tf
+2.5 -1.56 TD
+0.0889 Tw
+[(I would like to thank John Chambers and Allan Wilks )-10.2(for )-10.2(comments )-10.2(on )-10.2(this )-10.2(manuscript. )-252.1(Over )-9.4(the)]TJ
+-2.5 -1.2 TD
+0.0443 Tw
+[(years many people have been contributed to )6.9(S )6.9(in )6.9(one )6.9(way )6.9(or )6.9(another. )-247.9(Some )8.1(of )8.1(them )8.1(have )8.1(been )8.1(mentioned)]TJ
+T*
+0.0445 Tw
+[(here, )13(but there are many others whose often considerable efforts could not be mentioned for lack of space.)]TJ
+T*
+0.0778 Tw
+[(Among )-7.1(them )-7.1(are Doug Bates, Ron Baxter, Ray Brownrigg, Linda Clark, Bill Cleveland, Dick De Veaux,)]TJ
+T*
+0.0269 Tw
+[(Bill )7.4(Dunlap, )7.4(Guy )7.4(Fayet, )7.4(Nick Fisher, Anne Freeny, Colin Goodall, Rich Heiberger, Ross Ihaka, Jean Louis)]TJ
+T*
+0.066 Tw
+(Charpenteau, John Macdonald, Doug Martin, Bob McGill, Allen Mcintosh, Mike Meyer, Wayne Oldford,)Tj
+T*
+0.0803 Tw
+[(Daryl )9.9(Pregibon, )9.9(Matt )9.9(Schiltz, )9.9(Del )9.9(Scott, )9.9(Ritei Shibata, Bill Shugard, Ming Shyu, Masaai Sibuya, Kishore)]TJ
+T*
+0.0741 Tw
+[(Singhal, Terry Therneau, Rob Tibshirani, Luke Tierney, and )8.4(Alan )8.4(Zaslavsky. )-241.2(Thank you. )-236.5(Unfortunately,)]TJ
+T*
+-0.0044 Tw
+[(Iím sure that other names that should appear here have been omitted. )-255.2(My apologies.)]TJ
+/TT2 1 Tf
+0 -2.4 TD
+0 Tw
+(REFERENCES)Tj
+/TT6 1 Tf
+0 -2.76 TD
+0.1255 Tw
+(Baker, Brenda S. \(1977\), ëëAn Algorithm for Structuring Flowgraphsíí,)Tj
+/TT4 1 Tf
+29.99 0 TD
+0.1364 Tw
+(J. Assoc. for Comp. Machinery,)Tj
+/TT6 1 Tf
+-26.39 -1.2 TD
+-0.001 Tw
+(Vol 24, No. 1, pp. 98-120.)Tj
+-3.6 -2.4 TD
+0.0016 Tw
+(Becker, Richard A. \(1978\), ëëPortable Graphical Software for Data Analysisíí,)Tj
+/TT4 1 Tf
+31.68 0 TD
+[(Proc. Computer Science )-18.5(and)]TJ
+-28.08 -1.2 TD
+-0.0012 Tw
+(Statistics: 11th Annual Symposium on the Interface,)Tj
+/TT6 1 Tf
+20.99 0 TD
+-0.003 Tw
+(pp 92-95.)Tj
+-24.59 -2.4 TD
+0.012 Tw
+[(Becker, Richard A. \(1984\), ëëExperiences with a Large Mixed-Language System )-14.2(Running )-14.2(Under )-14.2(the )-14.2(UNIX)]TJ
+3.6 -1.2 TD
+-0.0094 Tw
+(Operating Systemíí,)Tj
+/TT4 1 Tf
+8.35 0 TD
+-0.0085 Tw
+(Proc. USENIX Conference.)Tj
+/TT6 1 Tf
+-11.95 -2.4 TD
+0.1459 Tw
+[(Becker, )10.2(Richard )10.2(A. )10.3(and )10.3(John )10.2(M. )10.2(Chambers \(1976\), ëëOn Structure and Portability in Graphics for Data)]TJ
+ET
+endstream
+endobj
+57 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT9 16 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+59 0 obj
+<<
+/Length 4860
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 17 -)Tj
+-16.92 -3.6 TD
+0 Tw
+(Analysisíí,)Tj
+/TT4 1 Tf
+4.66 0 TD
+-0.0031 Tw
+(Proc. 9th Interface Symp. Computer Science and Statistics.)Tj
+/TT6 1 Tf
+-8.26 -2.4 TD
+0.0757 Tw
+[(Becker, Richard A. and John M. )-10.1(Chambers )-10.2(\(1977\), )-10.2(ëëGR-Z: )-10.2(A )-10.2(System )-10.1(of )-10.1(Graphical )-10.1(Subroutines )-10.1(for )-10.2(Data)]TJ
+3.6 -1.2 TD
+0 Tw
+(Analysisíí,)Tj
+/TT4 1 Tf
+4.66 0 TD
+-0.0005 Tw
+(Proc. 10th Interface Symp. on Statistics and Computing,)Tj
+/TT6 1 Tf
+22.8 0 TD
+0 Tw
+(409-415.)Tj
+-31.06 -2.4 TD
+0.0944 Tw
+[(Becker, Richard A. and John )-12.3(M. )-12.3(Chambers )-12.3(\(1978\),)]TJ
+/TT4 1 Tf
+21.47 0 TD
+0.1082 Tw
+(ëSí: A Language and System for Data Analysis,)Tj
+/TT6 1 Tf
+20.06 0 TD
+0 Tw
+(Bell)Tj
+-37.93 -1.2 TD
+-0.0066 Tw
+[(Laboratories, September, 1978. )-242(\(described ëëVersion 2íí of S\).)]TJ
+-3.6 -2.4 TD
+0.0054 Tw
+(Becker, Richard A. and John M. Chambers \(1981\),)Tj
+/TT4 1 Tf
+20.71 0 TD
+0.0196 Tw
+[(S: )13.4(A Language and System for Data Analysis,)]TJ
+/TT6 1 Tf
+18.67 0 TD
+0.0158 Tw
+(Bell Lab-)Tj
+-35.78 -1.2 TD
+-0.0092 Tw
+(oratories, January, 1981.)Tj
+-3.6 -2.4 TD
+0.0875 Tw
+[(Becker, )24.6(Richard A. and John M. Chambers \(1984\),)]TJ
+/TT4 1 Tf
+21.34 0 TD
+0.0877 Tw
+(S: An Interactive Environment for Data Analysis and)Tj
+-17.74 -1.2 TD
+0 Tw
+(Graphics,)Tj
+/TT6 1 Tf
+4.22 0 TD
+-0.0034 Tw
+(Wadsworth Advanced Books Program, Belmont CA.)Tj
+-7.82 -2.4 TD
+0.0154 Tw
+[(Becker, Richard A and John M. Chambers \(1984b\), ëëDesign of the )-12.5(S )-12.5(System )-12.5(for )-12.5(Data )-12.5(Analysisíí,)]TJ
+/TT4 1 Tf
+39.76 0 TD
+0 Tw
+(Commu-)Tj
+-36.16 -1.2 TD
+0.001 Tw
+(nications of the ACM,)Tj
+/TT6 1 Tf
+9.03 0 TD
+-0.0012 Tw
+(Vol. 27, No. 5, pp. 486-495, May 1984.)Tj
+-12.63 -2.4 TD
+0.0644 Tw
+[(Becker, Richard A. and John )-12.3(M. )-12.3(Chambers )-12.3(\(1985\),)]TJ
+/TT4 1 Tf
+21.23 0 TD
+0.0758 Tw
+(Extending the S System,)Tj
+/TT6 1 Tf
+10.11 0 TD
+0.0701 Tw
+(Wadsworth Advanced Books)Tj
+-27.74 -1.2 TD
+0.0013 Tw
+(Program, Belmont CA.)Tj
+-3.6 -2.4 TD
+0.0749 Tw
+(Becker, Richard A. and John M. Chambers \(1988\), ëëAuditing of Data Analysesíí,)Tj
+/TT4 1 Tf
+34.1 0 TD
+0.088 Tw
+(SIAM J. Sci. and Stat.)Tj
+-30.5 -1.2 TD
+0 Tw
+(Comp.,)Tj
+/TT6 1 Tf
+3.14 0 TD
+-0.001 Tw
+(pp. 747-760, Vol 9, No 4.)Tj
+-6.74 -2.4 TD
+-0.0018 Tw
+[(Becker, Richard A. and John M. Chambers \(1989\), ëëStatistical Computing Environments: Past, Present )-8(and)]TJ
+3.6 -1.2 TD
+0 Tw
+(Future,íí)Tj
+/TT4 1 Tf
+3.77 0 TD
+-0.0024 Tw
+(Proc. Am. Stat. Assn. Sesquicentennial Invited Paper Sessions,)Tj
+/TT6 1 Tf
+25.34 0 TD
+-0.003 Tw
+(pp. 245-258.)Tj
+-32.71 -2.4 TD
+0.0871 Tw
+(Becker, Richard A., John M. Chambers and Allan R. Wilks \(1988\),)Tj
+/TT4 1 Tf
+28.15 0 TD
+0.1007 Tw
+(The New S Language,)Tj
+/TT6 1 Tf
+9.43 0 TD
+0.0936 Tw
+(Chapman and)Tj
+-33.98 -1.2 TD
+-0.0075 Tw
+(Hall, New York.)Tj
+-3.6 -2.4 TD
+0.0959 Tw
+[(Becker, Richard A., John M. Chambers and Allan R. Wilks \(1993\), ëëDynamic Graphics as )-10.9(a )-10.9(Diagnostic)]TJ
+3.6 -1.2 TD
+-0.0031 Tw
+(Monitor for Síí, AT&T Bell Laboratories Statistics Research Report.)Tj
+-3.6 -2.4 TD
+0.1033 Tw
+[(Chambers, )7.1(John M. \(1974\), ëëExploratory Data Base Management Programsíí, Bell Laboratories Internal)]TJ
+3.6 -1.2 TD
+-0.0008 Tw
+(Memorandum, July 15, 1974.)Tj
+-3.6 -2.4 TD
+0.236 Tw
+[(Chambers, John M. \(1975\), ëëStructured Computational Graphics )-11.7(for )-11.7(Data )-11.7(Analysisíí, )-11.7(Intl. )-11.7(Stat. )-11.7(Inst.)]TJ
+3.6 -1.2 TD
+-0.0082 Tw
+(Invited Paper, 1-9 IX 1975, Warszawa.)Tj
+-3.6 -2.4 TD
+-0.003 Tw
+(Chambers, John M. \(1977\),)Tj
+/TT4 1 Tf
+11.24 0 TD
+0.0025 Tw
+(Computational Methods for Data Analysis,)Tj
+/TT6 1 Tf
+17.51 0 TD
+-0.0084 Tw
+(Wiley, New York.)Tj
+-28.75 -2.4 TD
+0.0067 Tw
+[(Chambers, John M. \(1978\), ëëThe Impact of General Data Structures on Statistical Computingíí, Bell )-5.6(Labo-)]TJ
+3.6 -1.2 TD
+-0.0053 Tw
+(ratories Internal Memorandum, May 20, 1978.)Tj
+-3.6 -2.4 TD
+0.0578 Tw
+[(Chambers, John M. \(1980\), ëëStatistical )-10.9(Computing: )-10.9(History )-10.9(and )-10.9(Trendsíí,)]TJ
+/TT4 1 Tf
+30.6 0 TD
+0.0712 Tw
+(The American Statistician,)Tj
+/TT6 1 Tf
+11.1 0 TD
+0 Tw
+(Vol)Tj
+-38.1 -1.2 TD
+-0.0015 Tw
+(34, pp 238-243.)Tj
+-3.6 -2.4 TD
+0.1239 Tw
+[(Chambers, John M. \(1987\), ëëInterfaces for a Quantitative Programming )-8.9(Environmentíí,)]TJ
+/TT4 1 Tf
+36.81 0 TD
+0.1396 Tw
+(Comp. Sci. and)Tj
+-33.21 -1.2 TD
+-0.0021 Tw
+(Stat, 19th Symp. on the Interface,)Tj
+/TT6 1 Tf
+13.57 0 TD
+-0.003 Tw
+(pp. 280-286.)Tj
+-17.17 -2.4 TD
+0.1251 Tw
+(Chambers, John M. \(1992\), ëëTesting Software for \(and with\) Data Analysisíí, AT&T Bell Laboratories)Tj
+3.6 -1.2 TD
+-0.0038 Tw
+(Statistics Research Report.)Tj
+-3.6 -2.4 TD
+0.0271 Tw
+[(Chambers, John M. \(1993a\), ëëClasses and Methods in )-9(S. )-9(I: )-9(Recent )-9(Developmentsíí,)]TJ
+/TT4 1 Tf
+34.34 0 TD
+0.0538 Tw
+(Computational Statis-)Tj
+ET
+endstream
+endobj
+60 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+62 0 obj
+<<
+/Length 4738
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 18 -)Tj
+/TT4 1 Tf
+-16.92 -3.6 TD
+0 Tw
+(tics,)Tj
+/TT6 1 Tf
+1.89 0 TD
+-0.0124 Tw
+(to appear.)Tj
+-5.49 -2.4 TD
+0.0374 Tw
+(Chambers, John M. \(1993b\), ëëClasses and Methods in S. II: Future Directionsíí,)Tj
+/TT4 1 Tf
+33.03 0 TD
+0.0582 Tw
+(Computational Statistics,)Tj
+/TT6 1 Tf
+-29.43 -1.2 TD
+-0.0124 Tw
+(to appear.)Tj
+-3.6 -2.4 TD
+-0.0045 Tw
+(Chambers, John M. and Trevor Hastie, eds. \(1992\),)Tj
+/TT4 1 Tf
+20.77 0 TD
+0.0028 Tw
+(Statistical Models in S,)Tj
+/TT6 1 Tf
+9.48 0 TD
+-0.0053 Tw
+(Chapman and Hall, New York.)Tj
+-30.25 -2.4 TD
+0.0066 Tw
+[(Chambers, )5.3(John )5.3(M. )5.3(and )5.3(Judith )5.3(M. )5.3(Schilling \(1981\), ëëS and GLIM: An Experiment in Interfacing Statistical)]TJ
+3.6 -1.2 TD
+-0.0049 Tw
+(Systemsíí, Bell Laboratories Internal Memorandum, January 5, 1981.)Tj
+-3.6 -2.4 TD
+0.0686 Tw
+[(Dongerra, J. J., J. R. Bunch, C. B. Moler, and )-7.2(G. )-7.2(W. )-7.2(Stewart )-7.2(\(1979\),)]TJ
+/TT4 1 Tf
+28.58 0 TD
+0.0804 Tw
+(LINPACK Users Guide,)Tj
+/TT6 1 Tf
+10.13 0 TD
+0.0745 Tw
+(Society for)Tj
+-35.11 -1.2 TD
+-0.003 Tw
+(Industrial and Applied Mathematics, Philadelphia.)Tj
+-3.6 -2.4 TD
+0.0055 Tw
+[(Feldman, )7.8(S. )7.8(I., )7.8(David )7.8(M. )7.8(Gay, )7.8(Mark W. Maimone, N. L. Schryer \(1990\), ëëA Fortran-to-C Converter, Com-)]TJ
+3.6 -1.2 TD
+-0.004 Tw
+(puting Science Technical Report No. 149, AT&T Bell Laboratories.)Tj
+-3.6 -2.4 TD
+0.0362 Tw
+[(Feldman, S. I. and P. J. Weinberger \(1978\), ëëA Portable )-9.4(Fortran )-9.4(77 )-9.4(Compileríí, )-9.4(Bell )-9.4(Laboratories )-9.4(Techni-)]TJ
+3.6 -1.2 TD
+-0.0111 Tw
+(cal Memorandum.)Tj
+-3.6 -2.4 TD
+0 Tw
+(Ha )Tj
+0.7371 0 TD
+0.0115 Tw
+[("rdle, Wolfgang )17.5(\(1990\))]TJ
+/TT4 1 Tf
+9.6329 0 TD
+-0.0011 Tw
+(Smoothing Techniques With Implementation in S,)Tj
+/TT6 1 Tf
+20.02 0 TD
+-0.0093 Tw
+(Springer Verlag, New York.)Tj
+-30.39 -2.4 TD
+-0.0066 Tw
+[(Iverson, K. E. \(1991\), ëëA )-12.1(Personal )-12.1(View )-12.1(of )-12.1(APLíí,)]TJ
+/TT4 1 Tf
+20.89 0 TD
+0.0031 Tw
+(IBM Systems Journal,)Tj
+/TT6 1 Tf
+9.07 0 TD
+0.009 Tw
+[(Vol 30, No. 4, pp 582-593. )-243.3(\(The)]TJ
+-26.36 -1.2 TD
+-0.0012 Tw
+(entire issue of this journal is devoted to APL.\))Tj
+-3.6 -2.4 TD
+0.0465 Tw
+(Johnson, S. C. and M. E. Lesk \(1978\), ëëLanguage Development Toolsíí,)Tj
+/TT4 1 Tf
+30.01 0 TD
+[(The Bell System Technical )-7.5(Jour-)]TJ
+-26.41 -1.2 TD
+0 Tw
+(nal,)Tj
+/TT6 1 Tf
+1.78 0 TD
+-0.0006 Tw
+(Vol. 57, No. 6, Part 2, pp. 2155-2175, July-August 1978.)Tj
+-5.38 -2.4 TD
+-0.0002 Tw
+[(Johnson, S. C. and D. M. Ritchie \(1978\), ëëPortability of )-7.6(C )-7.6(Programs )-7.6(and )-7.6(the )-7.6(UNIX )-7.6(Systemíí,)]TJ
+/TT4 1 Tf
+37.91 0 TD
+0.0068 Tw
+(The Bell Sys-)Tj
+-34.31 -1.2 TD
+-0.004 Tw
+(tem Technical Journal,)Tj
+/TT6 1 Tf
+9.49 0 TD
+-0.0006 Tw
+(Vol. 57, No. 6, Part 2, pp. 2021-2048, July-August 1978.)Tj
+-13.09 -2.4 TD
+-0.0065 Tw
+(Kernighan, Brian W. \(1975\), ëëRATFORóA Preprocessor for a Rational Fortraníí,)Tj
+/TT4 1 Tf
+33.61 0 TD
+0.008 Tw
+(SoftwareóPractice and)Tj
+-30.01 -1.2 TD
+0 Tw
+(Experience,)Tj
+/TT6 1 Tf
+4.98 0 TD
+-0.001 Tw
+(Vol. 5, pp 395-406.)Tj
+-8.58 -2.4 TD
+-0.0037 Tw
+(Kernighan, Brian W. and P. J. Plauger \(1976\),)Tj
+/TT4 1 Tf
+18.72 0 TD
+0.0112 Tw
+(Software Tools,)Tj
+/TT6 1 Tf
+6.54 0 TD
+-0.0077 Tw
+(Addison Wesley.)Tj
+-25.26 -2.4 TD
+0.0354 Tw
+[(Kernighan, Brian W. and Dennis M. Ritchie \(1977\), ëëThe M4 Macro )-5.7(Processoríí, )-5.7(Bell )-5.7(Laboratories )-5.7(Tech-)]TJ
+3.6 -1.2 TD
+-0.0032 Tw
+(nical Memorandum, April, 1977.)Tj
+-3.6 -2.4 TD
+0.0549 Tw
+(Larntz, Kinley \(1986\), ëëReview of S: An Interactive Environment for Data Analysis and Graphicsíí,)Tj
+/TT4 1 Tf
+41.41 0 TD
+0.0683 Tw
+(J. of)Tj
+-37.81 -1.2 TD
+0.0014 Tw
+(the American Statistical Association,)Tj
+/TT6 1 Tf
+15.03 0 TD
+-0.001 Tw
+(Vol. 81, pp. 251-252.)Tj
+-18.63 -2.4 TD
+0.165 Tw
+[(National )16.1(Bureau of Economic Research \(NBER, 1974\),)]TJ
+/TT4 1 Tf
+23.61 0 TD
+0.1656 Tw
+(Troll Reference Manual,)Tj
+/TT6 1 Tf
+10.61 0 TD
+0.1709 Tw
+(Installment 5, August)Tj
+-30.62 -1.2 TD
+0 Tw
+(1974.)Tj
+-3.6 -2.4 TD
+-0.0043 Tw
+(Ritchie, D. M. and K. Thompson \(1970\), ëëQED Text Editoríí, Bell Laboratories Technical Memorandum.)Tj
+T*
+0.0584 Tw
+[(Ritchie, D. M, and K. Thompson \(1978\), )-5.3(ëëThe )-5.3(UNIX )-5.3(Time-Sharing )-5.3(Systemíí,)]TJ
+/TT4 1 Tf
+32.42 0 TD
+0.0665 Tw
+(The Bell System Technical)Tj
+-28.82 -1.2 TD
+0 Tw
+(Journal,)Tj
+/TT6 1 Tf
+3.61 0 TD
+-0.0006 Tw
+(Vol. 57, No. 6, Part 2, pp. 1905-1929, July-August 1978.)Tj
+-7.21 -2.4 TD
+0.0187 Tw
+(Ritchie, D. M, S. C. Johnson, M. E. Lesk, and B. W. Kernighan \(1978\), ëëThe C Programming Languageíí,)Tj
+/TT4 1 Tf
+3.6 -1.2 TD
+-0.0029 Tw
+(The Bell System Technical Journal,)Tj
+/TT6 1 Tf
+14.43 0 TD
+-0.0006 Tw
+(Vol. 57, No. 6, Part 2, pp. 1991-2019, July-August 1978.)Tj
+ET
+endstream
+endobj
+63 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+65 0 obj
+<<
+/Length 2463
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 19 -)Tj
+-20.52 -3.6 TD
+-0.0054 Tw
+(Ryder, B. G. \(1974\), ëëThe PFORT Verifieríí,)Tj
+/TT4 1 Tf
+18.63 0 TD
+-0.0048 Tw
+(Software ó Practice and Experience,)Tj
+/TT6 1 Tf
+15.31 0 TD
+-0.001 Tw
+(Vol. 4, pp. 359-377.)Tj
+-33.94 -2.4 TD
+0.0359 Tw
+[(Scheifler, )9.2(R. )9.2(W. )9.2(and )9.2(J. Gettys \(1986\), ëëThe X Window Systemíí,)]TJ
+/TT4 1 Tf
+26.94 0 TD
+0.0413 Tw
+(ACM Transactions on Graphics,)Tj
+/TT6 1 Tf
+13.47 0 TD
+0.04 Tw
+(Vol. 5,)Tj
+-36.81 -1.2 TD
+-0.0017 Tw
+(No. 2, pp. 79-109.)Tj
+-3.6 -2.4 TD
+0.0686 Tw
+[(Smith, B. T., J. M. Boyle, J. J. Dongerra, B. S. Garbow, Y. Ikebe, V. C. Klema, and )-10.4(C. )-10.4(B. )-10.4(Moler )-10.4(\(1976\),)]TJ
+/TT4 1 Tf
+3.6 -1.2 TD
+0.0392 Tw
+(Matrix Eigensystem RoutinesóEISPACK Guide,)Tj
+/TT6 1 Tf
+19.96 0 TD
+0.0379 Tw
+(Second Edition, Lecture Notes in Computer Sci-)Tj
+-19.96 -1.2 TD
+-0.0095 Tw
+(ence 6, Springer-Verlag, Berlin.)Tj
+-3.6 -2.4 TD
+0.1469 Tw
+[(Standish, T. A. \(1969\), ëëSome Features of )-11.5(PPL )-11.5(ó )-11.5(A )-11.5(Polymorphic )-11.5(Programming )-11.5(Languageíí,)]TJ
+/TT4 1 Tf
+39.82 0 TD
+0.1583 Tw
+(Proc. of)Tj
+-36.22 -1.2 TD
+0.1949 Tw
+(Extensible Language Symposium,)Tj
+/TT6 1 Tf
+14.31 0 TD
+0.1964 Tw
+(Christensen and Shaw, eds.,)Tj
+/TT4 1 Tf
+12.26 0 TD
+0.2009 Tw
+[(SIGPLAN Notices, Vol )11.3(4, )11.3(Aug.)]TJ
+-26.57 -1.2 TD
+0 Tw
+(1969.)Tj
+/TT6 1 Tf
+-3.6 -2.4 TD
+0.0005 Tw
+(StatSci \(1993\),)Tj
+/TT4 1 Tf
+6.25 0 TD
+-0.0031 Tw
+(S-PLUS Programmerís Manual, Version 3.1,)Tj
+/TT6 1 Tf
+18.32 0 TD
+-0.0018 Tw
+(Statistical Sciences, Seattle.)Tj
+-24.57 -2.4 TD
+0.0121 Tw
+(Taft, Edward A. \(1972\),)Tj
+/TT4 1 Tf
+9.98 0 TD
+0.0274 Tw
+(PPL Userís Manual)Tj
+/TT6 1 Tf
+8.39 0 TD
+0.0243 Tw
+(Center for Research in Computing Technology, Harvard Uni-)Tj
+-14.77 -1.2 TD
+-0.004 Tw
+(versity, September, 1972.)Tj
+-3.6 -2.4 TD
+-0.0076 Tw
+(Therneau, Terry M. \(1990\), ëëReview of S-PLUSíí,)Tj
+/TT4 1 Tf
+20.81 0 TD
+0.0011 Tw
+(The American Statistician,)Tj
+/TT6 1 Tf
+10.89 0 TD
+-0.001 Tw
+(Vol. 44, No. 3, pp. 239-241.)Tj
+-31.7 -2.4 TD
+0.0654 Tw
+(Tukey, John W. \(1971\),)Tj
+/TT4 1 Tf
+10.08 0 TD
+0.0794 Tw
+(Exploratory Data Analysis,)Tj
+/TT6 1 Tf
+11.46 0 TD
+0.0842 Tw
+[(Limited Preliminary Edition. )-251(Published )5.3(by )5.3(Addison-)]TJ
+-17.94 -1.2 TD
+-0.0032 Tw
+(Wesley in 1977.)Tj
+-3.6 -2.4 TD
+(Venables, W. N., and B. D. Ripley \(1994\),)Tj
+/TT4 1 Tf
+17.28 0 TD
+0.008 Tw
+(Statistics with S,)Tj
+/TT6 1 Tf
+6.85 0 TD
+0 Tw
+(Springer-Verlag.)Tj
+ET
+endstream
+endobj
+66 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT4 5 0 R
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+68 0 obj
+<<
+/Length 82
+>>
+stream
+BT
+/TT6 1 Tf
+10 0 0 10 277.2 744.0601 Tm
+0 g
+/GS1 gs
+0 Tc
+-0.003 Tw
+(- 20 -)Tj
+ET
+endstream
+endobj
+69 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT6 6 0 R
+>>
+/ExtGState <<
+/GS1 7 0 R
+>>
+>>
+endobj
+7 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+70 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 701
+/CapHeight 0
+/Descent -298
+/Flags 4
+/FontBBox [-167 -299 1094 827]
+/FontName /CGALMJ+Symbol
+/ItalicAngle 0
+/StemV 0
+/FontFile2 71 0 R
+>>
+endobj
+71 0 obj
+<<
+/Filter /FlateDecode
+/Length 20648
+/Length1 40068
+>>
+stream
+Hâ‰W}t’ø3ª3;≥;ªY9û*$úC´"T0|ÑÇ%≈¿â)iúñC9ÃÓæÕéÃÓ3≥dC´§D wM1¢µtk5•4•îZ
+§–$Ú!VT§Â#†*• ”HÔõù›,–„©ıœºwf~˜˜ﬁ}oÓΩÔæô7¿ ¿-xsÇˇ°áÔΩÔÙÇí˘ Ãÿ:'`®1†˝¿¸o•¡˘f¡˜%aÚ= Ï¯p»˜øg4åex8ùˇﬁÚe»áT?÷*£-˜ºµ‡—-®ïju∏£o˚
+ÄµÉZÑ»°„€◊44L¡Ò£#ÿ ÌeüXà˙085ìk›Â5»ﬂE˝ÇGÜ…∏jX‘Å˝™ ∑ΩŸÂgÍ—¶'£rRéào‡|C±ø JL˘ùƒWÄ⁄Ä∞1&GI…»jÏ]®Ô–t¢],Ë”
+∞uÑKö◊™˜œ∆±ı]ÿ8úıÃj‡¿…ngó„å+”»É˚†r
+ö¯q3Á£[ã”\´÷@π£õk∏⁄ ¿o`C4å9C
+n‡_¢úá0ñ¿2vÃÄfòÁò&xäY√òeÿ;6A¥‚5Ü¡H9ö°¡6ºf±˚pDF@∂¶Bj5 À`ÿæñi;Åmd6@ªêyfB>‹ÈlÜÀ]ÿ‚àB!ºƒŒÜGúãYp"éÚ3Z0ëù ≤‚:∏‚ìπY∞6C
+¢é3ÏlW	t0	à¿18	£`ÄU`ó¡8ƒle3Ô1ÂÏAÿÕt1òRé÷0–=iÊ∂¬ÌÏ<¿îÇ€a8È˛RÏœáª—~zÖ—˜}‹ÙsGçÄı∞€◊C)∑Ÿ:«0¥§>Ñ2¨w#_á¨ñ+É›î√!n&4†ÖèÚs¨æ≠é&¶•ZÆï°|ù†|¿‡«¬ ÁùÏl~	Œµôªü=ÃVA-\akπ-Ã	X≈•0}òÆñ0ÈòLÖrnˆ‹äëÑ8W$.sÂ*3åı„⁄ºúçÕk‹Vb'Û!8«ùg:ò{˘ØÚMLl-43£¯˚°ã)‰w0cy¡Á0Çã–Ωp‡ˆÇéM@ßgB¨¿‰	\Ñc∏◊∆‚n:,W
+Ì‰™*#&ï´BfÑ"n}ìvƒ5cH 1Y[À‚≈]éæòJX∫1˘]∏ˇì∏:à´–›KãÁx6"> ?æSº;†◊F#]ÚüÀ∆§¶^&Œƒﬁìi˚≥1¡ù5äÊ…îﬁì∞öçâ`bÄX÷€cbÃ∆§¿∑7‡ëhmoè	~î21Òú5ÛdZoèI˙$È˛Œó˚¸˙È7CÈ)Ï*g¶˚Ò‘˙5˚Ä©gNö0”ØΩ¬Lßﬂ|,Î$ÄO¶kÅ+É;˜1æ”á_@¸‚;ø òΩòÀŸrµ‚≥¢[XÔx"ôlÕ˚0ô≥ñö>7C$¸#ŸXk„„6.∂Ò«6.±q©çÀl\n„
+W⁄∏ ∆:ü∞qµçkl|“∆ßl¨∑Ò'6ÆµÒi◊Ÿ¯åçÎm|÷∆ü≥qÉçœ€¯ÇsRBèˇTòÆäèçxëè*±ÑI~&™ƒ0»ºÑ¨n¬∫4ïxÏÁÇ+1≈¨NÒa5Æ+±_8Éj"í+§»Q¸É˚%áøa∫˘2ghràº" ∫Ø
+ƒÕHcZTIÿ¸ïÀ⁄&∑%Ë
+ùÓ≈´bõ˘©‘	˘ç®©	ÉZc4Ò	‚Ùøï∞C6ânŸµEà&TS—‘ÍﬂIÙ˜+ÆSeu´GCY)·Ô˘@BUâπç)Ûï˘ÉÄ~[√_ı (ÛeïƒÇ‰èY√9íVœvÅ®™Ç1˛‰±ÃöOtì$wHâ†ﬂHrß/àTë+—3°«vq8ìiƒhÕ≈ñ?Â∂¥€SE¢¶.∆_P—É*…ÿ˛wöSg[’ÃjÉò≠íC?—mÍSóà!ºÊ£nbkÇﬁàπ◊ßì∞JíæODﬂåD ≈˝RFï≤RFë≤◊]ObÊA7çEZ~Éìcï*˘´P©À!ﬁÙÍ§R1,#t%|»ƒ\k≠,˛ñΩ	ë®¨œµ¯€.|`(4ﬂq—	Ç≤zÿäõQŸåºÎV„ï¥üv$#À±–ﬂD[éÎOá6Pi≤Õ2ö/«‹ñ–é{3≤e…â¨"Múvó_@bï‰§h˘Büí≤^»1„=oèHﬂ˜ˆ¯ÄÙ—HD—`åÙiöB$Fg0µ3=Ñ$œˆêÄ˘°7Ä;c.1”äÂRí¸8óÃsJIZıRñDï–˘ûÆÄ˘OóEHÚá9©íãnÀÀÍOö∏DÍ%wF2µÀYô$ˇïïÊ…≤’ijüÊ0íÏ»aÛﬂ>€T[∑Û:Níü]«fW⁄|[˚™∑á°7◊r:f∑ÎÎÈ7MÊ.Æœ≠ NªÖπ|}œç5=“	\Ö'"Ä–Ê≠êtœUpî9≠À©£|SuÍÿﬁF´Î6°ÕSÁnÙ‘â{≈i¥òÚ‘qÓ~ÿ÷È˚ÜßŒS'ïyé
+ß≈§ÿ‚qªx©Ã].m[∏
+ÔÎ®∑g+q˜≥f:Î‚Ö|Ωò‚JƒmãÑ÷S.¶\ºX‰â∏;]Ô„u÷µ…1“µ	€?◊√ˇ•zŒäÁóÖ6∂ëFA≤ãø1oØò¢⁄¯zjá'Çœùïˆ[hÛÉòÚÉ{©w®ªS⁄ñ∑W*ì ºCÈ›…≠îK•çæozá“àz"b
+GfÁwùÂJhøTÔâÉ{*>À™“FÆƒpw“zszW[á0»√É√U»É<Óm¸Ó;∞≠æx…oˇ/ç7µ‡èRqc>w Çptj∑∂Ô/nÎrióûw·ˇ0K›ÿTúkêUÓ∞mt‘dm|Ï4ï>…QZ∏ãﬁ⁄m5‡ú~ƒ¸S{dÈ[{Üú,]Y&º¥k“cóÜjrßä.<îˇÈxTigÚéŒÀoÕÔË*‹6®π„ÃÛóÓ‹yqóî‰`7úDÖ˛5SX:g?zk∑¶/Ç•‡Ë∑ÀIfV å∆][l€»¯wèCÈ?‘ólÁ«ü˜√ˆ≈πƒg«ì≤ÊÏ‹¿¿äBÄïVæ8Np-ïvùH¬ß÷µÕ@C–Rr	ÜDB	5ê≤I*£kUïNŒG	0†-≠—d†+h‘°€öÔπ≥MRDHHhÔ´˚˚º˜<øˇÛ~‹ŸúÓ†∑™3Í.\í’„0Y•X—ÀJwµXÚ∏Ωe¢ãÏ^œ&	ˆ±LÆıH·˜ø–}±–2∑‡*Ç„$π£u÷ë1ãb{wkì•YønÙ%i™¡Ë‘√0‹À∞ZÚ[-d4Í• ~Râål◊˙¡¬B√©ˆ;~/´…1 së€É^≠å@F%H<¯uÍ(>VΩù:#)˛pﬁ)8NÆho	eæ“Ñtº—i0⁄5Ÿ`‰∫c6à√ÍV`’~&Äîä/Ëåçë!Fz|Û{ÎÒeé¥.∑)_ÓL3BòÏûœw‰,ê±ˆ™‚v!£dmÀ[Á≠YûFF>Íı°.U”FzB’ı·?.ì w®ÌØUx«œù≈ÌŸj8‘®∏ê1˚”™É'˝≤#‹mütË˙»∂∂Ò√/zä©"2÷∏®≈!‰
+Ò"	¨QgñÔÚú9Íı©æèŒ≈kßØÏ eõ<KÖn°ûC1Ÿï≠Jsª¡ÿôdtàM÷µg∆ZG
+»(Æ(Îü±¥*«uœË†[⁄Ωy«6G¬Ô5Wx'|vò[‘-Î¢ù1∑È”Ÿ„ﬂ|ßÙ©ôvÈby¸ÍúM˘v∑RßPÏΩ´jVÙGqÃëV≠Ö¨ú˜˜K9Ò®Œ¯•¯ô≤xíÀﬂ• ≤√ö⁄(!#ﬂ&œ’†”NÃ„zπ{´‹ºùµ:c©ò[“d•?ZnFFáC»-ik]*TáÇÌ^)∏Q∑l≈<>‚\V√ö–«⁄.5ó9 =èç∑⁄ÖŒrWïÑå≈JΩgiø*:™Âök}‘ﬂA™ {ÀjI<9ßôÁ´>S_ß íË P'Àˆ±£Lgw⁄<9â∂¡'⁄‰f72*I∆@É3º…G«õûõ5;$\J·Ü0œæÿ≠ÇÖÀêQ∑4UxΩNë”c0æ^⁄<”S>—1ƒX˜Óﬁ*ÛÊˇ!qÌnƒ·D#ÅÄo0ˇZ#I2u¸bÒ§Q"»Ë!Ä¨8÷ ˚3‹c Üy¸ıO[çyÏKÊ—%Zù¥<dvËyîmÁB·0ÊƒE»∏ ◊ÃF;ﬂ’§Ø	'‘Ò$cCô'ÿÌ&öÒ-Ía1ˆÙÊ|s=ùGoÚë8◊«∫æ°”1•ıËÏV∆:Y≥>∏Ë2jV{æë«õ<-;ÄÎÛqAzÕTÜút„…Mí†.,\ÿ:ÁD÷€8UAYÊı˙)¯◊Q<‹x˜ûÇ w5W Îƒ.}>‹ı¬¯ûyÂ{û(]ÚìC_;wé›®”◊ÆÔí˝5ÊßÊ£æÏÕèK%˝B	ê¡ûÛß¶∂_í"≤£Ác“¯%êã¡*uÛÒ}ÔAgú}>…ò9k7º¥´æå=≥⁄RÖÎzvº∂∑6—3zZ|E€ñ£˝=ªVúÙùÃŒ˛:qÆ+ﬁÂãÅx⁄˘HèŸ≥0˝[g—ÒÀØª~’{eUMÓ=Q_pA®…uÌ	÷íAÅií»uùS´ŒZÿ∆>ÿíó\◊µâê•.™3äBƒX◊îÀ±"ê\{´≈≤ŒΩÓQbô-ñ⁄ÓÂ°7ŸçõõIÓà˙n'Â§‘Fá9C˘∂H≈MOªp
+§ãñ:∞‘DáÖ—]Êı#£ ª=»(§»ÈÓ0tss…∆Ë—®®3‹`T‰Ú$#bÑa±SﬂiF[?êƒ-√H∆≥-’VïÛGs≈2)mà|ÿ∞í≠ü,µEA™J1¬∆irMFbTáûNu.∏m√ù–∞6#"¢—∂√ïwÄv'ÖÄÏ0s<&¬$òè ü_Ÿ3·qòO¡Xœ‚wÕJXu
+Ña4A+¥¡^ÿÔ¬˚–ÅSpŒ√e∏ˇÜAb!Ú …'?$S»£ƒO …2üTìg…JÚ2—HòºJZ»NÚŸGﬁ&…üI9F>&ßI/π@.ë´‰?îPµQ'Õ•n:Ü>D¶*-£≥È<˙4˝≠§KÓA}ûÆ§/“:∫Ån°Ø—6˙;˙}èv—OË˙˝Ì£˝4¡Ã,ã}è=¿d6ñMdSYõ¡ÇÏI∂Ä-e/∞’¨ûΩ ZX{ìΩ√±ŸIvöEŸEvÖp E>Çª˘>ôO·?Ê•¸1˛4_ üÁ/ÒzæëoÊ€˘æèøÀˇƒÚxÔ‰á˘1~Ç¬OÒ^ÂÁó¯e„ˇ‰ˇ‚¸:4QìŸîa ¬Í$<qSI∑‡˚·
+·ÃD2àÖ
+8s3âô¢sj!e∆¡—b!F•7ŒEQÅ`•f<2iÜqd§Ó–µ+Õ¬{´q∫[-$cÈΩLÿj"V¢G –}·Xõ±˙#&º
+…ö≤ËW›íâﬁ,∫¨LoøÖ∑—è\®ˇíÍ44ìa≈(6íçxË
+çÿÇa∑§…òÕîAlƒ DT"Íπ√ÏâÿGW>Ï@≈ÜŸE‘¢G—3a¯ßzÍ5Ïÿœ<T9∆‚X—f"‹l5£7j66˝L–Üœ¡4ÍÎ89x∫pY∑„ŸåmKÓ—q_ä7≈nº˙π$á„ﬂË}/¬ÌªÔ+h©{≥-ÊB-ì;y^Ùs[¸ˇNãs∏°@F-Û:πTŸ"Ú˚§ÖÎ◊›hÒ”í-®®%XÇZÓçñº~òvkãê~Ÿﬂ\ÓRID”}”2B◊bÅ†?tWZFˇos l©®˝ú˙ôπµ îñî—‡d]=ﬂÌ?Iki«/_çA‚ct-Ÿr–Hjâ
+€:òf|èÒXIO$?∂Ùõ≠¡˜—h©∂´+q!ÓY€/’Xbkä|ÉÊ}ïHÙEl=	ü/°=h9vÕE+ıÛôØˇÿ&Æ; ‡ﬂ˜ﬁ≈>‡‚úì‘;ÉÁ\~ê¢çUÁÖ†f¯B»∂li˝1i´Œ	
+c£`÷nDSî\B‚$ìCí“IŒ`ÉL¸—≠›
+e”÷˛1Œ±¡©ö6≠ì¶b+L©û`#®nnÔùÌ /m´¥ΩHëºªwø˜˝æÔsÁﬁ–⁄2¨F„ËÙÑÓ∞‰Í€ˆ€ñÌ„7v[WuÎÀ;ñò%ê1ÜòˇÄ≠±ÏEÈ.lYÑÂñâUõJÎ_Ä¢hÚö÷ôŒÓa≤9‡•Àº®ƒ˙b—jI%á$∆)Æ∑˚5Ω·¿b‰ôÄÛIó≠±,ã®/=dö’ƒÙP'óûè~ ’¿,MªEh°«ß√f{lxôÅ)q·áëèY∏`XjıC+≥\ùhkÆ…Y.àéZf°√≠òÌ÷.ﬁ”≠Yè‘)6(€“z,ÍóÙè√„ÏèH∆9øÕÁeélﬂπd`ôEaøÖ›dÒÇj†Dj—5¡≤æı0K%ÎnªmÈŒ‘S®∞ÍUÀRçµ.õÛ´Ü!/≥q∆ú–Í”ôÂÏÕKñK◊Îmg 'tXÂ0î‡ï0‰,≥(ä{JèMqCÉ«UÓÑà§”ª(>{JÇ9#gAÁù∂∆Ÿ§œ¡H‹8ô¥_ø¸πèúEÜ®E>eSK∆ªy!#ä<|xNím«,|ﬁ“™ÆÁı…“"˚ ò„ÛŸæc«Ù-¯ŸöÔ,Ï‚*zh‚è∂%∂n7ò%ié,Yf+eGõΩ±ÆÙ8µÜﬂó4j/ˆ⁄¿(N‘J¡„Î}æ1=v‰¸jhwπ\e0ÁûÓReuE Õœ	≥ê⁄ãáK∫^)>?t≥1âùÓ;˘÷±õ¨±i…ëPã˙EÕ$ï	n-»ºHœî!£6#˝SŸúÂŸëŒÕ‚˘™†¿Gw“9¥i§ÀU–?8*M:kC•Kã]\EΩë—R_’÷ÌZòWö∂ô|[sπ®≤,è~-ë\n√≤T^÷ˆj’—^∑©¨n®≠0åˆ µò—∏áZjÀòÂÃÆî¶xÕΩ\ˇ†e±ïüsπ”Øçéçn““ë`˙èÅﬂ)sµ]¯≥Z,î“3}g>Ã™ú#:fáŒ†3Ÿï_@	ÀÚÑM€Ë≥óÒ‰–e‹DcLmFhp‘ç
+ñæl¿¨Í3˘â•u∏eB°ñ÷m&gYF#I4…ºˇàËeñ2¡P{¥ı ∂πîÇ[$Õ¯ä5/—¯O`∞¨÷yòY∫@UYÒ-–†µ∆lû∏KIø:96Â÷©%¯¢í…Ï&ÆÍD∑e1#èä√{imª®cïEGA˙È∫dT‹`Yû÷C˛:;øÔö|ºtıã‘≥á‹ËÒC∆≈0î∑∞ãiºåLÏ0ã<DÁ%iYdk^ò•vˇÙ‚Í◊nô‘¢2Îïˆ+1à}íO+9Àó’äá≠5:µàïº@∏úÖè ØÓ†ñÿtƒoYÇyã≠zø*¿LX7ÕK7≠bùÔ3™Z≥ò43√Yñx’ÁçˇÜ]t^TC`ñjÈ3añÆ1∫øÃõ/m§3À7_û¶kåfá!+^,ã<ú·˜Ï7ºû	6/1PËºD4#h
+’ŸÉí_	[±çª˚±Ûú¯+ˆPﬂÇ[ﬁ"QK⁄≤ß#u¡◊óYPÕ!SÄ∫QjÈøRòó]F:õóí¸3ˆß$C≤*∏≤_]â gQ€x}˝D˝˙,›%◊ÂÁ%zVúl£µKëeI¥5yÀÄ œÖ.I◊°íüÒ({®%®K¥úÜ˛hùè‰rr\äjŸoÂdÃ)Ç“>G-BŒRó®•rl È/ÛOo?9—TM-=¬/Ì‡•∆ÕÄ=æá≈¯êm»ôL§¿Zc»\∏&UKÉ˙dQWêqãó6B4',ÖxiN¶ÈûYŒ.≥ƒ∞ G¶zÍ%C:ö\‘ˆ∂ÖN/Õc
+B—ùnB˜JjÈí:àkØ¥g°¢«\è÷¡Úÿ⁄ÀÂÓéó+«~·[S1ÓÒ?ˇÁ7¢±˘Íßæu˛‹©Õ…†E«^/—5ñäËI–A#Ñ˛
+Ìh–û%-eOØo˛Ë›_¬Íä0h∂ùÕcä2í~=Ûy¨ÛtØL∏∫W≤ú,®ZÑ÷¸1ºÌ÷∞„ÒëZR◊Õ+∆ÆÉ1˚úóéÂ7öøòf<õœ6ˆö„ŸcY±1–Î≠œfˆ¨π®»jù¶hÊ/ç° H2VQ¸OﬁﬂháX,‚ûO˝ùÓïçt∂W"–ÿAˇhÏ€≥\Æ≥,j„ñxÏ±–f{¢[Âª˚
+˚ãπ ”&giÛ˚∆º•¿˛ëe9¿∑Ω¿,∑œbXº¨xX˛˙>M´…ı4Í dˆ∞,<Ÿ∆üÔ$Î+j
+˝È#±«∫G+‘ç≠ˇLŒøAÈ‘XµO…-f9Œ∂nfó,¥˚Ø,ÍC-˜ø’›ñìŒó©À˜Ï^®„◊¶®G¡9¢
+∫—ñ[∏ª:?®ŸÔ¥ı{YPJﬂî∑?‡^KÀCGÕ∑‹†‘0AÊ©•/K´Êˇwö=˜_˜B ïøZΩ€bË°Ö‹K«ÓU∞‹ÁDww+X÷…™e)MXf˘_∂áû+Ô›≠P©x’Òˇc˘‚¯ºE¯-òÜ√#iZÕ◊√Á°	∂“„ì4=Ãt@ÏÖ†!/¡Q8Ø¿i¯5¸Œ¿,\Ä˜‡}¯‹ÄE¥ï"/z’°z‘ÑæåæÜv£Ô°4éé†ËóË∑hΩÖﬁEó–UÙtl«•x^ã‹ÄõÒ¯)¸‹Öøçøã{Ò0û¿Sxˇøéﬂƒ	¸6˛N·´¯:^$Ed%YED"}U‰≥‰1ROHi'œêÚ9@FHîLìS‰MÚ;í$Ôêw…˚‰Ø‰rÉdπ"Œ¡π∏n-∑ëkÊæƒ=…π}‹˜π!ní˚1˜3ÓWú¡ΩÕΩ«•ˇE{’ Eu]·sÔªÔÌ€‹∑)´efﬂ.ãÇçäHZàT6(DÌ ¡hjgdàïL'QõVßFÿËÓQ@%ë÷üV:”hgÍƒ§-†®——ôLkgÃ@[c“éç;Q∆ü◊s/¢∆h:Êû=ÔÌª?Á|˜‹ﬂè˝ã]a∑dUNíuyö<S.íÁ»eÚ"yâ\#Âà¸¶ºKÓîﬂñﬂìèÀ…˝Ú'ÚE˘í¸Ö|Uío)DëEq*…Jä‚Qº $eä2U…VûVf*œ(EJâ2ÂyêÒ≤rW9˛„»T!	`&b'„@%Ëòò¡B°2ñòaå/"S,`¡6*±@±°+>«+™VúS	‡¿ˇ„Ä´s¨XG≈˙±E“ê5⁄–¢lÑ€2[*÷‰Ìyé5Æ(ò£
+´ºÖçò©ô0äm•áÈ?˜ƒ{#è¬8:Nh"ub*QÒ≠
+Ñø¯«1Q'„Â6…N∞Öì˜ïG˚NÑP˛-‚†;XZ°Vj%â∏^¨ÄäÒT‚qJ &. D¬8K(XÇ£†‡’ñ⁄¿$ã2Ò4Û∏)X£âØcÉk∆UåêCﬁÅˇ˘±YÙXvàˇ?πl»¶®Gáæ5ø‹Aò˛∏ëhcŒ•á q·lÔõ3tÿò·ﬁ∏aõx øﬂı]	YKÂCëÒÙ≈ë‰4Ë›-ié»zÌAÓ‹GS†Fú<6àﬂ,4aV©Pjì<…≠õ‡∂o8sóë⁄:ÒZN/j,ÑcIrœ¬K≥°íAÚ§ú¸ú@z·±Í≠Õ5÷Õ}gé;Â”°æ.„º~T;‡B$a∆Òkã∏ØŸHu∑È†_ÁÉ¢˙É-Lm∂ƒœI§o”+†7è%∑WØπ“AGb‚…Àªr{;"Qc©<&=•YëîfÆœzk
+_ƒÕÎa•!èıïË„ÕNßØ¨%¨uÌÓ´	πÉƒ>†¡	]-©kwÙ$Ñ4hH´í[√uÙV"9>aôø¨*≥47JÎCØ/ˆå")…‘I‚üØgEÈ∂^pµáˆwi.óJC%ﬂ⁄˙¥`_‘íîT¨ïTÓÆ/@$KÔù—ÒÛÔW•Ωµ≥®ÔOªã€“Ã∫¶*Söè¥ù÷ù8XHdß'ïÓœße≤¥uÈ∆g´27øÔÓ;rıÍµ~V¥*kÅáÅØX˙à≥¸PÎè´± ˇøIrÏπˇ∞#÷Æù€;∆œlõP}Q£÷[ÚZ.¥c˚ûµ<ÒQ°VÆ˚}!édÀEÛ´¢ùÎ};VÆÀ*oÕ™Ï4O¨ª≤÷ÔÔØ5á∂ÿvßΩ7¡d‘Â§¨n.\~ )]”}ÖLı©Eseû•Üo…ê±«hi‹”QÊp5Œœ?Ãë,KﬁRÍ=π”ﬁÈ1≈Ò^	í__(úÌµ‘˚"˛X…dÀi^}â[Â£éÔ©à˛VÒUîœûÆ	$M™2 Ì<&%2+Æ´ÑèŒ"€ÀÌ'´≤\.Ms´vCÀX∏—ëN €ùÚäC`Ê1H÷'mπû6]23Hﬂm˙{ƒ´U_‘MΩ%œZD‚qñL¿—Q5Ødö@≠àvFÓ qh˘*ÈNæ÷◊’ƒÁ…d›ª‰ﬂ∆—ÒÃ≥Ω<ÔlU∂@V’t=cnxFê¨™ÿ”
+é‰ã·´ñ¶e5®à‰7Ω”£^›Â’W⁄ﬁ°’˚öN3ü±Õk÷C˙πóÇ∞5˛∞8⁄Y‚Ûïã«DWã¡ü|u√SaPc)à∆Ç_;µ’ó™KpÌ§'È∫/ƒL˝~-èF"n1:ﬁ@ ¯<ô6<c«á~vÍ5ÙÍ⁄ú©+SNL∫Y˚ûa‰_˜bWó;¸iÓÈ¸úáåç˘ÁñB’Å93¬ëïôÔ¶nûyZ]ˆ·é't”w∑VG˘˛Å{¨}‡∂ W±⁄˙≈5«ˆ∫Ì€ﬁOÏ„3vP3¥’´	DT>cmﬁº<(@${9í¯€4≤;=`gÙsÂõFùü∏T]¨IûOı—Pªø	ãéo%£˘´Ç0&œH¬=Vçx"ÒsßI¯z`,O ©/˝fH*á?ÏÉ¸wØUÆIõòS<C€alÉØMï.{7‘Î†"	”èwÛ∑˛ $KƒË‡ïû©>R˝o/«0í∫«ÖÑ‡u ·ªê
+ìêQMÅ,»Öô»™x,î ≥*ÉÁa1∆˛ß3Xé‹ÍU¯%ºÅ7`32¨t¬x˘’Q8}Ça}ü√ópã»xovqìâd22≠\¿çk.yé, ?!U‰%RC^%kIyùDëym%€IŸEˆë∑…»ª§á#ê≥‰/‰<˘'˘7πLæ$7àAÅ2jy‚§.dtöJ'”)4õŒºn≠§’t]M◊“¶ÈV⁄ÜÃnrª˝Ù ˝#=Jè—≥ÙÌßÈ í(≤ª$)EÚIOJŸRû`fÂ»Õ*•ji9≤≥:)"5IÕ»—⁄§òÙ;Èê‘%ùîŒ K;' OîÆI7ê©c»÷ÃÃ∆ÏÃ…Y
+s3/õ»&±Ô±i,ìe≥ñÀ~»¸¨ÄÕFô“}Ï@˙F\J¢åﬂÁ¡Ñ,¡å‹	!à/&T¬õæ˜ë0_‹Í±oı»7Ã8ãT¥cBe æë+3/û´ÚrŒÃ`òõ0dHº∑ß
+˛¿yW∞>Åû∏èa~!€ºÖ*0QÓ˚1p)mÛﬁPds»"áE∞6±˚ ˚…yf±I&¨3Ãˇ,»s«Ç{xgºˇ\¨X”$aDÑ}°
+∆kÑ• wy¨BŒh˘à0ï!èYe‚…À\ø¶Q.Ö¨ ∏Õy´Ù⁄„_ﬁ£m≥æ¶Ãœ/œ"i_YÆãJTT Ω“™&6Ó|⁄¸ ™˜'IúôÒ/<∂M£GÕ Â·˝⁄‚[”–t]¯~Û_»ÔJãnûË
+ˆ,¸õÜAy≤5t˘R7êÓ‘èOı]˚«/R7}|˘ÚØåœMõ^1t`ı~lò"Ä∞ˇ;5Í±z]¸'•é≈©ÅÌÃ	»©;tdgL„¯»~J‹0´˝:”ÖﬂXÈÚt$∂3ˆŒkF¶D~º"Ω±8+Úy?»~aÔSˇ#ø|Ä£®Ó8˛{Ômv/∏Ê6!»F3ﬁé4Q§KPIˇH6ô$BMT¥ˇñ “R∆	¬(JÅw$@éÜ0‘¶%h Gp∞lgË^Œa¬LF§#≠é¥¬ v¨Fmßâ∑˝Ω›Kr	vj˝3«˜nˇæ?øﬂÔÛˆ∑˜›
+ıDh/AªaA¡æe‹Tª?VÉæÁ∂6mŒ¿Ìöá´|Åëfå	ÕØÀqπt“-πï;j:JÚÓ/äª«ÀäO‘A]”¸3so6¨ÂµìÆπ˝|¡‹¢⁄yskˆKEóÃ–∆Ï ú^“ÒÍ˜K*´oÍ_˙¡∂Çáç._©aÊø±ºiò⁄„Ò|SÚó4{˚îúCÖ≈=e33÷æìÈu›5<3G„ù€n<:ø≤£§∏ÌN“y€‹”ø6ûÄ∫»æí9¡ìÌº∂;gU€å™#¬Ó∑€Ù5ﬂ¨@&	íyÔ˚’ﬂûyπ∫‰pG°›Xs‡ò¶Œiæ∏∂'C3Øﬂı†‚XåãnôÙÿÉ’E¡p»‹ê£Ì∏w]7æ?y¯Ωg>7ø¢£§JÿµÛ∂DuoﬂÎ«Íö◊ïl?Ú±˛I1ﬁ™¢»™ùπ5{§l’ñ≤—nË‡˚´ÂV’Ë(X|bcmaO+›^%“=y◊ Á·–Ó~Ä¿áπv§¯Paã4_3'∏cÁWÔÕŸ˝róùYßÓºŸçw†Àç◊WS›klÄÌ≠%€ÕìÌ)⁄SŸTPäÑv›|œ°Ï‹#M—ÓîÌ˜=Y}p~Ç‹Ävk∫∂F˛ıçK"^t◊œï‰K{Ôá∆UD⁄rÕpëπ!◊\Úp'ÕÜ˙ßDº[n8j¢∞Õ[Î≠oÛ›ß¶ü†Â[ùçΩ[€ÎØˇ≈ÈÒ°Ω~¯ƒ€Ô¨|ªÙ —;p∫∏£˚ŒÍWm}Ú¬‘]∑.jÈÇ“2Õ‘ƒ˙ÊÏçòV˘ëA‰€jü)]q~Ïnw}ìı!SÿùâÎ;A
+UÚ	;JÚäã"{Ω¸ÕLÂ‚G)$Ã>Ç
+M*Ç&OfâŸ¥ÜÚ‘$v™Ø&“¨“böh&1ÆîŒ4v3î°]Ztjo°ÊﬁëSv”Û}∞‡ú§Q±ÒoOÿµ=ª+≤Dõë #>lwf'£f≠èÕO+œ∆.XaÈOIÂ@PKB1LÜ©®¶¶C)Í©2‘S≥†ÓÇπp7Í©¿"X˜¡rXÅzÍXõ‡ß∞⁄·∞¿8
+œ£¶:Ó*™3pﬁDMı>$¿!å\E≤…µ®™&†Æ*"7°≤öNn#Âd©&ﬂBuµÄ|èXd	YÜ˙ÍA≤Ü¨'M§ô¥êm®∞ví=§ã<Méíﬂ†¬˙=9FbüA=ANí?í?ì◊»‰"yãº+îÕ†~öKØG}UHo§ΩÖ~ùö¥ÇV“9¥éﬁMøK—≈Ù~∫äÆ°a°≠Ùq˙K‘YO”£Ùw4J{ËI˙'˙ç”ãÙÔÙÙ2À`W≥±®µÆeT[SÿtT[w∞jVÀÊ±Ô∞z∂å5∞ïljÆGÿ∂ïW€ÃöŸœP}µ°˛Í@÷…ˆ∞}Ï)÷≈°{ñ=áıyrÖíºC>ñí"(Òø=5Çœ=J®QÒäRwc$ØFU!∆†Æ†ﬁ8oÏ‡ôhuå{◊kë›ñWGE¬®BqsÁÛ¨g∏{Q%Ô(ÙRZãg…ÁıGªTÿ˛ÙJJh#ÙXózÂVÙ}∂‡F•!èî4eö…Dªüèf∫æyU¨ÓLT\"nö‚Üô Êì≤.⁄ëïÜ+C[¯‘dP¡ìIä$fîòÑæx˚—ÉÄ`–*ÚÿÅkq˜&Ë».áÒÓãh”gÛä¯‚´™â3¸ﬂÒCµ¸%)A±Ò·ÎÜ≤>÷¢°T∏v¯ª‡$æ4,j`$ã#ACœÖ|Ô€˜Öb¡?≈ÿf¡ÇA√'XHoEˇø,¨ˇyˇ‰∆àPá£Xh™FÏã∆œì≈˙(6¯á¨Á_—√N}†˛áb^yÀõå$¸Y«áß©c&æ ”XPè„Rê7èd°~å…á êí˛/Eµ €åiFjl|®˘L*^bk£Gä Ã8J◊ëÖª{≈)€ù∫ëºb‰p—ÂÙ/ÖåHc·wﬁX(êŒ¢f~≈…_≠pê›nÌFªÅ∞D˛˙GôùÚµ◊Ês}Z Èè:éﬂ°ãﬁMH
+ƒJ‘I˙ìe®<bqXÁwŒ&÷;	¯âÁÑnÄ6ƒ¢¿;0c»Ω’ /*Õ“V—iËkãX˜rÕcëF>≈B9wœ`ÄëŒ+0g ¿çó€ÂÙØóLâ<à√Ø‹
+ã=≤Ñ,öYÙ¡Ã YŸ™⁄¯›%J·¬Gœ&ò“◊‡t¥)Ô	π≠…2´ó©‘∞-â|C“±vø:çs{‘y…:"€†±–áûu‚d}»=åÒØô≠xRdâNã”á€Lür/ÜÈ	4¨≤Úä,2ÿ0∫dp…≤¨˙™F}ã‘˚ÇOƒaTü!è≈?œKÊ0ãK∞!HÍ›Õ≈>yZÛ |EÇ(9“£•ºg‹0l^*”@‹öÌ≤∞≥à=πT2tK∑åhã¨fsŒ¬=∞`aßöŒ"4…ÛœÔp«ÍºvL#.:-O(ƒ”X”≤∆Ÿå°[d”‘à6—‘Ù‡≥}∂aÂw m4ã∞9ãl"rkπ«bÏÂ˜Æ`—mÈv¬àäA≥oi-Q˝*·Ãx% åÀ◊u°TÜE∫•2ïËQÓ±∞T®GèSUã¢l,∏>»"°OkÃRŒˆÖüÌñ.†ñ÷#æ˛-µTÈˇ∞;‡¥Ë∂"¶n"Y◊Éπ¬∂\œ+LóÇƒôÙ’#Xƒ.I÷q‡*Ù=$∏ŒÅd`Ä9õ≤Ï\≥2ìÁq=çÖè‡"Xpd1;—€–ù[c˚\„ùê≈ÜA$/ò:óÉÂ¬ÿÇ<n®◊·;’e°É•‰ì⁄Ç≈lb™«"Yƒö<yêEﬂΩQrWI_»ç÷¥ziLQWﬁΩ|!Ô}£¨7L”ù∑‘d‡≤s∂P’’•Ì«Md!Q√}x¨2à_é˜•ñWº/0î >FW'G∞8{ImËeJdS•QC≥√Õ†·∫©íéπd´>ZŸeôYÕÂ≈»‚ﬂ‰◊_lG ov∑ªÎtÌ€sÇô#ó‹∆	Q"ò#%q•T∑vC¬à< R◊IîÄÑ⁄K_0¢≤Á|ßÛ!πÕâøÆê®ë™ˆµ !ÒÇÿÎ•æV2i˚f©}8cP Cïç*»E7|≥ª˜«µì∂	 $Ê¡{æ€ùù˝ÕÏ˜}„»ÚA≥Å€°ÖÎ,8ï“È ‘h’ÎZlZ¸ôdZdÕOÅ‚}«â-Ë—Z<≤å@UZ|-Ã¢&-ÿÚ*Ï&ﬁÙaÕ◊Ω∑j5ú•s∆ﬂÂŸ⁄˜ØûRóè}•ˆŒ\ÍI¥`c√Ÿ•·≈â´Áfñt¶gÃ´“¬¬á–Ò˝oÂ»Mq≥e‚ê•wõ¯ê“c∏”Õ“B	÷¨âu=Û÷5∆ò∂◊¢>Y6ﬁù„RrΩ—T9U∞pdè“¬qJvµî’∆G´,≤»àöÊîÆ≈üÕ%∑˘»ºÍ~⁄≈õ-£;ØÆzÜR"≥ZxÃ˚îıTQó≥g◊–ÇM-™”5Ó£ÖufÎ<x>-te6xx]˚¬yz,ª◊1tJ«¨ÏRBÕcl[VôŒ¨5é&ﬁÄ^¡]ANΩ-ﬁo€‡∏Ú—]“3ÒqnÜƒu-∂ò]¥“ÔX,h£Ö9ﬂ∆”\®‚â.§„l<Uf•…$Z‡j€eöÛ¢9/njÛ"pJIªîÖÒ§MCã=·óxh±¿—bJ—æ(.C:≠˙òBo∂◊-=aR›ÓÅÈÂ¸4îç€hë÷Úƒ:Dã%iÒ¸Zù{<lÍ0”π~œbùôX∑NîÆ¥8¢gØ“t<o˝1ØËEπ6Niµ‚˙˚çä[G∆p9âÆ!|™π¡ÑÄDÃJlÒ®˙¨uÕrÛ≥«≈Àˆx-l8Z8òÚ§Ö6`¡eèr]òNe(∂∞liq!≤ “¬CãI◊ÖöæH,ÜãpQ”˜.M»Óπ`2ÊYDÌÆön√Å]ÍZt¿µ‡Ñ--‘6Z@◊Çaﬂç-¯∞N-¥XJê&Ûº`c£YßÅær∆©≠›h· ‹é◊€r]ËJ¡,&Ñ,PÌ|lÒ8Ëf#ÕCábñŸb° ù ËL€ƒ˙¬)$µ$»•ÖÊTvŸ-¥∞m›é◊EÛdl¡ª˙Su;Á˛Ò∂–¬«9¶[Ÿ˙∫åÍ¥—±q9é°E/(ΩZ8W£wƒóQùJ<¬ªÍ2ù.Yß∆•Öø›¬Gã‰≈k¿tXqú˙{¢#êC∂RN¥§)(Ë	!ÇI!≥'˛¬ï7¿Ä∆>»ÀwƒÌY8“BàéÜ{—B÷ù^Qà§ÜõY®ŒOFÂ∫√H/Z±E/‹J. ⁄˘¬äÍ?Ç±ì–ÁëÖ◊d·∫‡êi±â√
+)«yÑ“∏5k…π≈NüÄ¥P¬l†¬\£“¢IÀTüﬁf1≥h¸°≠ã∫->∞.]ÊF/‘Wycª,c'ﬂjÅô`-§ ¥$-pEg·@]¨º∞-0òÇi?[‚d°garb’πØ˙Y-
+¯pLßû«¬x¡ÅQ6qPZDı•uÓ÷Ü-Á·(ß˙Jh!¿”˚îÊΩYÎ‘iëﬂŸ"Y	cÁå]qÎÔ›jœø!∫Ò‚–I|H™M= -˙Ò¬VÎ>·ç˝˘◊1ß~	£≈î@7≤¿ÏiNºû0˚N?^xØ21ß‚îŸë≈'E0hg–Çæ õ±Öï]ËYx$⁄•8h1YÇUYwJVÛyÕ∞útl°IJ†Ç≠g°É¨L’U+[zê8é7ÛÚd≥ÿåbßÃ©©Ñ¡kkõ≠‹ï'ªydÍtòGòe:´+DQº`ÍFñ#Ó÷Z◊0ãåÅ¨‡´nîG∏ëµñ¥ÿÖÓ§;êG
+'≠“ZßÃπ≥Ö˝«⁄Ø±†¬õ)8\√RŸ9-|Y1»◊ƒb¨ -p?Ç&Ûõ|FZD5∏ojhë6i1∆ˆ,~«ﬁtŒj'—‚G”Ï´¥X∂f~∂WeﬁÖÏÚcŸFﬁ¬≤&™µ5∑Hê1ûË÷Ö3÷¡]Î’ZÛù‡:~Ò⁄dk2Vª—Î÷C»bÄ¨¡,˙ıEíLaÈénd±[∆ŒRla©M-XKÏ◊Òä"åË3W˛±§N‘ÒÒÎã≤Óƒ{πªÃ_Éãzday˛eéµÑcE{3?”Fãƒı˙·{8˚dIéù<”Œø…÷∆¶Mz¸π£#ﬁ¸R§õGÀ‘üÕ•_ ÕÕó◊Á¢\nV–ö#‡ıÍN,e›âµ^ÿpS%◊On|÷¯π‹c©í
+$\÷ù<¨;áÂl.hOZh≤Wá˜ÎŒ]∞ /ì™Ïê¥HF%i!Z“bQx˘ß≠v†¬à⁄75À<k»`‰DcÉx'QkÂB-ﬁõ‚ï\K3j≠πD1»µs0ßﬁB¸]¨í+¢Ö◊ÂﬂÆU∆ÊYì5ÍÜwlï¶_€ú5Äç$ˆèú»‘É\∏7kÀ¨IxNÓ>˙58÷5ÅØiZÿn:∫∫;mh€Ïπƒ¿~Dà∂.7R=ã˛~DÉÇºLnCã]ˆ˚ºƒﬂ-p:TË5|O	lm>FãÁO∆ãË%UºmÄ¡Qˆ´«è‘ø +ëÁñªˇê¡{i;ﬂ!>Â¿¡¸\¯äÍ;Ù–;//-ÜlÄ%Ñ ñ°·F‚æ,Ï¯ÿ∑PÂWn˙NÓ=Z¿vã⁄éqÜ∆ù\`ò79'"äÈ-C≥˘WÄm4wm·ÉÀ6`aÚªY¯>È[§˚˙òXJ„_—ŸÚÂ\Ü√ˆ}óêéç[9°W∑mhÁ|‘¶ÒáæÖû‡w±Hp?1TÌ˛7:ÿ◊áZæ◊Q∫Ò—>Y(“¢∫Õb«5ı—[7∆Aû∆E»•Ö!Ô~ßxÅ…oƒË^‘ıªk„ΩOÈ{•?ƒ‚?ÿ,ÓßÒ˚Ô¬âè∂≥Zh“bÂøiÒø”ú¯h;^ﬂ¬ˇˇ¥Ë6€âﬁê¸ﬂi°bË€á•„pŒ¿◊·[pûÄ<é9¨eüÅ√/·%¯¸ºÅÎW¯!dò|Çd#èíiÚMrâ|‚ëeÚ"˘-yï¨ìw…-≈P∆îqÂ3 	ÂÀ ◊î S∏{≠*?U~•º®¸ãˆjÅäÚ∏¬wˇvE1Ù_…“(TS¥-.Fµ"ò]cÎBîƒ”ÙDãƒ◊“
+kµ<4çä©5∆0¶O§k”÷G¥ıqT‘™1&>ì∆cm|ƒcEÇ€;?Î#új<«ÙøˇùÊﬁ;˜õ;Ûœ?˜ﬂL∑”˝Ù$˝ú^•å3ÎÕY
+ƒ≤ÿhÊbnˆ36ó-dıl5[œ6±Ì¨ç}Ã.∞´Ï?¨ùxËw@Ωx<O‰OÛ4>åè·ì¯ã|&˜◊y3ﬂƒwÒ¸(?«ø‡W˘m)\Í)iíUzF&çëä•)RÖ¥Hjî~'mí>îéHÁ•Î2óÕrÇú&g…y≤¸í\./í_ó◊À≠Ú˘Ñ¸O˘Ç|SaJÑ“O˘ëí´LV^Vf)sî≈ *ÂÂe¶µ{ï√ Â§rV˘\˘órIÈTô™™F’§ˆV5¸√KV®’5S¶Ê"ÇËv›ë‡È¸˛¿™ƒa$úôIÌAT¢R—Rô(VPã, .¬UU \ÈA¬¡Då`5íHÅ¨Ç=iO¨Gí(]j2¥é"FùUçvF·5¬SòÓ+î?B˜ç•ÆdÄPà@&¥3—0°ƒpîè·√/b†*#ÇÑ˚ åF≤Hù˚H1àèLóÜÍ„ÿaw∆Ec$‘ÉëõQnÊ1U1ÎõÓE“€B◊ìö!\
+'ëàgÄ>$#Ü3ésQh"tí0F		u∏
+¯q÷BîÇ:EX†N?®#Å:±è∏∏b›ﬁƒŸ_áÙ«ˇ<®—(nÉ¯ƒ\ÌˇÜB=XºzÆû‹ˇÌ(Ü:∑= EO∂5eìªç˛t›æÃoE¡^ï˜H‹˘°Ë{≈ˆöÌ˛aù•ÉVÍ(á÷≠]∑o‡Æ¢ïu`]±¯‰	,{∂ulcÁÕUıø∫uŒ÷éàØ{f70*Á—ˇWHÂr˙ã7Ù¨,∆‰ÿòéRæd(q\R√©9ˇ»Íèh}≈ÂiÓCIÒÓ}ˇ~>e§Øü_ö2-ª¿æ%π>œxbY~uiÀœΩÕ∂¿+c=1Y6†∂æô˘¢ï≈…¶ù'ÑÛººdœ/{’®0æ∞”ÖOøWqyŒ)ÛîÍôŸ âö#æaaÙ˘4˜±£eÀÿWÂ
+H´⁄‡_Yv›ˆVÕ˙B√ÚQ…Õ˘õUıt≠}Ã(yªtokÓ»ÃÀãNQ«¥Ë®≈Ô⁄ÿ+—ÉÆÃÄp¶ºr◊T„BGUb¸∆Õ3'B˝¸œ]ki=z(≠dÚÚx˜ﬁ˜ö≥7˛ıπÉ˘5s›oÔ§>7b]°⁄p1πˆ˘’uUıñùÀ≤ñ
+S¸π÷ã•πeÔLH<Æ¶é⁄ÍT…aãœ¸~∑JB~ı“-D©[t;{„˚<Ø3Ø“„à∏‘⁄íÊ>Ω_ƒuÓÂøeA~C^IbˆuYhﬁ¢6‰⁄kÕ˘’âUﬁöömà“PíõÚ~≥πEGâ¶#‚é|YÏπ}∆ñ3c1>ﬁ3∫|í@©JÆ¥Tqªúà±|’∞–hB}∆Íãád˜w÷ÆË›¨n›˙«@„Íˆ’óO7~0Á/ûo?xh>Ã0≠™M:◊ÿK’≤ÒÀI”lcï≈XßÚ¨+7+È≥;ﬂ†É5}±ˆ2ÆÀÈˆ∏Ÿ‹ÆØã%≤‚LÆŒò˛&SõÒø¯fﬂ6‡…D’<jW∆UWàöá‡∫‹›8 Ê‡>é"ŒËo≤hf¶∏€íßÌ=âG”Õç›QäÒﬁ~F›Ca¶•p/¡ªá¢#Œ≈ﬂï˚∑ﬁ)s}I?ú÷aÉ«æÚ#˝Ïuíˆ áè¢{√?ä¯-äÜXà√P„!	w≠¿@¸?C‡'ê√!∆@>Ê[·yxß /Bf^≥‡5X UPK1˜Z	´·-hÜ?@+f`;`7Ä√pÛ∞3p.¿ø·:¥CB≈YçgD4ÈM‚H<I")‰˚$ù&CI&±ì\2öå#»DRD¶íRRF^!≥HôèY[5YHj…íÔÄ»o»
+“DVìµòn >ÃˇDvêΩ‰ 9N>!ß…gò^"W…“Næ¶ÑJxÊÖS3ç¶O`¶òLSi:B3©ùÊ—±ò3∫hùJß—ò;ñ”yò?÷–•t]E◊ËY‰Í£~∫çÓ¬\Ú0=J?¢ßËgÙ"ΩLØ—ØË⁄No—N`Ñ1Ã1CY8Êôë,äıb}X,ãcœíÿì¨?{
+i e›3Ñ;˙H˘E¶`Tí»í(ß%¢≈®ƒò^J¥±†2◊˚…]ƒDM¡>≤.S)&è∫W—KX†Öå˝U›NxêÉ~y∞≈ÓJÓ'Ù!{Q]ÚH1>4~·ìb$T¯eJÈôç¨3b#.ªS±ápaW4
+—{uıïøA]+h´RâKA©/ÈÃë∫fI÷ÎAb:sÆØ	ïdIÙ¬B¨è(Öéq‹øR `Sdâãÿ™}4)◊Ì≥çsjª]ñTk∑¶fT48|·ö?p8y¨‰ÚI}},IıÒ§Ñ≥RûMµét85?QrÏA∑9≈véwbU¥PåÚ{™ÎH?»Á{Ñ,u˘I†⁄ˆ'∂‡gÜM.Bµj’¥úÈv)∆Fà)¨ÖZµ·5<ﬂô‡“ºö7◊Ì’Ük”¶∏q`˙%^◊”8ƒÒŒÈX8->õ+ˆnµƒÂÇ~z?\˜„u°á≤†á2›:ËD£0ÎHÕ«˙9ú„ú>è=÷g≥ªb--«∑Õ·Ùm≥«Z\.¥
+ø;R|Œõsé9<+Ü./8∂X∏ºﬁÆVÇ≈ÁÒzcΩG∞Ìám›∫lAÅtè,)«O<]ÂI∞ƒ
+AÇ%¡Ç„tâI6äπœ¡ëZ\©‚Ëëö:õ‘òpª•„µ≤+SºÔ⁄Õ˜C©^ªÖ«,>h| !pKnÅJ9ä±]Ñ\Ã›0ıN‰Zö∏ÜØÿP‰5»?÷”ëüB.@Œ@ŒGE3`rˆ>ú‚…ñ¿<ÙY ±æd«·M≤÷à'Ká
+ˆ.ºãvì˛ÀvıÖ:éïÒÙﬁ∂3®¯0ÏÉ≤é√ √∏ií6Ω∑√í¥˘”¥Mõì‰ú‰ bö4Mõ§Mo“€?xñA¡á¡qTò'YE∆AX—\|D|^}êóaD∏ûﬁπÀb·◊Ô‰úÔˇ˜ùúì“c*Ÿ€Ωî≥ã©á/®ªd^-? v}Í+ÃπRæEdÓØEˇ¸C¢Ô_d˛FÒU!gÂﬂ˜rD¶\ (jy©+π†O◊Ø<£≤=ˆ„´ê˙—sDÙ˝hè“Ÿ(ùQﬂ+=9YÇS|Jq≈©∑ˆ(=°*•Á$?ßöd¸6·ª~Â:°O®€•∑®%°êË®3ÇﬂR◊àÃÕ“∑©7ÀoRY˚b˘Î‘˘Úëàﬂ=T©‚£Bpõÿ∏V¨êúˇÑzH÷>øèë<SáQ7…X 8#< ·= <ºw˛ó‚√ÛWdΩFÊﬂ(ùùø"~H˚˛C›#zø_.S¡MÇﬁ!ÒΩ_§äâ¸ƒø[{Ïs±è˚” vë‹¥˜ÿèI~ŒJmJΩ\˚)¡ªD˛~˘Ö©«püØÚÉ¬Ì√k‘Ô.ÒŒÑ_!6T“‰"Mq{êÿØïüø$:Ó_¬√ﬁ˚ó∏µ«ïgÖ∑_~CÚÇ_”ãq1-æ$µ~zµ´‘˘›K9b≥_ÇH≠G{\πQ‡U.†R ˘˘…˝æwnêXŒJ/Œë”‚£ãﬁˇ ;j{πc>sÒ_øX /,Ú≈∫øΩ^;$s_¢˛Hëˆ'«ÂÌÈˇ˝.‘>Ê8?ˇ˝'i·r_›sªiøóø5ö∆>°ÔæˆÏ5ﬂ.ô/≠ƒcs∞À6+⁄@ƒÖ3º7«(8s¿4Ÿdû,*≠∞vGµxÍ÷÷ãŒn2ÌEjKPëõI’˙y†åk£ZjÑÃÿS…0Ìfh"∏AíÔò]K⁄EH@ê4¢µcu=©ã~8=I;ßÉa€—¶¬	†5—¬âo1´ÑÂV¶‚—˜êÕ∞û$≠ Z	˙T˝Ev¢ztóÊ´≠çGgOÂ<ÔO"ı∏uZ‚*0ï<td06ƒcCÊ49D [=∞‰@g’$`‚¶Cw6Ú§ìèv˝π Lbïafqxç_Dm≥mä38≥e≠~É]ùÍj)pôÒ-£>•sùë%°çê´˚À®√áºii≥%à√1ÀŸH‘Üƒ∂Á–c•∂F⁄`zÑOÓ¨⁄</íò&B€–≈ôÿŒ⁄á.;ùÕX¢ÙƒU|€ñ`7f6Ã¬”åUK‰GΩ„S]ThÆ÷Qö:Ø—U&w8lö®+,ByõC´)åÃÃ•c{ôF–JeW	¡hé£DÃ+x1ø?ﬂ¨'ÕﬁN±≈7”GZ›Z$ÜCo é¬$≥ ∞îÊ§ Úroƒè≥Õ8
+ΩòÀª≠∂æï7ôÌ2!ãeRWÜ<ui∏¨ƒªsÇ∏äÁ*ç◊¬û…nòëP(w[N‚DÖÇU<Â]Y@ãµ¡o$€Èµ[ıS1é5G Î^Ï±à±9Kªõ7,—?v<ü9ÈZíÑ&È¿:î◊ŸFÄú	aò8[g1òy¶-k∏Hm˘®πÒD‰ƒë÷¡≤¥ıcÆK˛÷Ñ[à‘Ê‘A}vêıŸûYáùù+∆d–£a$!—üB/0›‰K`t
+éªD∫w≠v›∂µ¸≈â∏ôH˝]=eçzí#–7llÚfí†1À2„BÌÿVA‘Ö,ÏÖ];´Œ¨ì›‹◊#fÏ"q≠”tÜGùØ,6üz®„•_◊#‡ÕÎöè‚çÎ∞ö‰Bﬂçh©Ögìï∏ÌÁZËÜ!üµ`e‘‰"‚µ»ÿdñN≠ªÚd<ŸÇÜ†⁄8Hn@&¨⁄b®⁄ænØ◊+ÈñßÌ›¿Ö¿cµéEÕD*†Á≥®#Ñ1dD X“åÜeÖsˆFH6"æm+:≠9lÓåcØ°µÎ4øïÅ¢Idˇ÷HÕ{~"Aà∂ç89U√¶ÖRŸ Õí‘òj rY¿◊ÜS∫Ü,y‹ Qµ5]Á„Æ4Õß}√¬´Ÿ§˛¿´Å)¬y«≠ïØƒ„@n≤>ùn°‹§Ê*¬ƒqÁÈ B·J2OöÇŸÙödõ"ªù`ö™°/ÂçÌâqo¬(`†˙b¬’K¢%1]¿ê$syŸô”hVàÖ.¨ı9ïüõ, #R◊ñaÂq5PAKO>fµ-é<∑ìuÍ≠'ƒÆ¡⁄®!=•Å0∑kçƒO“Q™Æp∞‚ÜQœÁ~ÑQ¬9Œ€>¬È(í°e»ı=F6Õ»±’ó§…±€13u;ÎWá6Œ^T]œ	GG|z*wÙæ)Å:£lOeÕ≥8ﬁòò¸‘Zì.·˙HëV@¨ÿX$}ê4]‘Í!	KMìçJﬁM≥ ∑,´ºaƒ02Ö-s≥≈Lt]nMÏ jkTµ)ípe…§’±Ö9Ã™«ŸQ86v{z§UE›ÓÀ”– 2áΩôW	◊wÓ<˛ÚÉWÔˇ◊ﬂº˙∑?›y~ˇœ'ˇ˛Û£√_æ˜+„≥ˆÁÓŒ˛˘ùÏ«‡gËºóyTS◊∆˜ÕÕ%@Ç2ÑAHÅ	AeááCE‚äñ∂†T≠Z¥‘πŒ˙™Çv∞ÌR©x*ïg±¢m-Á*"éUﬂ+›˜É’µÍﬂo5'˘›}æ}¶ªœpo˘¸6sE®√¿À√√ÊﬂX´¥?Kqs≈ﬁ¶¥G«&%|∞iÇÚ¡âÏÀŸn	4¬æ''õkÃ*ã∑≠åﬁ‚8l]bÊÇ7Ã≠£˝F∂U’¶‰ÆüT∫º|ã…≈\Ω•™e∆¯‹îÒágüŒ˙2√˚ÏÜ;ı◊X"≥.›‘\¨<¥0æxœ≈˚∆öyQAá]˜Ã.ºØf¡Œﬂñˇ±{∫ÒµπÂçÖ≤Lé~'W‹ºlJHa`zP¬ÒIæ_!|aˇUˆˆ≥Á£Wm·∂º˛”Èo>-}øxöcÁcíRÔÕ˝Aw}ƒæÊèÏ7^<zaJ˛¨√RË≈œ„wù;ü1©v”ùvœ
+{ÖÜ¸W[∂]wÂ»∂YæE/◊ÂøôvnNÈ…|cù&w–ôq«÷˜_zÍ¿¡£kÀ‚ÚØ¯ﬂ+Óﬁ˙0‘_y˜≈lÀ∫∆∫´’f«Ωû‰QiŸUlâ¢awhTÙÓÚ˚˝ã◊~¶–^;|q‰PSIœ_#:UﬂÏspÏ≠÷UÕ¥˘∂ËÓçS6{S#RõoõÏt?ñWzeÍe‰ú≠!KF>à_9:`ÛãäÁq[ÛñhåâΩU—ágUü:;π‰Ê„çïâ)i?}ìë)v∑ƒÏ\ïñQ⁄4Eüµª‰¬◊›cñT_*ö∞¥)U]Q∂ºJ≥x~JÚn’≤*˛g*H%8ëùA®ú)ÖíÖÇ©øÇ8*∫CµTB„(±]q•ÒØîÈH1F˛‘ô4Ìäñ"ˇ¢P•†ÊärC˘6‰@˚i-MÁ¶C⁄ï¥Ür(ïzˇ©8“ºW'J•{%ˇE°
+¡ç_ﬂÂÇ}€?∫∏VEÅ ëïDA	ä<QP¿@íI≠†¸lˇæ_Äœ¡_¡g‡S	¯|>õ¡`xØúç∞Ô—]öH_ÂúlãÙÏ;‡mxº^¿´`=¯x¸¸¸ºLÔì˜vôÙú˚⁄wl+ÈÏ⁄v  ∑∞œÉ5‡9:À¸v5x<û∆ÿˇª
+<û +¡c‡Qx¨†C4î«U—ñk≠Â˛eE§r:HéÏ)'7‰
+ÿsê ¯’]ÇGd∆≤VÜó˙¡¸öê◊ KmØIâØcX›èr_°áRåuÌÂ%æ ⁄^⁄C39'krNÓiO{≤Gd -|AIlé:ª¡œ¿O—Ê'‘ì˘1Ï]–w¢˜(≈ÌÌS‰‰ˆdE§Ì®∑ç‚òÒúàÙ/‘ﬁäﬁ∂¿ﬁní◊1m§ÃP÷ÉÎ–¬Zx?◊†œ’Æ‚ï,“JîYÔrpÊÙî)óÚﬂfÎ#€(ã¡EÌkgoL∂H9“Ú˝,DâÖò∑∏üBé_={
+·)§„Ï)†˘‹´è»î#<ü7{k≤Gd ëy∑ 5ﬂÁ“îö€ñC?sPj6îw¡Y‡L‹ıå∏∂}ù«áM"◊ÃkÀ°¶¨à4çr1˚”‡…Â#Gû˝\Ã~.∆ñCoS k9ò˝åMVD Fù,p
+8	Ã”¡q‡Xp8öFaØèFn∆9v8Lˇ	¶Ä√1S…∞_áÇC¿¡‡ 0	–zçG⁄Ì˜É“;:v<∆‚n˙¿Óˆc¿h∞'h·⁄"Ø9ŸÓö¿H0Ï∆öHFÿ·`
+æFòÿ!`0ÿïÇ∏âØr.+4v ËONL=y0˝x≈ã‰›ác$Rî˜Ü‚€Ùàk[ù¡NË€•t†®mßÜ£”ëúπGâØ≤ÊJ.MâØrè.Ì>ÏFŸπéîÎ:aw9BÈ :Äj–¥mAôô6|∫äÑg·E"®¿ﬁR†e„œ‡ªœ`µÄ[_Õø¸€«ø„¸Së Z¥B»3¸-˙{∫˘~º‰«-q(âÉj√ÀÒ8}ÚÑ@€s†ï<YÚCE‚Ä™X∑%[g5Oö]5˚ÌYWsRq¿∏¨èwN*^\ùÿ”ô:ª®yö<ÿˆ$Oo5Oó€ﬁ‰ÕÌt°.‹é'5/__.È«IÕÀZœ%˝9IºÙXÈ I‚çÃv8'‚-fd€ƒâxKöŸé¡a8Ä7´öﬁ‚˜ ‚cÈm∂ﬂ·Cäh'5ÜÚq∂ÉèF5?häYØ‰áêöÔ]æ˚úà÷'Y9√ènjÂ‚3Ÿ∫A9Y⁄ÖE™ãµSíç`+)î^S_”ç4u5u5FWg_Á _gﬂ…Jj…=Zn[7®_>ôn,GTIZ§GR«™oòLZ;ƒg`∏óèá>‹”√dpó¥é¡=ÃHi/6€7XÇÆÍ¶mxu–œiı=<›Ωî±Ωz˚ô¬Çï¢æß£äz©bá%õB(πﬂ∞q5uMUu15öÊÀÁ]tgˇtﬁ≥[MuMöÊ”uÕöfgˆY‰r˛o!Zàà2õı~6ZWoAÁ¶sãd¡eé‘v¥—˚Ö	¸5⁄én:≠Øπ∑`v6ô}#‹ÿ/iHÔCŒÚç !ÇÎ∫∞®≤Q ıfST˜(≈	7µfÍ;R"ªmüÈj#ŸÖy˘)BSíå˝5ZÁÒ√<#˙ZÁˆãåË/¨XΩg°∞Ÿ∫ëÉo]+L≠BˆÔõﬁmNüU4rÿ÷{üÃ∏5nﬁ“·É'	˛äÇ0*y@ö^om H÷Ü§ı4:Ÿv:“«;‡C˜ƒ~œ#C§–P1ƒ¨PöRË[©)È!Ç(‰ZWY≠÷Îz!G¨Níi˝±xfcf~·¡SÔíŸçÈÔ-ìÁ]0ãã§ü•>ö˚“ó±Y⁄ƒq1S7Éøﬁ«√]◊—U£∂Uë´ÉÿU)	=Ã]<ù$ákQ^zÖ%â›‚z[§¯òæfS¯kí—ªkêè“†ÒÙunGÅîZWµR—¡AT®‹¥Æ*≠Noàè15uUıUöKW´Íˇ–9ÅcÄ ôp,ã€+66gååÓÿÿº7ÇÀ „TÿXîùèQTPDLûQTŸ‘eÃ Ã(|5}FScVePÃ¢H ”ª≤π"À¨˛-2b¢¢b2ÔÂD≈÷à¨U<™("..¢∏Ôﬂ7)G{Q≈@9Gi.∆Ω,“åÌíLå“íˇ:%•ôdeôe$õˇ©3ﬁ˛W-!)ñêfbëﬁÊÁ˘/ItÖáˇ6pÒ.F!Ω‡∆¯!8N8“‡µ/¥Ê ïkº@a≥YR†ZÖÖ(",ª!l&`Ω‡eÉ˛P6êù	e≥ŸÕŒÓé>æ^⁄¡ïπI˘9∏9¿Vó;–@`+œÿv
+∂wsíÄ≈|∞=ò
+l{ñYâ¿-nu‰»Ä}yÿÌ`˚‘q 6{ÿ_p| 1ÇÂÅX¬„ò<øÕWFA∞¬Ög;@Ù’Ñ˝ˇ≠˙;á„ €<phABç ¿ ["=ø
+endstream
+endobj
+72 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+73 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 653
+/Descent -250
+/Flags 98
+/FontBBox [-169 -217 1010 883]
+/FontName /Times-Italic
+/ItalicAngle -15
+/StemV 76
+/XHeight 441
+/StemH 76
+>>
+endobj
+74 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+75 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [250 0 0 0 0 0 0 0 333 333 0 0 0 333 0 0 
+500 500 0 0 500 0 500 500 500 500 0 0 0 0 0 0 
+0 722 667 722 722 667 611 778 778 389 0 778 667 944 722 778 
+0 0 722 556 667 722 722 1000 722 722 0 0 0 0 0 0 
+0 500 0 444 556 444 333 500 556 278 0 556 278 833 556 500 
+556 0 444 389 333 556 0 722 500 500 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 333 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 72 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 151
+/Widths [250 0 0 0 0 0 0 0 0 0 0 0 250 333 250 0 
+500 500 500 500 500 0 500 500 0 500 333 0 0 0 0 0 
+0 611 611 667 722 611 0 722 0 333 444 667 556 833 667 0 
+611 0 611 500 556 722 611 833 611 0 0 0 0 0 0 0 
+0 500 500 444 500 444 278 500 500 278 278 444 278 722 500 500 
+500 500 389 389 278 500 444 667 444 444 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 333 333 0 0 0 0 889 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Italic
+/FontDescriptor 73 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 151
+/Widths [250 0 408 500 500 0 778 0 333 333 500 564 250 333 250 278 
+500 500 500 500 500 500 500 500 500 500 278 278 0 0 0 444 
+0 722 667 667 722 611 556 722 722 333 389 722 611 889 722 722 
+556 722 667 556 611 722 722 944 722 722 611 0 0 0 0 500 
+0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 
+500 500 333 389 278 500 500 722 500 500 444 0 0 0 0 0 
+0 0 0 0 0 0 500 0 333 0 0 0 0 0 0 0 
+0 333 333 444 444 0 0 1000 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 74 0 R
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /CGALMJ+Symbol
+/Encoding /Identity-H
+/DescendantFonts [ 76 0 R ]
+/ToUnicode 77 0 R
+>>
+endobj
+76 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /CGALMJ+Symbol
+/FontDescriptor 70 0 R
+/CIDSystemInfo<<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/DW 1000
+/W [
+183 [790 890 ]
+]
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 152
+/Widths [600 600 0 0 0 0 0 0 600 600 0 0 600 600 600 0 
+0 600 600 0 0 0 0 0 0 0 0 0 600 0 0 600 
+600 600 0 600 600 600 600 0 0 600 0 0 600 600 600 600 
+600 0 600 600 600 600 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 600 600 600 600 600 600 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 600 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 75 0 R
+>>
+endobj
+77 0 obj
+<<
+/Filter /FlateDecode
+/Length 222
+>>
+stream
+HâTPÀj√0º˚+ˆÿíÉSöå $|ËÉ⁄È]ñ÷FPØƒZ>¯Ô#©yêÉ$ffG;ª‚–≤ƒ7;›bÄ¡íaú›¬°«—l+0Vá ∑ûîÕÌ:ú‘u!~¢8^·©ÎvõÚƒdKcd^™”od⁄≈˚?úêî %
+q¯P˛SM"Ôd∑zÑ*„Ì•∑38{•ëçuYˆ;ôü7	HÊQø∫˙·>ñ◊ÔØ«Ω,¢Î™ß“p∑@zaéYÛr¢î≈ﬁñ‰ùOm”)Œ Œ˘m¿
+endstream
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 11 0 R
+/Contents 10 0 R
+>>
+endobj
+13 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 15 0 R
+/Contents 14 0 R
+>>
+endobj
+17 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 19 0 R
+/Contents 18 0 R
+>>
+endobj
+20 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 22 0 R
+/Contents 21 0 R
+>>
+endobj
+23 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 25 0 R
+/Contents 24 0 R
+>>
+endobj
+26 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 28 0 R
+/Contents 27 0 R
+>>
+endobj
+29 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 31 0 R
+/Contents 30 0 R
+>>
+endobj
+32 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 34 0 R
+/Contents 33 0 R
+>>
+endobj
+35 0 obj
+<<
+/Type /Page
+/Parent 8 0 R
+/Resources 37 0 R
+/Contents 36 0 R
+>>
+endobj
+38 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 40 0 R
+/Contents 39 0 R
+>>
+endobj
+43 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 45 0 R
+/Contents 44 0 R
+>>
+endobj
+46 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 48 0 R
+/Contents 47 0 R
+>>
+endobj
+49 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 51 0 R
+/Contents 50 0 R
+>>
+endobj
+52 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 54 0 R
+/Contents 53 0 R
+>>
+endobj
+55 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 57 0 R
+/Contents 56 0 R
+>>
+endobj
+58 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 60 0 R
+/Contents 59 0 R
+>>
+endobj
+61 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 63 0 R
+/Contents 62 0 R
+>>
+endobj
+64 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 66 0 R
+/Contents 65 0 R
+>>
+endobj
+67 0 obj
+<<
+/Type /Page
+/Parent 42 0 R
+/Resources 69 0 R
+/Contents 68 0 R
+>>
+endobj
+78 0 obj
+<<
+/S /D
+>>
+endobj
+79 0 obj
+<<
+/Nums [0 78 0 R ]
+>>
+endobj
+8 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R 9 0 R 13 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R]
+/Count 10
+/Parent 41 0 R
+>>
+endobj
+42 0 obj
+<<
+/Type /Pages
+/Kids [38 0 R 43 0 R 46 0 R 49 0 R 52 0 R 55 0 R 58 0 R 61 0 R 64 0 R 67 0 R]
+/Count 10
+/Parent 41 0 R
+>>
+endobj
+41 0 obj
+<<
+/Type /Pages
+/Kids [8 0 R 42 0 R ]
+/Count 20
+/MediaBox [0 0 612 792]
+>>
+endobj
+80 0 obj
+<<
+/CreationDate (D:20200218205304-05'00')
+/ModDate (D:20200218205304-05'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+81 0 obj
+<<
+/Type /Catalog
+/Pages 41 0 R
+/PageLabels 79 0 R
+>>
+endobj
+xref
+0 82
+0000000000 65535 f 
+0000167286 00000 n 
+0000000016 00000 n 
+0000006167 00000 n 
+0000164494 00000 n 
+0000165007 00000 n 
+0000165541 00000 n 
+0000142636 00000 n 
+0000169020 00000 n 
+0000167366 00000 n 
+0000006284 00000 n 
+0000014687 00000 n 
+0000166125 00000 n 
+0000167448 00000 n 
+0000014795 00000 n 
+0000023162 00000 n 
+0000166477 00000 n 
+0000167531 00000 n 
+0000023292 00000 n 
+0000031456 00000 n 
+0000167614 00000 n 
+0000031574 00000 n 
+0000038959 00000 n 
+0000167697 00000 n 
+0000039077 00000 n 
+0000048260 00000 n 
+0000167780 00000 n 
+0000048378 00000 n 
+0000056422 00000 n 
+0000167863 00000 n 
+0000056541 00000 n 
+0000065228 00000 n 
+0000167946 00000 n 
+0000065358 00000 n 
+0000073410 00000 n 
+0000168029 00000 n 
+0000073540 00000 n 
+0000081306 00000 n 
+0000168112 00000 n 
+0000081425 00000 n 
+0000090158 00000 n 
+0000169293 00000 n 
+0000169155 00000 n 
+0000168196 00000 n 
+0000090288 00000 n 
+0000098733 00000 n 
+0000168280 00000 n 
+0000098875 00000 n 
+0000106491 00000 n 
+0000168364 00000 n 
+0000106621 00000 n 
+0000114102 00000 n 
+0000168448 00000 n 
+0000114220 00000 n 
+0000122885 00000 n 
+0000168532 00000 n 
+0000123004 00000 n 
+0000129736 00000 n 
+0000168616 00000 n 
+0000129866 00000 n 
+0000134779 00000 n 
+0000168700 00000 n 
+0000134886 00000 n 
+0000139677 00000 n 
+0000168784 00000 n 
+0000139784 00000 n 
+0000142300 00000 n 
+0000168868 00000 n 
+0000142407 00000 n 
+0000142540 00000 n 
+0000142776 00000 n 
+0000142966 00000 n 
+0000163704 00000 n 
+0000163906 00000 n 
+0000164106 00000 n 
+0000164303 00000 n 
+0000166268 00000 n 
+0000166991 00000 n 
+0000168952 00000 n 
+0000168980 00000 n 
+0000169384 00000 n 
+0000169516 00000 n 
+trailer
+<<
+/Size 82
+/Root 81 0 R
+/Info 80 0 R
+/ID [<b40cbd89a77ebf7bf8096e344cdb4401><b40cbd89a77ebf7bf8096e344cdb4401>]
+>>
+startxref
+169586
+%%EOF
